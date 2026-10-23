@@ -5,6 +5,8 @@
  *   --recapture      reload real pages even when a capture is saved
  *   --mode M         vision | text | both (default both: the ablation)
  *   --max-calls N    make at most N new model calls, then score what exists
+ *   --max-neurons N  Cloudflare: stop making new calls before N neurons are
+ *                    spent in this run (Workers AI's free tier is 10,000 a day)
  *   --estimate       print the data a run would use, and stop
  *   --only a,b       just these page ids
  *
@@ -41,6 +43,11 @@ const option = (name, fallback) => {
 const MODES = { vision: ['vision'], text: ['text'], both: ['vision', 'text'] }[option('mode', 'both')];
 if (!MODES) throw new Error('--mode is vision, text or both');
 let callsLeft = Number(option('max-calls', Infinity));
+const maxNeurons = Number(option('max-neurons', Infinity));
+let neuronsSpent = 0;
+let costliest = { vision: 0, text: 0 };
+// Workers AI reports neurons itself; otherwise price the tokens the same way.
+const neuronsOf = (u) => u?.neurons ?? ((u?.prompt_tokens ?? 0) * 24_545 + (u?.completion_tokens ?? 0) * 77_273) / 1e6;
 
 const catalog = loadCatalog();
 const readJson = (f) => JSON.parse(readFileSync(resolve(ROOT, f), 'utf8'));
@@ -172,8 +179,14 @@ for (const mode of MODES) {
       if (mode === MODES[0]) skipped.push({ id: page.id, why: EXCLUDED[page.id] ?? c?.error ?? 'not captured' });
       continue;
     }
-    if (!isCached(c, mode)) {
+    const fresh = !isCached(c, mode);
+    if (fresh) {
       if (callsLeft <= 0) { stopped ??= 'the --max-calls budget ran out'; continue; }
+      // Leave room for a call as costly as the costliest one so far.
+      if (neuronsSpent + Math.max(costliest[mode], mode === 'vision' ? 80 : 25) > maxNeurons) {
+        stopped ??= `the --max-neurons budget (${maxNeurons}) would be exceeded`;
+        continue;
+      }
       callsLeft--;
     }
     let claim;
@@ -186,6 +199,12 @@ for (const mode of MODES) {
       }
       modelErrors.push({ id: `${page.id} (${mode})`, why: err.message.slice(0, 160) });
       continue;
+    }
+    if (fresh) {
+      const n = neuronsOf(claim.usage);
+      neuronsSpent += n;
+      costliest[mode] = Math.max(costliest[mode], n);
+      console.log(`  ${mode.padEnd(6)} ${page.id.padEnd(16)} ${String(claim.claimed_brand).padEnd(18)} ${claim.modelMs} ms  ${n.toFixed(0)} neurons (run total ${neuronsSpent.toFixed(0)})`);
     }
     const realUrl = page.real ? c.finalUrl : page.url;
     const base = {
@@ -204,6 +223,7 @@ for (const mode of MODES) {
 }
 
 if (stopped) console.error(`\nStopped: ${stopped}`);
+if (neuronsSpent) console.log(`\nNeurons spent in this run: ${neuronsSpent.toFixed(0)}`);
 
 // ---------------------------------------------------------------- metrics
 
