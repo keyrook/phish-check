@@ -1,0 +1,21 @@
+{
+  "about": "Cases the catalog cannot settle. `no-domains`: the brand is in the catalog but the catalog lists no domains for it. `not-in-catalog`: the brand is absent from the catalog. `no-brand`: local pages in eval/fixtures that name no service at all. Real pages are opened and screenshotted only.",
+  "pages": [
+    { "id": "facebook", "group": "no-domains", "brand": "facebook", "url": "https://www.facebook.com/login" },
+    { "id": "instagram", "group": "no-domains", "brand": "instagram", "url": "https://www.instagram.com/accounts/login/" },
+    { "id": "openai", "group": "no-domains", "brand": "openai", "url": "https://chatgpt.com/auth/login" },
+    { "id": "atlassian", "group": "no-domains", "brand": "atlassian", "url": "https://id.atlassian.com/login" },
+    { "id": "figma", "group": "no-domains", "brand": "figma", "url": "https://www.figma.com/login" },
+    { "id": "vercel", "group": "no-domains", "brand": "vercel", "url": "https://vercel.com/login" },
+    { "id": "canva", "group": "no-domains", "brand": "canva", "url": "https://www.canva.com/login" },
+    { "id": "wellsfargo", "group": "not-in-catalog", "brand": "Wells Fargo", "url": "https://connect.secure.wellsfargo.com/auth/login/present" },
+    { "id": "bankofamerica", "group": "not-in-catalog", "brand": "Bank of America", "url": "https://secure.bankofamerica.com/login/sign-in/signOnV2Screen.go" },
+    { "id": "adobe", "group": "not-in-catalog", "brand": "Adobe", "url": "https://account.adobe.com/" },
+    { "id": "vietcombank", "group": "not-in-catalog", "brand": "Vietcombank", "url": "https://vcbdigibank.vietcombank.com.vn/login" },
+    { "id": "zalo", "group": "not-in-catalog", "brand": "Zalo", "url": "https://id.zalo.me/account?continue=https%3A%2F%2Fchat.zalo.me%2F" },
+    { "id": "quora", "group": "not-in-catalog", "brand": "Quora", "url": "https://www.quora.com/" },
+    { "id": "generic-signin", "group": "no-brand", "brand": null, "fixture": "generic-signin.html", "url": "https://portal.example-intranet.test/login" },
+    { "id": "generic-otp", "group": "no-brand", "brand": null, "fixture": "generic-otp.html", "url": "https://verify.example-intranet.test/2fa" },
+    { "id": "generic-webmail", "group": "no-brand", "brand": null, "fixture": "generic-webmail.html", "url": "https://mail.example-hosting.test/" }
+  ]
+}
