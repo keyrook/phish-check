@@ -1,0 +1,5746 @@
+{
+ "source": "keyrook/keyrook-authenticator packages/core/src/brand/catalog.ts",
+ "count": 522,
+ "withDomains": 354,
+ "brands": [
+  {
+   "slug": "1password",
+   "name": "1Password",
+   "domains": [
+    "1password.com"
+   ],
+   "sites": [
+    "1password.com"
+   ],
+   "aliases": [
+    "onepassword"
+   ],
+   "popular": true
+  },
+  {
+   "slug": "2fas",
+   "name": "2FAS",
+   "domains": [
+    "2fas.com"
+   ],
+   "sites": [
+    "2fas.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "abstract",
+   "name": "Abstract",
+   "domains": [
+    "abstract.com"
+   ],
+   "sites": [
+    "abstract.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "adyen",
+   "name": "Adyen",
+   "domains": [
+    "adyen.com"
+   ],
+   "sites": [
+    "adyen.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "aegisauthenticator",
+   "name": "Aegis Authenticator",
+   "domains": [
+    "getaegis.app"
+   ],
+   "sites": [
+    "getaegis.app"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "affirm",
+   "name": "Affirm",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "afterpay",
+   "name": "Afterpay",
+   "domains": [
+    "afterpay.com"
+   ],
+   "sites": [
+    "afterpay.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "agoda",
+   "name": "Agoda",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "airbnb",
+   "name": "Airbnb",
+   "domains": [
+    "airbnb.com"
+   ],
+   "sites": [
+    "airbnb.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "airtable",
+   "name": "Airtable",
+   "domains": [
+    "airtable.com"
+   ],
+   "sites": [
+    "airtable.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "aistudio",
+   "name": "Google AI Studio",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "akamai",
+   "name": "Akamai",
+   "domains": [
+    "akamai.com"
+   ],
+   "sites": [
+    "akamai.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "algolia",
+   "name": "Algolia",
+   "domains": [
+    "frontify.com"
+   ],
+   "sites": [
+    "frontify.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "alibabacloud",
+   "name": "Alibaba Cloud",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "alibabadotcom",
+   "name": "Alibaba",
+   "domains": [
+    "alibaba.com"
+   ],
+   "sites": [
+    "alibaba.com"
+   ],
+   "aliases": [
+    "alibaba"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "aliexpress",
+   "name": "AliExpress",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "alipay",
+   "name": "Alipay",
+   "domains": [
+    "alipay.com"
+   ],
+   "sites": [
+    "alipay.com"
+   ],
+   "aliases": [
+    "ant",
+    "group"
+   ],
+   "popular": true
+  },
+  {
+   "slug": "amazon",
+   "name": "Amazon",
+   "domains": [
+    "amazon.com"
+   ],
+   "sites": [
+    "amazon.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "americanexpress",
+   "name": "American Express",
+   "domains": [
+    "americanexpress.com"
+   ],
+   "sites": [
+    "americanexpress.com"
+   ],
+   "aliases": [
+    "amex"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "ansible",
+   "name": "Ansible",
+   "domains": [
+    "ansible.com"
+   ],
+   "sites": [
+    "ansible.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "anthropic",
+   "name": "Anthropic",
+   "domains": [
+    "anthropic.com"
+   ],
+   "sites": [
+    "anthropic.com"
+   ],
+   "aliases": [
+    "claude"
+   ],
+   "popular": true
+  },
+  {
+   "slug": "anytype",
+   "name": "Anytype",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "apple",
+   "name": "Apple",
+   "domains": [
+    "apple.com",
+    "appleid.apple.com",
+    "icloud.com"
+   ],
+   "sites": [
+    "apple.com",
+    "icloud.com"
+   ],
+   "aliases": [
+    "icloud",
+    "apple",
+    "id"
+   ],
+   "popular": true
+  },
+  {
+   "slug": "appwrite",
+   "name": "Appwrite",
+   "domains": [
+    "appwrite.io"
+   ],
+   "sites": [
+    "appwrite.io"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "archivedotorg",
+   "name": "Internet Archive",
+   "domains": [
+    "archive.org"
+   ],
+   "sites": [
+    "archive.org"
+   ],
+   "aliases": [
+    "internet",
+    "archive"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "argo",
+   "name": "Argo",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "asana",
+   "name": "Asana",
+   "domains": [
+    "asana.com"
+   ],
+   "sites": [
+    "asana.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "atlassian",
+   "name": "Atlassian",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "audible",
+   "name": "Audible",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "auth0",
+   "name": "Auth0",
+   "domains": [
+    "auth0.com"
+   ],
+   "sites": [
+    "auth0.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "authelia",
+   "name": "Authelia",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "authentik",
+   "name": "Authentik",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "avalanche",
+   "name": "Avalanche",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "aws",
+   "name": "AWS",
+   "domains": [
+    "aws.amazon.com",
+    "signin.aws.amazon.com"
+   ],
+   "sites": [
+    "amazon.com"
+   ],
+   "aliases": [
+    "amazonwebservices",
+    "amazon",
+    "web",
+    "services"
+   ],
+   "popular": true
+  },
+  {
+   "slug": "backblaze",
+   "name": "Backblaze",
+   "domains": [
+    "backblaze.com"
+   ],
+   "sites": [
+    "backblaze.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "baichuan",
+   "name": "Baichuan",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "bandcamp",
+   "name": "Bandcamp",
+   "domains": [
+    "bandcamp.com"
+   ],
+   "sites": [
+    "bandcamp.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "barclays",
+   "name": "Barclays",
+   "domains": [
+    "home.barclays"
+   ],
+   "sites": [
+    "home.barclays"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "basecamp",
+   "name": "Basecamp",
+   "domains": [
+    "basecamp.com"
+   ],
+   "sites": [
+    "basecamp.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "battledotnet",
+   "name": "Battle.net",
+   "domains": [
+    "battle.net"
+   ],
+   "sites": [
+    "battle.net"
+   ],
+   "aliases": [
+    "blizzard",
+    "battlenet"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "bedrock",
+   "name": "Bedrock",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "betterstack",
+   "name": "Better Stack",
+   "domains": [
+    "betterstack.com"
+   ],
+   "sites": [
+    "betterstack.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "bigcommerce",
+   "name": "BigCommerce",
+   "domains": [
+    "bigcommerce.co.uk"
+   ],
+   "sites": [
+    "bigcommerce.co.uk"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "binance",
+   "name": "Binance",
+   "domains": [
+    "binance.com"
+   ],
+   "sites": [
+    "binance.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "bitbucket",
+   "name": "Bitbucket",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "bitcoin",
+   "name": "Bitcoin",
+   "domains": [
+    "bitcoin.org"
+   ],
+   "sites": [
+    "bitcoin.org"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "bitget",
+   "name": "Bitget",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "bitpay",
+   "name": "BitPay",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "bitstamp",
+   "name": "Bitstamp",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "bitwarden",
+   "name": "Bitwarden",
+   "domains": [
+    "bitwarden.com"
+   ],
+   "sites": [
+    "bitwarden.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "blockchaindotcom",
+   "name": "Blockchain.com",
+   "domains": [
+    "blockchain.com"
+   ],
+   "sites": [
+    "blockchain.com"
+   ],
+   "aliases": [
+    "blockchain"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "blogger",
+   "name": "Blogger",
+   "domains": [
+    "blogger.com"
+   ],
+   "sites": [
+    "blogger.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "bluesky",
+   "name": "Bluesky",
+   "domains": [
+    "bsky.app"
+   ],
+   "sites": [
+    "bsky.app"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "bolt",
+   "name": "Bolt",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "bookingdotcom",
+   "name": "Booking.com",
+   "domains": [
+    "booking.com"
+   ],
+   "sites": [
+    "booking.com"
+   ],
+   "aliases": [
+    "booking"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "box",
+   "name": "Box",
+   "domains": [
+    "box.com"
+   ],
+   "sites": [
+    "box.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "braintree",
+   "name": "Braintree",
+   "domains": [
+    "braintreepayments.com"
+   ],
+   "sites": [
+    "braintreepayments.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "brevo",
+   "name": "Brevo",
+   "domains": [
+    "brevo.com"
+   ],
+   "sites": [
+    "brevo.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "brex",
+   "name": "Brex",
+   "domains": [
+    "brex.com"
+   ],
+   "sites": [
+    "brex.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "buildkite",
+   "name": "Buildkite",
+   "domains": [
+    "buildkite.com"
+   ],
+   "sites": [
+    "buildkite.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "bun",
+   "name": "Bun",
+   "domains": [
+    "bun.sh"
+   ],
+   "sites": [
+    "bun.sh"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "buymeacoffee",
+   "name": "Buy Me A Coffee",
+   "domains": [
+    "buymeacoffee.com"
+   ],
+   "sites": [
+    "buymeacoffee.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "bybit",
+   "name": "Bybit",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "calendly",
+   "name": "Calendly",
+   "domains": [
+    "calendly.com"
+   ],
+   "sites": [
+    "calendly.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "canva",
+   "name": "Canva",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "cardano",
+   "name": "Cardano",
+   "domains": [
+    "cardano.org"
+   ],
+   "sites": [
+    "cardano.org"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "cashapp",
+   "name": "Cash App",
+   "domains": [
+    "cash.app"
+   ],
+   "sites": [
+    "cash.app"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "chainlink",
+   "name": "Chainlink",
+   "domains": [
+    "chain.link"
+   ],
+   "sites": [
+    "chain.link"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "chase",
+   "name": "Chase",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "chromatic",
+   "name": "Chromatic",
+   "domains": [
+    "chromatic.com"
+   ],
+   "sites": [
+    "chromatic.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "circleci",
+   "name": "CircleCI",
+   "domains": [
+    "circleci.com"
+   ],
+   "sites": [
+    "circleci.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "civitai",
+   "name": "Civitai",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "claude",
+   "name": "Claude",
+   "domains": [
+    "claude.ai"
+   ],
+   "sites": [
+    "claude.ai"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "claudecode",
+   "name": "Claude Code",
+   "domains": [
+    "claude.com"
+   ],
+   "sites": [
+    "claude.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "clerk",
+   "name": "Clerk",
+   "domains": [
+    "clerk.com"
+   ],
+   "sites": [
+    "clerk.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "clickhouse",
+   "name": "ClickHouse",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "clickup",
+   "name": "ClickUp",
+   "domains": [
+    "clickup.com"
+   ],
+   "sites": [
+    "clickup.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "cloudflare",
+   "name": "Cloudflare",
+   "domains": [
+    "cloudflare.com"
+   ],
+   "sites": [
+    "cloudflare.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "cloudways",
+   "name": "Cloudways",
+   "domains": [
+    "cloudways.com"
+   ],
+   "sites": [
+    "cloudways.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "cockroachlabs",
+   "name": "Cockroach Labs",
+   "domains": [
+    "cockroachlabs.com"
+   ],
+   "sites": [
+    "cockroachlabs.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "coda",
+   "name": "Coda",
+   "domains": [
+    "coda.io"
+   ],
+   "sites": [
+    "coda.io"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "codeberg",
+   "name": "Codeberg",
+   "domains": [
+    "codeberg.org"
+   ],
+   "sites": [
+    "codeberg.org"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "codecademy",
+   "name": "Codecademy",
+   "domains": [
+    "codecademy.com"
+   ],
+   "sites": [
+    "codecademy.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "codecov",
+   "name": "Codecov",
+   "domains": [
+    "codecov.io"
+   ],
+   "sites": [
+    "codecov.io"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "codeforces",
+   "name": "Codeforces",
+   "domains": [
+    "codeforces.com"
+   ],
+   "sites": [
+    "codeforces.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "codepen",
+   "name": "CodePen",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "codesandbox",
+   "name": "CodeSandbox",
+   "domains": [
+    "codesandbox.io"
+   ],
+   "sites": [
+    "codesandbox.io"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "cohere",
+   "name": "Cohere",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "coinbase",
+   "name": "Coinbase",
+   "domains": [
+    "coinbase.com"
+   ],
+   "sites": [
+    "coinbase.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "comfyui",
+   "name": "ComfyUI",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "confluence",
+   "name": "Confluence",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "contabo",
+   "name": "Contabo",
+   "domains": [
+    "contabo.com"
+   ],
+   "sites": [
+    "contabo.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "convex",
+   "name": "Convex",
+   "domains": [
+    "convex.dev"
+   ],
+   "sites": [
+    "convex.dev"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "coursera",
+   "name": "Coursera",
+   "domains": [
+    "coursera.org"
+   ],
+   "sites": [
+    "coursera.org"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "coveralls",
+   "name": "Coveralls",
+   "domains": [
+    "coveralls.io"
+   ],
+   "sites": [
+    "coveralls.io"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "craft",
+   "name": "Craft",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "crunchyroll",
+   "name": "Crunchyroll",
+   "domains": [
+    "crunchyroll.com"
+   ],
+   "sites": [
+    "crunchyroll.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "cursor",
+   "name": "Cursor",
+   "domains": [
+    "cursor.com"
+   ],
+   "sites": [
+    "cursor.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "dailymotion",
+   "name": "Dailymotion",
+   "domains": [
+    "dailymotion.com"
+   ],
+   "sites": [
+    "dailymotion.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "dashlane",
+   "name": "Dashlane",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "databricks",
+   "name": "Databricks",
+   "domains": [
+    "databricks.com"
+   ],
+   "sites": [
+    "databricks.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "datadog",
+   "name": "Datadog",
+   "domains": [
+    "datadoghq.com"
+   ],
+   "sites": [
+    "datadoghq.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "deepseek",
+   "name": "DeepSeek",
+   "domains": [
+    "deepseek.com"
+   ],
+   "sites": [
+    "deepseek.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "deezer",
+   "name": "Deezer",
+   "domains": [
+    "deezerbrand.com"
+   ],
+   "sites": [
+    "deezerbrand.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "deliveroo",
+   "name": "Deliveroo",
+   "domains": [
+    "deliveroo.com"
+   ],
+   "sites": [
+    "deliveroo.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "deno",
+   "name": "Deno",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "descript",
+   "name": "Descript",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "devdotto",
+   "name": "dev.to",
+   "domains": [
+    "dev.to"
+   ],
+   "sites": [
+    "dev.to"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "didi",
+   "name": "DiDi",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "dify",
+   "name": "Dify",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "digitalocean",
+   "name": "DigitalOcean",
+   "domains": [
+    "digitalocean.com"
+   ],
+   "sites": [
+    "digitalocean.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "discord",
+   "name": "Discord",
+   "domains": [
+    "discord.com"
+   ],
+   "sites": [
+    "discord.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "docker",
+   "name": "Docker",
+   "domains": [
+    "docker.com"
+   ],
+   "sites": [
+    "docker.com"
+   ],
+   "aliases": [
+    "dockerhub"
+   ],
+   "popular": true
+  },
+  {
+   "slug": "docusign",
+   "name": "DocuSign",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "dogecoin",
+   "name": "Dogecoin",
+   "domains": [
+    "cryptologos.cc"
+   ],
+   "sites": [
+    "cryptologos.cc"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "doordash",
+   "name": "DoorDash",
+   "domains": [
+    "doordash.com"
+   ],
+   "sites": [
+    "doordash.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "doubao",
+   "name": "Doubao",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "dreamhost",
+   "name": "DreamHost",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "drift",
+   "name": "Drift",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "dropbox",
+   "name": "Dropbox",
+   "domains": [
+    "dropbox.com"
+   ],
+   "sites": [
+    "dropbox.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "duolingo",
+   "name": "Duolingo",
+   "domains": [
+    "duolingo.com"
+   ],
+   "sites": [
+    "duolingo.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "ea",
+   "name": "EA",
+   "domains": [
+    "ea.com"
+   ],
+   "sites": [
+    "ea.com"
+   ],
+   "aliases": [
+    "electronic",
+    "arts",
+    "origin"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "ebay",
+   "name": "eBay",
+   "domains": [
+    "ebay.com"
+   ],
+   "sites": [
+    "ebay.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "edx",
+   "name": "edX",
+   "domains": [
+    "edx.org"
+   ],
+   "sites": [
+    "edx.org"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "elastic",
+   "name": "Elastic",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "elasticsearch",
+   "name": "Elasticsearch",
+   "domains": [],
+   "sites": [],
+   "aliases": [
+    "elastic"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "electrum",
+   "name": "Electrum",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "element",
+   "name": "Element",
+   "domains": [
+    "element.io"
+   ],
+   "sites": [
+    "element.io"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "elevenlabs",
+   "name": "ElevenLabs",
+   "domains": [
+    "elevenlabs.io"
+   ],
+   "sites": [
+    "elevenlabs.io"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "emby",
+   "name": "Emby",
+   "domains": [
+    "emby.media"
+   ],
+   "sites": [
+    "emby.media"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "ente",
+   "name": "Ente",
+   "domains": [
+    "ente.io"
+   ],
+   "sites": [
+    "ente.io"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "epicgames",
+   "name": "Epic Games",
+   "domains": [
+    "epicgames.com"
+   ],
+   "sites": [
+    "epicgames.com"
+   ],
+   "aliases": [
+    "epic"
+   ],
+   "popular": true
+  },
+  {
+   "slug": "esbuild",
+   "name": "esbuild",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "ethereum",
+   "name": "Ethereum",
+   "domains": [
+    "ethereum.org"
+   ],
+   "sites": [
+    "ethereum.org"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "etoro",
+   "name": "eToro",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "etrade",
+   "name": "E*Trade",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "etsy",
+   "name": "Etsy",
+   "domains": [
+    "etsy.com"
+   ],
+   "sites": [
+    "etsy.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "evernote",
+   "name": "Evernote",
+   "domains": [
+    "evernote.com"
+   ],
+   "sites": [
+    "evernote.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "exercism",
+   "name": "Exercism",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "exodus",
+   "name": "Exodus",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "expedia",
+   "name": "Expedia",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "expo",
+   "name": "Expo",
+   "domains": [
+    "expo.dev"
+   ],
+   "sites": [
+    "expo.dev"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "expressvpn",
+   "name": "ExpressVPN",
+   "domains": [
+    "expressvpn.com"
+   ],
+   "sites": [
+    "expressvpn.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "facebook",
+   "name": "Facebook",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "fastly",
+   "name": "Fastly",
+   "domains": [
+    "fastly.com"
+   ],
+   "sites": [
+    "fastly.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "fastmail",
+   "name": "Fastmail",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "fidelity",
+   "name": "Fidelity",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "figma",
+   "name": "Figma",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "filezilla",
+   "name": "FileZilla",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "firebase",
+   "name": "Firebase",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "fireworks",
+   "name": "Fireworks",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "flixbus",
+   "name": "FlixBus",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "flutter",
+   "name": "Flutter",
+   "domains": [
+    "flutter.dev"
+   ],
+   "sites": [
+    "flutter.dev"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "flydotio",
+   "name": "Fly.io",
+   "domains": [
+    "fly.io"
+   ],
+   "sites": [
+    "fly.io"
+   ],
+   "aliases": [
+    "fly"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "framer",
+   "name": "Framer",
+   "domains": [
+    "framer.com"
+   ],
+   "sites": [
+    "framer.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "freecodecamp",
+   "name": "freeCodeCamp",
+   "domains": [
+    "freecodecamp.org"
+   ],
+   "sites": [
+    "freecodecamp.org"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "front",
+   "name": "Front",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "gandi",
+   "name": "Gandi",
+   "domains": [
+    "gandi.net"
+   ],
+   "sites": [
+    "gandi.net"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "gatedotio",
+   "name": "Gate.io",
+   "domains": [
+    "gate.io"
+   ],
+   "sites": [
+    "gate.io"
+   ],
+   "aliases": [
+    "gate"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "ghost",
+   "name": "Ghost",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "gitea",
+   "name": "Gitea",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "gitee",
+   "name": "Gitee",
+   "domains": [
+    "gitee.com"
+   ],
+   "sites": [
+    "gitee.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "github",
+   "name": "GitHub",
+   "domains": [
+    "github.com"
+   ],
+   "sites": [
+    "github.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "githubcopilot",
+   "name": "GitHub Copilot",
+   "domains": [
+    "primer.style"
+   ],
+   "sites": [
+    "primer.style"
+   ],
+   "aliases": [
+    "copilot"
+   ],
+   "popular": true
+  },
+  {
+   "slug": "gitkraken",
+   "name": "GitKraken",
+   "domains": [
+    "gitkraken.com"
+   ],
+   "sites": [
+    "gitkraken.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "gitlab",
+   "name": "GitLab",
+   "domains": [
+    "gitlab.com"
+   ],
+   "sites": [
+    "gitlab.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "glitch",
+   "name": "Glitch",
+   "domains": [
+    "glitch.com"
+   ],
+   "sites": [
+    "glitch.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "go",
+   "name": "Go",
+   "domains": [
+    "golang.org"
+   ],
+   "sites": [
+    "golang.org"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "godaddy",
+   "name": "GoDaddy",
+   "domains": [
+    "godaddy.net"
+   ],
+   "sites": [
+    "godaddy.net"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "godotengine",
+   "name": "Godot Engine",
+   "domains": [
+    "godotengine.org"
+   ],
+   "sites": [
+    "godotengine.org"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "gogdotcom",
+   "name": "GOG",
+   "domains": [
+    "gog.com"
+   ],
+   "sites": [
+    "gog.com"
+   ],
+   "aliases": [
+    "gog"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "gojek",
+   "name": "Gojek",
+   "domains": [
+    "gojek.com"
+   ],
+   "sites": [
+    "gojek.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "goodreads",
+   "name": "Goodreads",
+   "domains": [
+    "goodreads.com"
+   ],
+   "sites": [
+    "goodreads.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "google",
+   "name": "Google",
+   "domains": [
+    "google.com",
+    "accounts.google.com"
+   ],
+   "sites": [
+    "google.com"
+   ],
+   "aliases": [
+    "gmail",
+    "google",
+    "account"
+   ],
+   "popular": true
+  },
+  {
+   "slug": "googlecolab",
+   "name": "Google Colab",
+   "domains": [
+    "colab.research.google.com"
+   ],
+   "sites": [
+    "google.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "googledrive",
+   "name": "Google Drive",
+   "domains": [
+    "drive.google.com"
+   ],
+   "sites": [
+    "google.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "googlegemini",
+   "name": "Google Gemini",
+   "domains": [
+    "gemini.google.com"
+   ],
+   "sites": [
+    "google.com"
+   ],
+   "aliases": [
+    "gemini",
+    "bard"
+   ],
+   "popular": true
+  },
+  {
+   "slug": "googlemeet",
+   "name": "Google Meet",
+   "domains": [
+    "meet.google.com"
+   ],
+   "sites": [
+    "google.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "gotomeeting",
+   "name": "GoToMeeting",
+   "domains": [
+    "gotomeeting.com"
+   ],
+   "sites": [
+    "gotomeeting.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "grab",
+   "name": "Grab",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "gradle",
+   "name": "Gradle",
+   "domains": [
+    "gradle.com"
+   ],
+   "sites": [
+    "gradle.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "grafana",
+   "name": "Grafana",
+   "domains": [
+    "grafana.com"
+   ],
+   "sites": [
+    "grafana.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "grok",
+   "name": "Grok",
+   "domains": [],
+   "sites": [],
+   "aliases": [
+    "xai",
+    "grok",
+    "ai"
+   ],
+   "popular": true
+  },
+  {
+   "slug": "groq",
+   "name": "Groq",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "gumroad",
+   "name": "Gumroad",
+   "domains": [
+    "gumroad.com"
+   ],
+   "sites": [
+    "gumroad.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "hackerrank",
+   "name": "HackerRank",
+   "domains": [
+    "hackerrank.com"
+   ],
+   "sites": [
+    "hackerrank.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "hashicorpvault",
+   "name": "HashiCorp Vault",
+   "domains": [
+    "hashicorp.com"
+   ],
+   "sites": [
+    "hashicorp.com"
+   ],
+   "aliases": [
+    "vault",
+    "hashicorp"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "hashnode",
+   "name": "Hashnode",
+   "domains": [
+    "hashnode.com"
+   ],
+   "sites": [
+    "hashnode.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "hbo",
+   "name": "HBO",
+   "domains": [
+    "hbo.com"
+   ],
+   "sites": [
+    "hbo.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "hedra",
+   "name": "Hedra",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "helm",
+   "name": "Helm",
+   "domains": [
+    "helm.sh"
+   ],
+   "sites": [
+    "helm.sh"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "helpscout",
+   "name": "Help Scout",
+   "domains": [
+    "helpscout.com"
+   ],
+   "sites": [
+    "helpscout.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "heroku",
+   "name": "Heroku",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "hetzner",
+   "name": "Hetzner",
+   "domains": [
+    "hetzner.com"
+   ],
+   "sites": [
+    "hetzner.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "hey",
+   "name": "HEY",
+   "domains": [
+    "hey.com"
+   ],
+   "sites": [
+    "hey.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "homebrew",
+   "name": "Homebrew",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "hostinger",
+   "name": "Hostinger",
+   "domains": [
+    "hostinger.com"
+   ],
+   "sites": [
+    "hostinger.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "hsbc",
+   "name": "HSBC",
+   "domains": [
+    "hsbc.com"
+   ],
+   "sites": [
+    "hsbc.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "huaweicloud",
+   "name": "Huaweicloud",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "hubspot",
+   "name": "HubSpot",
+   "domains": [
+    "hubspot.com"
+   ],
+   "sites": [
+    "hubspot.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "huggingface",
+   "name": "Hugging Face",
+   "domains": [
+    "huggingface.co"
+   ],
+   "sites": [
+    "huggingface.co"
+   ],
+   "aliases": [
+    "hf"
+   ],
+   "popular": true
+  },
+  {
+   "slug": "hulu",
+   "name": "Hulu",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "humblebundle",
+   "name": "Humble Bundle",
+   "domains": [
+    "humblebundle.com"
+   ],
+   "sites": [
+    "humblebundle.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "hunyuan",
+   "name": "Hunyuan",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "ibmcloud",
+   "name": "IBM Cloud",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "icedrive",
+   "name": "Icedrive",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "ifttt",
+   "name": "IFTTT",
+   "domains": [
+    "ifttt.com"
+   ],
+   "sites": [
+    "ifttt.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "imdb",
+   "name": "IMDb",
+   "domains": [
+    "imdb.com"
+   ],
+   "sites": [
+    "imdb.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "influxdb",
+   "name": "InfluxDB",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "insomnia",
+   "name": "Insomnia",
+   "domains": [
+    "insomnia.rest"
+   ],
+   "sites": [
+    "insomnia.rest"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "instacart",
+   "name": "Instacart",
+   "domains": [
+    "instacart.com"
+   ],
+   "sites": [
+    "instacart.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "instagram",
+   "name": "Instagram",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "intercom",
+   "name": "Intercom",
+   "domains": [
+    "intercom.com"
+   ],
+   "sites": [
+    "intercom.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "invision",
+   "name": "InVision",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "ionic",
+   "name": "Ionic",
+   "domains": [
+    "ionicframework.com"
+   ],
+   "sites": [
+    "ionicframework.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "ionos",
+   "name": "Ionos",
+   "domains": [
+    "ionos.de"
+   ],
+   "sites": [
+    "ionos.de"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "itchdotio",
+   "name": "itch.io",
+   "domains": [
+    "itch.io"
+   ],
+   "sites": [
+    "itch.io"
+   ],
+   "aliases": [
+    "itch"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "jellyfin",
+   "name": "Jellyfin",
+   "domains": [
+    "jellyfin.org"
+   ],
+   "sites": [
+    "jellyfin.org"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "jenkins",
+   "name": "Jenkins",
+   "domains": [
+    "jenkins.io"
+   ],
+   "sites": [
+    "jenkins.io"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "jetbrains",
+   "name": "JetBrains",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "jira",
+   "name": "Jira",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "jitsi",
+   "name": "Jitsi",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "joplin",
+   "name": "Joplin",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "jsfiddle",
+   "name": "JSFiddle",
+   "domains": [
+    "jsfiddle.net"
+   ],
+   "sites": [
+    "jsfiddle.net"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "justeat",
+   "name": "Just Eat",
+   "domains": [
+    "just-eat.com"
+   ],
+   "sites": [
+    "just-eat.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "kaggle",
+   "name": "Kaggle",
+   "domains": [
+    "kaggle.com"
+   ],
+   "sites": [
+    "kaggle.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "kakao",
+   "name": "Kakao",
+   "domains": [
+    "kakaocorp.com"
+   ],
+   "sites": [
+    "kakaocorp.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "keepassxc",
+   "name": "KeePassXC",
+   "domains": [
+    "keepassxc.org"
+   ],
+   "sites": [
+    "keepassxc.org"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "keeper",
+   "name": "Keeper",
+   "domains": [
+    "keeper.io"
+   ],
+   "sites": [
+    "keeper.io"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "keycloak",
+   "name": "Keycloak",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "khanacademy",
+   "name": "Khan Academy",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "kick",
+   "name": "Kick",
+   "domains": [
+    "kick.com"
+   ],
+   "sites": [
+    "kick.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "kimi",
+   "name": "Kimi",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "kinsta",
+   "name": "Kinsta",
+   "domains": [
+    "kinsta.com"
+   ],
+   "sites": [
+    "kinsta.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "klarna",
+   "name": "Klarna",
+   "domains": [
+    "klarna.design"
+   ],
+   "sites": [
+    "klarna.design"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "kofi",
+   "name": "Ko-fi",
+   "domains": [
+    "ko-fi.com"
+   ],
+   "sites": [
+    "ko-fi.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "kotlin",
+   "name": "Kotlin",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "kubernetes",
+   "name": "Kubernetes",
+   "domains": [],
+   "sites": [],
+   "aliases": [
+    "k8s"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "kucoin",
+   "name": "KuCoin",
+   "domains": [
+    "kucoin.com"
+   ],
+   "sites": [
+    "kucoin.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "langchain",
+   "name": "LangChain",
+   "domains": [
+    "langchain.com"
+   ],
+   "sites": [
+    "langchain.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "langsmith",
+   "name": "LangSmith",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "lastdotfm",
+   "name": "Last.fm",
+   "domains": [
+    "last.fm"
+   ],
+   "sites": [
+    "last.fm"
+   ],
+   "aliases": [
+    "lastfm"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "lastpass",
+   "name": "LastPass",
+   "domains": [
+    "lastpass.com"
+   ],
+   "sites": [
+    "lastpass.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "leetcode",
+   "name": "LeetCode",
+   "domains": [
+    "leetcode.com"
+   ],
+   "sites": [
+    "leetcode.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "letterboxd",
+   "name": "Letterboxd",
+   "domains": [
+    "letterboxd.com"
+   ],
+   "sites": [
+    "letterboxd.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "line",
+   "name": "LINE",
+   "domains": [
+    "line.me"
+   ],
+   "sites": [
+    "line.me"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "linear",
+   "name": "Linear",
+   "domains": [
+    "linear.app"
+   ],
+   "sites": [
+    "linear.app"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "linkedin",
+   "name": "LinkedIn",
+   "domains": [
+    "linkedin.com"
+   ],
+   "sites": [
+    "linkedin.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "linktree",
+   "name": "Linktree",
+   "domains": [
+    "linktr.ee"
+   ],
+   "sites": [
+    "linktr.ee"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "linode",
+   "name": "Linode",
+   "domains": [
+    "linode.com"
+   ],
+   "sites": [
+    "linode.com"
+   ],
+   "aliases": [
+    "akamai",
+    "connected",
+    "cloud"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "litecoin",
+   "name": "Litecoin",
+   "domains": [
+    "litecoin-foundation.org"
+   ],
+   "sites": [
+    "litecoin-foundation.org"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "llamaindex",
+   "name": "LlamaIndex",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "logseq",
+   "name": "Logseq",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "loom",
+   "name": "Loom",
+   "domains": [
+    "loom.com"
+   ],
+   "sites": [
+    "loom.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "lovable",
+   "name": "Lovable",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "luma",
+   "name": "Luma",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "lyft",
+   "name": "Lyft",
+   "domains": [
+    "lyft.com"
+   ],
+   "sites": [
+    "lyft.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "magento",
+   "name": "Magento",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "mailboxdotorg",
+   "name": "mailbox.org",
+   "domains": [
+    "mailbox.org"
+   ],
+   "sites": [
+    "mailbox.org"
+   ],
+   "aliases": [
+    "mailbox"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "mailchimp",
+   "name": "MailChimp",
+   "domains": [
+    "mailchimp.com"
+   ],
+   "sites": [
+    "mailchimp.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "mailgun",
+   "name": "Mailgun",
+   "domains": [
+    "mailgun.com"
+   ],
+   "sites": [
+    "mailgun.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "make",
+   "name": "Make",
+   "domains": [
+    "make.com"
+   ],
+   "sites": [
+    "make.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "mariadb",
+   "name": "MariaDB",
+   "domains": [
+    "mariadb.com"
+   ],
+   "sites": [
+    "mariadb.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "mastercard",
+   "name": "MasterCard",
+   "domains": [
+    "mastercard.com"
+   ],
+   "sites": [
+    "mastercard.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "mastodon",
+   "name": "Mastodon",
+   "domains": [
+    "joinmastodon.org"
+   ],
+   "sites": [
+    "joinmastodon.org"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "matrix",
+   "name": "Matrix",
+   "domains": [
+    "matrix.org"
+   ],
+   "sites": [
+    "matrix.org"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "mattermost",
+   "name": "Mattermost",
+   "domains": [
+    "mattermost.org"
+   ],
+   "sites": [
+    "mattermost.org"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "maven",
+   "name": "Maven",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "medium",
+   "name": "Medium",
+   "domains": [
+    "medium.design"
+   ],
+   "sites": [
+    "medium.design"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "mega",
+   "name": "MEGA",
+   "domains": [
+    "mega.io"
+   ],
+   "sites": [
+    "mega.io"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "meilisearch",
+   "name": "Meilisearch",
+   "domains": [
+    "meilisearch.com"
+   ],
+   "sites": [
+    "meilisearch.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "mercadolibre",
+   "name": "Mercado Libre",
+   "domains": [
+    "mercadolibre.com"
+   ],
+   "sites": [
+    "mercadolibre.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "microsoft",
+   "name": "Microsoft",
+   "domains": [
+    "microsoft.com",
+    "live.com",
+    "outlook.com",
+    "office.com"
+   ],
+   "sites": [
+    "microsoft.com",
+    "live.com",
+    "outlook.com",
+    "office.com"
+   ],
+   "aliases": [
+    "outlook",
+    "office",
+    "live",
+    "msa",
+    "azure"
+   ],
+   "popular": true
+  },
+  {
+   "slug": "midjourney",
+   "name": "Midjourney",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "migadu",
+   "name": "Migadu",
+   "domains": [
+    "migadu.com"
+   ],
+   "sites": [
+    "migadu.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "minecraft",
+   "name": "Minecraft",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "minimax",
+   "name": "MiniMax",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "miro",
+   "name": "Miro",
+   "domains": [
+    "miro.com"
+   ],
+   "sites": [
+    "miro.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "mistralai",
+   "name": "Mistral AI",
+   "domains": [
+    "mistral.ai"
+   ],
+   "sites": [
+    "mistral.ai"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "monday",
+   "name": "Monday",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "monero",
+   "name": "Monero",
+   "domains": [
+    "getmonero.org"
+   ],
+   "sites": [
+    "getmonero.org"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "mongodb",
+   "name": "MongoDB",
+   "domains": [
+    "mongodb.com"
+   ],
+   "sites": [
+    "mongodb.com"
+   ],
+   "aliases": [
+    "atlas"
+   ],
+   "popular": true
+  },
+  {
+   "slug": "monzo",
+   "name": "Monzo",
+   "domains": [
+    "monzo.com"
+   ],
+   "sites": [
+    "monzo.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "moonshot",
+   "name": "Moonshot",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "mullvad",
+   "name": "Mullvad",
+   "domains": [
+    "mullvad.net"
+   ],
+   "sites": [
+    "mullvad.net"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "mural",
+   "name": "Mural",
+   "domains": [
+    "mural.co"
+   ],
+   "sites": [
+    "mural.co"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "mysql",
+   "name": "MySQL",
+   "domains": [
+    "mysql.com"
+   ],
+   "sites": [
+    "mysql.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "n26",
+   "name": "N26",
+   "domains": [
+    "n26.com"
+   ],
+   "sites": [
+    "n26.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "n8n",
+   "name": "n8n",
+   "domains": [
+    "n8n.io"
+   ],
+   "sites": [
+    "n8n.io"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "namecheap",
+   "name": "Namecheap",
+   "domains": [
+    "namecheap.com"
+   ],
+   "sites": [
+    "namecheap.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "naver",
+   "name": "Naver",
+   "domains": [
+    "naver.com"
+   ],
+   "sites": [
+    "naver.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "neon",
+   "name": "Neon",
+   "domains": [
+    "neon.com"
+   ],
+   "sites": [
+    "neon.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "neovim",
+   "name": "Neovim",
+   "domains": [
+    "neovim.io"
+   ],
+   "sites": [
+    "neovim.io"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "netcup",
+   "name": "netcup",
+   "domains": [
+    "netcup.de"
+   ],
+   "sites": [
+    "netcup.de"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "netflix",
+   "name": "Netflix",
+   "domains": [
+    "netflix.com"
+   ],
+   "sites": [
+    "netflix.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "netlify",
+   "name": "Netlify",
+   "domains": [
+    "netlify.com"
+   ],
+   "sites": [
+    "netlify.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "newrelic",
+   "name": "New Relic",
+   "domains": [
+    "newrelic.com"
+   ],
+   "sites": [
+    "newrelic.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "nextcloud",
+   "name": "Nextcloud",
+   "domains": [
+    "nextcloud.com"
+   ],
+   "sites": [
+    "nextcloud.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "nhost",
+   "name": "Nhost",
+   "domains": [
+    "nhost.io"
+   ],
+   "sites": [
+    "nhost.io"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "nodedotjs",
+   "name": "Node.js",
+   "domains": [
+    "nodejs.org"
+   ],
+   "sites": [
+    "nodejs.org"
+   ],
+   "aliases": [
+    "node",
+    "nodejs"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "nordvpn",
+   "name": "NordVPN",
+   "domains": [
+    "nordvpn.com"
+   ],
+   "sites": [
+    "nordvpn.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "notebooklm",
+   "name": "NotebookLM",
+   "domains": [
+    "notebooklm.google"
+   ],
+   "sites": [
+    "notebooklm.google"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "notion",
+   "name": "Notion",
+   "domains": [
+    "notion.so"
+   ],
+   "sites": [
+    "notion.so"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "npm",
+   "name": "npm",
+   "domains": [
+    "npmjs.com"
+   ],
+   "sites": [
+    "npmjs.com"
+   ],
+   "aliases": [
+    "npmjs"
+   ],
+   "popular": true
+  },
+  {
+   "slug": "nubank",
+   "name": "Nubank",
+   "domains": [
+    "nubank.com.br"
+   ],
+   "sites": [
+    "nubank.com.br"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "nuget",
+   "name": "NuGet",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "nvidia",
+   "name": "NVIDIA",
+   "domains": [
+    "nvidia.com"
+   ],
+   "sites": [
+    "nvidia.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "nx",
+   "name": "Nx",
+   "domains": [
+    "nx.dev"
+   ],
+   "sites": [
+    "nx.dev"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "observable",
+   "name": "Observable",
+   "domains": [
+    "observablehq.com"
+   ],
+   "sites": [
+    "observablehq.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "obsidian",
+   "name": "Obsidian",
+   "domains": [
+    "obsidian.md"
+   ],
+   "sites": [
+    "obsidian.md"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "okta",
+   "name": "Okta",
+   "domains": [
+    "okta.com"
+   ],
+   "sites": [
+    "okta.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "okx",
+   "name": "OKX",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "ollama",
+   "name": "Ollama",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "openai",
+   "name": "OpenAI",
+   "domains": [],
+   "sites": [],
+   "aliases": [
+    "chatgpt",
+    "chat",
+    "gpt",
+    "open",
+    "ai",
+    "gpt"
+   ],
+   "popular": true
+  },
+  {
+   "slug": "opencart",
+   "name": "OpenCart",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "openrouter",
+   "name": "OpenRouter",
+   "domains": [
+    "openrouter.ai"
+   ],
+   "sites": [
+    "openrouter.ai"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "openstack",
+   "name": "OpenStack",
+   "domains": [
+    "openstack.org"
+   ],
+   "sites": [
+    "openstack.org"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "openvpn",
+   "name": "OpenVPN",
+   "domains": [
+    "openvpn.net"
+   ],
+   "sites": [
+    "openvpn.net"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "opsgenie",
+   "name": "Opsgenie",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "optimism",
+   "name": "Optimism",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "oracle",
+   "name": "Oracle",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "ovh",
+   "name": "OVH",
+   "domains": [
+    "ovh.com"
+   ],
+   "sites": [
+    "ovh.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "owncloud",
+   "name": "ownCloud",
+   "domains": [
+    "owncloud.com"
+   ],
+   "sites": [
+    "owncloud.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "packagist",
+   "name": "Packagist",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "pagerduty",
+   "name": "PagerDuty",
+   "domains": [
+    "pagerduty.com"
+   ],
+   "sites": [
+    "pagerduty.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "palantir",
+   "name": "Palantir",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "patreon",
+   "name": "Patreon",
+   "domains": [
+    "patreon.com"
+   ],
+   "sites": [
+    "patreon.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "payoneer",
+   "name": "Payoneer",
+   "domains": [
+    "payoneer.com"
+   ],
+   "sites": [
+    "payoneer.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "paypal",
+   "name": "PayPal",
+   "domains": [
+    "paypal.com"
+   ],
+   "sites": [
+    "paypal.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "pcloud",
+   "name": "pCloud",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "perplexity",
+   "name": "Perplexity",
+   "domains": [
+    "perplexity.ai"
+   ],
+   "sites": [
+    "perplexity.ai"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "phantom",
+   "name": "Phantom",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "pika",
+   "name": "Pika",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "pinterest",
+   "name": "Pinterest",
+   "domains": [
+    "pinterest.com"
+   ],
+   "sites": [
+    "pinterest.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "planetscale",
+   "name": "PlanetScale",
+   "domains": [
+    "planetscale.com"
+   ],
+   "sites": [
+    "planetscale.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "platformdotsh",
+   "name": "Platform.sh",
+   "domains": [
+    "platform.sh"
+   ],
+   "sites": [
+    "platform.sh"
+   ],
+   "aliases": [
+    "platformsh"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "playstation",
+   "name": "PlayStation",
+   "domains": [
+    "playstation.com"
+   ],
+   "sites": [
+    "playstation.com"
+   ],
+   "aliases": [
+    "sony",
+    "psn"
+   ],
+   "popular": true
+  },
+  {
+   "slug": "plex",
+   "name": "Plex",
+   "domains": [
+    "plex.tv"
+   ],
+   "sites": [
+    "plex.tv"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "pluralsight",
+   "name": "Pluralsight",
+   "domains": [
+    "pluralsight.com"
+   ],
+   "sites": [
+    "pluralsight.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "plus500",
+   "name": "Plus500",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "pocketbase",
+   "name": "PocketBase",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "podio",
+   "name": "Podio",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "poe",
+   "name": "Poe",
+   "domains": [
+    "poe.com"
+   ],
+   "sites": [
+    "poe.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "polkadot",
+   "name": "Polkadot",
+   "domains": [
+    "polkadot.network"
+   ],
+   "sites": [
+    "polkadot.network"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "polygon",
+   "name": "Polygon",
+   "domains": [
+    "polygon.technology"
+   ],
+   "sites": [
+    "polygon.technology"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "porkbun",
+   "name": "Porkbun",
+   "domains": [
+    "porkbun.design"
+   ],
+   "sites": [
+    "porkbun.design"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "portainer",
+   "name": "Portainer",
+   "domains": [
+    "portainer.io"
+   ],
+   "sites": [
+    "portainer.io"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "postgresql",
+   "name": "PostgreSQL",
+   "domains": [
+    "postgresql.org"
+   ],
+   "sites": [
+    "postgresql.org"
+   ],
+   "aliases": [
+    "postgres"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "postman",
+   "name": "Postman",
+   "domains": [
+    "getpostman.com"
+   ],
+   "sites": [
+    "getpostman.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "prestashop",
+   "name": "PrestaShop",
+   "domains": [
+    "prestashop.com"
+   ],
+   "sites": [
+    "prestashop.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "privateinternetaccess",
+   "name": "Private Internet Access",
+   "domains": [
+    "privateinternetaccess.com"
+   ],
+   "sites": [
+    "privateinternetaccess.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "prometheus",
+   "name": "Prometheus",
+   "domains": [
+    "prometheus.io"
+   ],
+   "sites": [
+    "prometheus.io"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "proton",
+   "name": "Proton",
+   "domains": [
+    "proton.me",
+    "protonmail.com"
+   ],
+   "sites": [
+    "proton.me",
+    "protonmail.com"
+   ],
+   "aliases": [
+    "protonmail",
+    "proton",
+    "mail",
+    "protonvpn"
+   ],
+   "popular": true
+  },
+  {
+   "slug": "protonvpn",
+   "name": "Proton VPN",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "proxmox",
+   "name": "Proxmox",
+   "domains": [
+    "proxmox.com"
+   ],
+   "sites": [
+    "proxmox.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "puppet",
+   "name": "Puppet",
+   "domains": [
+    "puppet.com"
+   ],
+   "sites": [
+    "puppet.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "pypi",
+   "name": "PyPI",
+   "domains": [
+    "pypi.org"
+   ],
+   "sites": [
+    "pypi.org"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "python",
+   "name": "Python",
+   "domains": [
+    "python.org"
+   ],
+   "sites": [
+    "python.org"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "qwen",
+   "name": "Qwen",
+   "domains": [
+    "qwen.ai"
+   ],
+   "sites": [
+    "qwen.ai"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "railway",
+   "name": "Railway",
+   "domains": [
+    "railway.app"
+   ],
+   "sites": [
+    "railway.app"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "rakuten",
+   "name": "Rakuten",
+   "domains": [
+    "rakuten.com"
+   ],
+   "sites": [
+    "rakuten.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "ramp",
+   "name": "Ramp",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "rancher",
+   "name": "Rancher",
+   "domains": [
+    "rancher.com"
+   ],
+   "sites": [
+    "rancher.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "rclone",
+   "name": "Rclone",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "reddit",
+   "name": "Reddit",
+   "domains": [
+    "redditinc.com"
+   ],
+   "sites": [
+    "redditinc.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "redis",
+   "name": "Redis",
+   "domains": [
+    "redis.io"
+   ],
+   "sites": [
+    "redis.io"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "remitly",
+   "name": "Remitly",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "render",
+   "name": "Render",
+   "domains": [
+    "render.com"
+   ],
+   "sites": [
+    "render.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "replicate",
+   "name": "Replicate",
+   "domains": [
+    "replicate.com"
+   ],
+   "sites": [
+    "replicate.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "replit",
+   "name": "Replit",
+   "domains": [
+    "repl.it"
+   ],
+   "sites": [
+    "repl.it"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "resend",
+   "name": "Resend",
+   "domains": [
+    "resend.com"
+   ],
+   "sites": [
+    "resend.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "revolut",
+   "name": "Revolut",
+   "domains": [
+    "revolut.com"
+   ],
+   "sites": [
+    "revolut.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "riotgames",
+   "name": "Riot Games",
+   "domains": [
+    "riotgames.com"
+   ],
+   "sites": [
+    "riotgames.com"
+   ],
+   "aliases": [
+    "riot"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "robinhood",
+   "name": "Robinhood",
+   "domains": [
+    "robinhood.com"
+   ],
+   "sites": [
+    "robinhood.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "roblox",
+   "name": "Roblox",
+   "domains": [
+    "roblox.com"
+   ],
+   "sites": [
+    "roblox.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "rocketdotchat",
+   "name": "Rocket.Chat",
+   "domains": [
+    "rocket.chat"
+   ],
+   "sites": [
+    "rocket.chat"
+   ],
+   "aliases": [
+    "rocketchat"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "rockstargames",
+   "name": "Rockstar Games",
+   "domains": [
+    "rockstargames.com"
+   ],
+   "sites": [
+    "rockstargames.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "rollupdotjs",
+   "name": "Rollup",
+   "domains": [
+    "rollupjs.org"
+   ],
+   "sites": [
+    "rollupjs.org"
+   ],
+   "aliases": [
+    "rollup"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "rubygems",
+   "name": "RubyGems",
+   "domains": [
+    "rubygems.org"
+   ],
+   "sites": [
+    "rubygems.org"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "rumble",
+   "name": "Rumble",
+   "domains": [
+    "rumble.com"
+   ],
+   "sites": [
+    "rumble.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "runway",
+   "name": "Runway",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "rust",
+   "name": "Rust",
+   "domains": [
+    "rust-lang.org"
+   ],
+   "sites": [
+    "rust-lang.org"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "safe",
+   "name": "Safe",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "salesforce",
+   "name": "Salesforce",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "santander",
+   "name": "Santander",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "scaleway",
+   "name": "Scaleway",
+   "domains": [
+    "scaleway.com"
+   ],
+   "sites": [
+    "scaleway.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "seafile",
+   "name": "Seafile",
+   "domains": [
+    "seafile.com"
+   ],
+   "sites": [
+    "seafile.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "sendgrid",
+   "name": "SendGrid",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "sentry",
+   "name": "Sentry",
+   "domains": [
+    "sentry.io"
+   ],
+   "sites": [
+    "sentry.io"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "session",
+   "name": "Session",
+   "domains": [
+    "getsession.org"
+   ],
+   "sites": [
+    "getsession.org"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "shopee",
+   "name": "Shopee",
+   "domains": [
+    "shopee.com"
+   ],
+   "sites": [
+    "shopee.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "shopify",
+   "name": "Shopify",
+   "domains": [
+    "shopify.com"
+   ],
+   "sites": [
+    "shopify.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "shortcut",
+   "name": "Shortcut",
+   "domains": [
+    "shortcut.com"
+   ],
+   "sites": [
+    "shortcut.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "signal",
+   "name": "Signal",
+   "domains": [
+    "signal.org"
+   ],
+   "sites": [
+    "signal.org"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "simplelogin",
+   "name": "SimpleLogin",
+   "domains": [
+    "simplelogin.io"
+   ],
+   "sites": [
+    "simplelogin.io"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "sketch",
+   "name": "Sketch",
+   "domains": [
+    "sketch.com"
+   ],
+   "sites": [
+    "sketch.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "skillshare",
+   "name": "Skillshare",
+   "domains": [
+    "skillshare.com"
+   ],
+   "sites": [
+    "skillshare.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "skrill",
+   "name": "Skrill",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "skyscanner",
+   "name": "Skyscanner",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "slack",
+   "name": "Slack",
+   "domains": [
+    "slack.com"
+   ],
+   "sites": [
+    "slack.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "snapchat",
+   "name": "Snapchat",
+   "domains": [
+    "snapchat.com"
+   ],
+   "sites": [
+    "snapchat.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "snowflake",
+   "name": "Snowflake",
+   "domains": [
+    "snowflake.com"
+   ],
+   "sites": [
+    "snowflake.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "snyk",
+   "name": "Snyk",
+   "domains": [
+    "snyk.io"
+   ],
+   "sites": [
+    "snyk.io"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "solana",
+   "name": "Solana",
+   "domains": [
+    "solana.com"
+   ],
+   "sites": [
+    "solana.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "sonarqube",
+   "name": "SonarQube",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "soundcloud",
+   "name": "SoundCloud",
+   "domains": [
+    "soundcloud.com"
+   ],
+   "sites": [
+    "soundcloud.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "sourceforge",
+   "name": "SourceForge",
+   "domains": [
+    "sourceforge.net"
+   ],
+   "sites": [
+    "sourceforge.net"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "sourcegraph",
+   "name": "Sourcegraph",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "sourcehut",
+   "name": "SourceHut",
+   "domains": [
+    "sourcehut.org"
+   ],
+   "sites": [
+    "sourcehut.org"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "sourcetree",
+   "name": "Sourcetree",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "spark",
+   "name": "Spark",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "splunk",
+   "name": "Splunk",
+   "domains": [
+    "splunk.com"
+   ],
+   "sites": [
+    "splunk.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "spotify",
+   "name": "Spotify",
+   "domains": [
+    "spotify.com"
+   ],
+   "sites": [
+    "spotify.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "sqlite",
+   "name": "SQLite",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "square",
+   "name": "Square",
+   "domains": [
+    "squareup.com"
+   ],
+   "sites": [
+    "squareup.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "squareenix",
+   "name": "Square Enix",
+   "domains": [
+    "square-enix.com"
+   ],
+   "sites": [
+    "square-enix.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "squarespace",
+   "name": "Squarespace",
+   "domains": [
+    "squarespace.com"
+   ],
+   "sites": [
+    "squarespace.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "stability",
+   "name": "Stability",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "stackblitz",
+   "name": "StackBlitz",
+   "domains": [
+    "stackblitz.com"
+   ],
+   "sites": [
+    "stackblitz.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "starlingbank",
+   "name": "Starling Bank",
+   "domains": [
+    "starlingbank.com"
+   ],
+   "sites": [
+    "starlingbank.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "statuspage",
+   "name": "Statuspage",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "steam",
+   "name": "Steam",
+   "domains": [
+    "steampowered.com",
+    "steamcommunity.com"
+   ],
+   "sites": [
+    "steampowered.com",
+    "steamcommunity.com"
+   ],
+   "aliases": [
+    "valve"
+   ],
+   "popular": true
+  },
+  {
+   "slug": "storybook",
+   "name": "Storybook",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "stripe",
+   "name": "Stripe",
+   "domains": [
+    "stripe.com"
+   ],
+   "sites": [
+    "stripe.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "sublimetext",
+   "name": "Sublime Text",
+   "domains": [
+    "sublimetext.com"
+   ],
+   "sites": [
+    "sublimetext.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "substack",
+   "name": "Substack",
+   "domains": [
+    "substack.com"
+   ],
+   "sites": [
+    "substack.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "sumologic",
+   "name": "Sumo Logic",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "suno",
+   "name": "Suno",
+   "domains": [
+    "suno.com"
+   ],
+   "sites": [
+    "suno.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "supabase",
+   "name": "Supabase",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "surfshark",
+   "name": "Surfshark",
+   "domains": [
+    "surfshark.com"
+   ],
+   "sites": [
+    "surfshark.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "surveymonkey",
+   "name": "SurveyMonkey",
+   "domains": [
+    "surveymonkey.com"
+   ],
+   "sites": [
+    "surveymonkey.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "swagger",
+   "name": "Swagger",
+   "domains": [
+    "swagger.io"
+   ],
+   "sites": [
+    "swagger.io"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "swift",
+   "name": "Swift",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "sync",
+   "name": "Sync",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "syncthing",
+   "name": "Syncthing",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "tailscale",
+   "name": "Tailscale",
+   "domains": [
+    "tailscale.com"
+   ],
+   "sites": [
+    "tailscale.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "target",
+   "name": "Target",
+   "domains": [
+    "target.com"
+   ],
+   "sites": [
+    "target.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "teamcity",
+   "name": "TeamCity",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "teamwork",
+   "name": "Teamwork",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "telegram",
+   "name": "Telegram",
+   "domains": [
+    "telegram.org"
+   ],
+   "sites": [
+    "telegram.org"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "tencentqq",
+   "name": "QQ",
+   "domains": [
+    "qq.com"
+   ],
+   "sites": [
+    "qq.com"
+   ],
+   "aliases": [
+    "qq",
+    "tencent"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "terraform",
+   "name": "Terraform",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "threads",
+   "name": "Threads",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "threema",
+   "name": "Threema",
+   "domains": [
+    "threema.ch"
+   ],
+   "sites": [
+    "threema.ch"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "ticktick",
+   "name": "TickTick",
+   "domains": [
+    "ticktick.com"
+   ],
+   "sites": [
+    "ticktick.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "tidal",
+   "name": "TIDAL",
+   "domains": [
+    "tidal.com"
+   ],
+   "sites": [
+    "tidal.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "tiktok",
+   "name": "TikTok",
+   "domains": [
+    "tiktok.com"
+   ],
+   "sites": [
+    "tiktok.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "todoist",
+   "name": "Todoist",
+   "domains": [
+    "todoist.com"
+   ],
+   "sites": [
+    "todoist.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "together",
+   "name": "Together",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "tradingview",
+   "name": "TradingView",
+   "domains": [
+    "tradingview.com"
+   ],
+   "sites": [
+    "tradingview.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "trainline",
+   "name": "Trainline",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "trakt",
+   "name": "Trakt",
+   "domains": [
+    "trakt.tv"
+   ],
+   "sites": [
+    "trakt.tv"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "traveloka",
+   "name": "Traveloka",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "travisci",
+   "name": "Travis CI",
+   "domains": [
+    "travis-ci.com"
+   ],
+   "sites": [
+    "travis-ci.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "trello",
+   "name": "Trello",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "trezor",
+   "name": "Trezor",
+   "domains": [
+    "visualbook.pro"
+   ],
+   "sites": [
+    "visualbook.pro"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "tripadvisor",
+   "name": "Tripadvisor",
+   "domains": [
+    "mediaroom.com"
+   ],
+   "sites": [
+    "mediaroom.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "trustwallet",
+   "name": "Trust Wallet",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "tumblr",
+   "name": "Tumblr",
+   "domains": [
+    "tumblr.com"
+   ],
+   "sites": [
+    "tumblr.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "turborepo",
+   "name": "Turborepo",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "turso",
+   "name": "Turso",
+   "domains": [
+    "turso.tech"
+   ],
+   "sites": [
+    "turso.tech"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "twitch",
+   "name": "Twitch",
+   "domains": [
+    "twitch.tv"
+   ],
+   "sites": [
+    "twitch.tv"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "typeform",
+   "name": "Typeform",
+   "domains": [
+    "typeform.com"
+   ],
+   "sites": [
+    "typeform.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "typesense",
+   "name": "Typesense",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "uber",
+   "name": "Uber",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "ubereats",
+   "name": "Uber Eats",
+   "domains": [],
+   "sites": [],
+   "aliases": [
+    "uber",
+    "eats"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "ubisoft",
+   "name": "Ubisoft",
+   "domains": [
+    "ubisoft.com"
+   ],
+   "sites": [
+    "ubisoft.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "udemy",
+   "name": "Udemy",
+   "domains": [
+    "udemy.com"
+   ],
+   "sites": [
+    "udemy.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "udio",
+   "name": "Udio",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "uniswap",
+   "name": "Uniswap",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "unity",
+   "name": "Unity",
+   "domains": [
+    "unity.com"
+   ],
+   "sites": [
+    "unity.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "unrealengine",
+   "name": "Unreal Engine",
+   "domains": [
+    "unrealengine.com"
+   ],
+   "sites": [
+    "unrealengine.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "upcloud",
+   "name": "UpCloud",
+   "domains": [
+    "upcloud.com"
+   ],
+   "sites": [
+    "upcloud.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "upstash",
+   "name": "Upstash",
+   "domains": [
+    "upstash.com"
+   ],
+   "sites": [
+    "upstash.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "v0",
+   "name": "v0",
+   "domains": [
+    "v0.dev"
+   ],
+   "sites": [
+    "v0.dev"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "vagrant",
+   "name": "Vagrant",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "venmo",
+   "name": "Venmo",
+   "domains": [
+    "venmo.com"
+   ],
+   "sites": [
+    "venmo.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "vercel",
+   "name": "Vercel",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "vertexai",
+   "name": "Vertex AI",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "viber",
+   "name": "Viber",
+   "domains": [
+    "viber.com"
+   ],
+   "sites": [
+    "viber.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "vimeo",
+   "name": "Vimeo",
+   "domains": [
+    "vimeo.com"
+   ],
+   "sites": [
+    "vimeo.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "visa",
+   "name": "Visa",
+   "domains": [
+    "visa.com"
+   ],
+   "sites": [
+    "visa.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "visualstudiocode",
+   "name": "Visual Studio Code",
+   "domains": [],
+   "sites": [],
+   "aliases": [
+    "vscode"
+   ],
+   "popular": false
+  },
+  {
+   "slug": "vite",
+   "name": "Vite",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "vk",
+   "name": "VK",
+   "domains": [
+    "vk.com"
+   ],
+   "sites": [
+    "vk.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "vultr",
+   "name": "Vultr",
+   "domains": [
+    "vultr.com"
+   ],
+   "sites": [
+    "vultr.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "walmart",
+   "name": "Walmart",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "webex",
+   "name": "Webex",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "webflow",
+   "name": "Webflow",
+   "domains": [
+    "webflow.io"
+   ],
+   "sites": [
+    "webflow.io"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "webpack",
+   "name": "Webpack",
+   "domains": [
+    "js.org"
+   ],
+   "sites": [
+    "js.org"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "webull",
+   "name": "Webull",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "wechat",
+   "name": "WeChat",
+   "domains": [
+    "wechat.design"
+   ],
+   "sites": [
+    "wechat.design"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "weibo",
+   "name": "Weibo",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "weightsandbiases",
+   "name": "Weights & Biases",
+   "domains": [
+    "wandb.ai"
+   ],
+   "sites": [
+    "wandb.ai"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "wenxin",
+   "name": "Wenxin",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "westernunion",
+   "name": "Western Union",
+   "domains": [
+    "westernunion.com"
+   ],
+   "sites": [
+    "westernunion.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "whatsapp",
+   "name": "WhatsApp",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "whereby",
+   "name": "Whereby",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "wikipedia",
+   "name": "Wikipedia",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "windsurf",
+   "name": "Windsurf",
+   "domains": [
+    "windsurf.com"
+   ],
+   "sites": [
+    "windsurf.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "wire",
+   "name": "Wire",
+   "domains": [
+    "wire.com"
+   ],
+   "sites": [
+    "wire.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "wireguard",
+   "name": "WireGuard",
+   "domains": [
+    "wireguard.com"
+   ],
+   "sites": [
+    "wireguard.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "wise",
+   "name": "Wise",
+   "domains": [
+    "wise.design"
+   ],
+   "sites": [
+    "wise.design"
+   ],
+   "aliases": [
+    "transferwise"
+   ],
+   "popular": true
+  },
+  {
+   "slug": "wix",
+   "name": "Wix",
+   "domains": [
+    "wix.com"
+   ],
+   "sites": [
+    "wix.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "woocommerce",
+   "name": "WooCommerce",
+   "domains": [
+    "woocommerce.com"
+   ],
+   "sites": [
+    "woocommerce.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "wordpress",
+   "name": "WordPress",
+   "domains": [
+    "wordpress.org"
+   ],
+   "sites": [
+    "wordpress.org"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "wpengine",
+   "name": "WP Engine",
+   "domains": [
+    "wpengine.com"
+   ],
+   "sites": [
+    "wpengine.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "x",
+   "name": "X",
+   "domains": [
+    "x.com",
+    "twitter.com"
+   ],
+   "sites": [
+    "x.com",
+    "twitter.com"
+   ],
+   "aliases": [
+    "twitter"
+   ],
+   "popular": true
+  },
+  {
+   "slug": "xai",
+   "name": "xAI",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "xbox",
+   "name": "Xbox",
+   "domains": [
+    "xbox.com"
+   ],
+   "sites": [
+    "xbox.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "yandex",
+   "name": "Yandex",
+   "domains": [
+    "yandex.com",
+    "yandex.ru"
+   ],
+   "sites": [
+    "yandex.com",
+    "yandex.ru"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "yi",
+   "name": "Yi",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "youtube",
+   "name": "YouTube",
+   "domains": [
+    "youtube.com"
+   ],
+   "sites": [
+    "youtube.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "yubico",
+   "name": "Yubico",
+   "domains": [
+    "yubico.com"
+   ],
+   "sites": [
+    "yubico.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "zapier",
+   "name": "Zapier",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "zed",
+   "name": "Zed",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "zelle",
+   "name": "Zelle",
+   "domains": [
+    "zellepay.com"
+   ],
+   "sites": [
+    "zellepay.com"
+   ],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "zendesk",
+   "name": "Zendesk",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "zhipu",
+   "name": "Zhipu",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  },
+  {
+   "slug": "zoho",
+   "name": "Zoho",
+   "domains": [
+    "zoho.com"
+   ],
+   "sites": [
+    "zoho.com"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "zoom",
+   "name": "Zoom",
+   "domains": [
+    "zoom.us"
+   ],
+   "sites": [
+    "zoom.us"
+   ],
+   "aliases": [],
+   "popular": true
+  },
+  {
+   "slug": "zulip",
+   "name": "Zulip",
+   "domains": [],
+   "sites": [],
+   "aliases": [],
+   "popular": false
+  }
+ ]
+}

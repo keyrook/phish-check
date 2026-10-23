@@ -1,0 +1,20 @@
+{
+  "name": "phish-check",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Does this login page belong to the brand it shows? Llama 4 Scout reads the page, a brand catalog checks the domain.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "catalog": "node scripts/snapshot-catalog.mjs",
+    "check": "node src/cli.mjs",
+    "eval": "node eval/run.mjs"
+  },
+  "dependencies": {
+    "playwright": "1.63.0",
+    "tldts": "7.4.19"
+  }
+}

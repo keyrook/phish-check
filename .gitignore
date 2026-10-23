@@ -1,0 +1,6 @@
+node_modules/
+.env
+# Captures (screenshots of real sign-in pages) and cached model answers.
+.tmp/
+*.png
+*.jpg
