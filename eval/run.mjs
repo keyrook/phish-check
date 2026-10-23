@@ -170,6 +170,9 @@ const rows = { vision: [], text: [] };
 const skipped = [];
 const modelErrors = [];
 let stopped = null;
+const MAX_CONSECUTIVE_ERRORS = 3;
+let consecutiveErrors = 0;
+console.log(`Asking ${provider().name}:${provider().model} (${MODES.join(' then ')})…`);
 
 outer:
 for (const mode of MODES) {
@@ -190,14 +193,24 @@ for (const mode of MODES) {
       callsLeft--;
     }
     let claim;
+    const asked = performance.now();
     try {
       claim = await identify(c.signals, mode === 'vision' ? c.screenshot : null);
+      consecutiveErrors = 0;
     } catch (err) {
       if (err instanceof MissingKeyError || err instanceof NetworkBlockedError) {
         stopped = err.message;
         break outer;
       }
-      modelErrors.push({ id: `${page.id} (${mode})`, why: err.message.slice(0, 160) });
+      const why = err.message.replace(/\s+/g, ' ').slice(0, 200);
+      console.log(`  ${mode.padEnd(6)} ${page.id.padEnd(16)} ERROR after ${Math.round(performance.now() - asked)} ms: ${why}`);
+      modelErrors.push({ id: `${page.id} (${mode})`, why });
+      // A provider that fails several times running is down, not unlucky:
+      // stop and say so instead of grinding through every page.
+      if (++consecutiveErrors >= MAX_CONSECUTIVE_ERRORS) {
+        stopped = `${consecutiveErrors} model calls in a row failed; the last said: ${why}`;
+        break outer;
+      }
       continue;
     }
     if (fresh) {

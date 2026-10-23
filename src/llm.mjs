@@ -113,6 +113,8 @@ export async function chat({ messages, json = true, maxTokens = 400 }, p = provi
       headers: { authorization: `Bearer ${p.key}`, 'content-type': 'application/json' },
       body: JSON.stringify(useJsonMode ? { ...body, response_format: { type: 'json_object' } } : body),
       signal: AbortSignal.timeout(90_000),
+    }).catch((err) => {
+      throw new Error(`${p.name}: no answer (${err.name === 'TimeoutError' ? 'timed out after 90 s' : err.message})`);
     });
     const latencyMs = Math.round(performance.now() - started);
     const text = await res.text();
@@ -150,7 +152,10 @@ export async function chat({ messages, json = true, maxTokens = 400 }, p = provi
       useJsonMode = false;
       continue;
     }
-    if ((res.status === 429 || res.status >= 500) && attempt < 3) {
+    // A rate limit clears by waiting. A server error is retried once only:
+    // Workers AI can take a minute to fail, and a provider that is down
+    // should surface quickly, not after minutes of silent retries.
+    if ((res.status === 429 && attempt < 3) || (res.status >= 500 && attempt < 1)) {
       const retryAfter = Number(res.headers.get('retry-after'));
       await sleep(Number.isFinite(retryAfter) && retryAfter > 0 ? retryAfter * 1000 : 5000 * (attempt + 1));
       continue;
