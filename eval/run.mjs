@@ -230,10 +230,12 @@ for (const mode of MODES) {
       captureMs: page.real ? c.captureMs : null,
     };
     const genuine = judge({ url: realUrl, claim, catalog });
-    rows[mode].push({ ...base, case: 'genuine', truth: page.truth, url: realUrl, ...genuine });
+    // Published without query or fragment: redirects leave session ids there.
+    const shown = (u) => { const x = new URL(u); return `${x.origin}${x.pathname}`; };
+    rows[mode].push({ ...base, case: 'genuine', truth: page.truth, url: shown(realUrl), ...genuine });
     if (page.real) {
       const url = spoofUrl(page, c.finalUrl, i);
-      rows[mode].push({ ...base, case: 'spoof', group: `spoof:${page.group}`, truth: 'phish', url, ...judge({ url, claim, catalog }) });
+      rows[mode].push({ ...base, case: 'spoof', group: `spoof:${page.group}`, truth: 'phish', url: shown(url), ...judge({ url, claim, catalog }) });
     }
   }
 }
