@@ -3,7 +3,7 @@
  "model": "@cf/meta/llama-4-scout-17b-16e-instruct",
  "modes": {
   "text": {
-   "at": "2026-10-23T15:33:59.044Z",
+   "at": "2026-10-23T16:07:14.248Z",
    "complete": true,
    "modelErrors": [],
    "summary": {
@@ -30,6 +30,8 @@
      "endToEndP95": 27345
     },
     "promptTokensMean": 437,
+    "salvaged": 0,
+    "unreadable": 0,
     "byGroup": [
      {
       "group": "live",
@@ -105,6 +107,7 @@
       },
       "neurons": 17.134546279907227
      },
+     "parse": "ok",
      "captureMs": 9569,
      "case": "genuine",
      "truth": "genuine",
@@ -138,6 +141,7 @@
       },
       "neurons": 17.134546279907227
      },
+     "parse": "ok",
      "captureMs": 9569,
      "case": "spoof",
      "truth": "phish",
@@ -172,6 +176,7 @@
       },
       "neurons": 12.586363792419434
      },
+     "parse": "ok",
      "captureMs": 7726,
      "case": "genuine",
      "truth": "genuine",
@@ -205,6 +210,7 @@
       },
       "neurons": 12.586363792419434
      },
+     "parse": "ok",
      "captureMs": 7726,
      "case": "spoof",
      "truth": "phish",
@@ -239,6 +245,7 @@
       },
       "neurons": 14.054545402526855
      },
+     "parse": "ok",
      "captureMs": 8310,
      "case": "genuine",
      "truth": "genuine",
@@ -272,6 +279,7 @@
       },
       "neurons": 14.054545402526855
      },
+     "parse": "ok",
      "captureMs": 8310,
      "case": "spoof",
      "truth": "phish",
@@ -306,6 +314,7 @@
       },
       "neurons": 16.091819763183594
      },
+     "parse": "ok",
      "captureMs": 6879,
      "case": "genuine",
      "truth": "genuine",
@@ -339,6 +348,7 @@
       },
       "neurons": 16.091819763183594
      },
+     "parse": "ok",
      "captureMs": 6879,
      "case": "spoof",
      "truth": "phish",
@@ -373,6 +383,7 @@
       },
       "neurons": 15.36363697052002
      },
+     "parse": "ok",
      "captureMs": 7009,
      "case": "genuine",
      "truth": "genuine",
@@ -407,6 +418,7 @@
       },
       "neurons": 15.36363697052002
      },
+     "parse": "ok",
      "captureMs": 7009,
      "case": "spoof",
      "truth": "phish",
@@ -441,6 +453,7 @@
       },
       "neurons": 14.80181884765625
      },
+     "parse": "ok",
      "captureMs": 11965,
      "case": "genuine",
      "truth": "genuine",
@@ -474,6 +487,7 @@
       },
       "neurons": 14.80181884765625
      },
+     "parse": "ok",
      "captureMs": 11965,
      "case": "spoof",
      "truth": "phish",
@@ -508,6 +522,7 @@
       },
       "neurons": 16.745454788208008
      },
+     "parse": "ok",
      "captureMs": 13544,
      "case": "genuine",
      "truth": "genuine",
@@ -541,6 +556,7 @@
       },
       "neurons": 16.745454788208008
      },
+     "parse": "ok",
      "captureMs": 13544,
      "case": "spoof",
      "truth": "phish",
@@ -575,6 +591,7 @@
       },
       "neurons": 12.850000381469727
      },
+     "parse": "ok",
      "captureMs": 5721,
      "case": "genuine",
      "truth": "genuine",
@@ -608,6 +625,7 @@
       },
       "neurons": 12.850000381469727
      },
+     "parse": "ok",
      "captureMs": 5721,
      "case": "spoof",
      "truth": "phish",
@@ -642,6 +660,7 @@
       },
       "neurons": 16.08818244934082
      },
+     "parse": "ok",
      "captureMs": 7207,
      "case": "genuine",
      "truth": "genuine",
@@ -675,6 +694,7 @@
       },
       "neurons": 16.08818244934082
      },
+     "parse": "ok",
      "captureMs": 7207,
      "case": "spoof",
      "truth": "phish",
@@ -709,6 +729,7 @@
       },
       "neurons": 14.504546165466309
      },
+     "parse": "ok",
      "captureMs": 10120,
      "case": "genuine",
      "truth": "genuine",
@@ -742,6 +763,7 @@
       },
       "neurons": 14.504546165466309
      },
+     "parse": "ok",
      "captureMs": 10120,
      "case": "spoof",
      "truth": "phish",
@@ -776,6 +798,7 @@
       },
       "neurons": 13.137272834777832
      },
+     "parse": "ok",
      "captureMs": 8495,
      "case": "genuine",
      "truth": "genuine",
@@ -809,6 +832,7 @@
       },
       "neurons": 13.137272834777832
      },
+     "parse": "ok",
      "captureMs": 8495,
      "case": "spoof",
      "truth": "phish",
@@ -843,6 +867,7 @@
       },
       "neurons": 13.134546279907227
      },
+     "parse": "ok",
      "captureMs": 5236,
      "case": "genuine",
      "truth": "genuine",
@@ -876,6 +901,7 @@
       },
       "neurons": 13.134546279907227
      },
+     "parse": "ok",
      "captureMs": 5236,
      "case": "spoof",
      "truth": "phish",
@@ -910,6 +936,7 @@
       },
       "neurons": 16.979999542236328
      },
+     "parse": "ok",
      "captureMs": 6293,
      "case": "genuine",
      "truth": "genuine",
@@ -943,6 +970,7 @@
       },
       "neurons": 16.979999542236328
      },
+     "parse": "ok",
      "captureMs": 6293,
      "case": "spoof",
      "truth": "phish",
@@ -977,6 +1005,7 @@
       },
       "neurons": 15.92909049987793
      },
+     "parse": "ok",
      "captureMs": 13260,
      "case": "genuine",
      "truth": "genuine",
@@ -1010,6 +1039,7 @@
       },
       "neurons": 15.92909049987793
      },
+     "parse": "ok",
      "captureMs": 13260,
      "case": "spoof",
      "truth": "phish",
@@ -1044,6 +1074,7 @@
       },
       "neurons": 13.592727661132812
      },
+     "parse": "ok",
      "captureMs": 15287,
      "case": "genuine",
      "truth": "genuine",
@@ -1077,6 +1108,7 @@
       },
       "neurons": 13.592727661132812
      },
+     "parse": "ok",
      "captureMs": 15287,
      "case": "spoof",
      "truth": "phish",
@@ -1111,6 +1143,7 @@
       },
       "neurons": 11.629091262817383
      },
+     "parse": "ok",
      "captureMs": 12814,
      "case": "genuine",
      "truth": "genuine",
@@ -1144,6 +1177,7 @@
       },
       "neurons": 11.629091262817383
      },
+     "parse": "ok",
      "captureMs": 12814,
      "case": "spoof",
      "truth": "phish",
@@ -1177,6 +1211,7 @@
       },
       "neurons": 13.140909194946289
      },
+     "parse": "ok",
      "captureMs": 8004,
      "case": "genuine",
      "truth": "genuine",
@@ -1210,6 +1245,7 @@
       },
       "neurons": 13.140909194946289
      },
+     "parse": "ok",
      "captureMs": 8004,
      "case": "spoof",
      "truth": "phish",
@@ -1244,6 +1280,7 @@
       },
       "neurons": 15.2590913772583
      },
+     "parse": "ok",
      "captureMs": 8443,
      "case": "genuine",
      "truth": "genuine",
@@ -1277,6 +1314,7 @@
       },
       "neurons": 15.2590913772583
      },
+     "parse": "ok",
      "captureMs": 8443,
      "case": "spoof",
      "truth": "phish",
@@ -1311,6 +1349,7 @@
       },
       "neurons": 14.540908813476562
      },
+     "parse": "ok",
      "captureMs": 7303,
      "case": "genuine",
      "truth": "genuine",
@@ -1344,6 +1383,7 @@
       },
       "neurons": 14.540908813476562
      },
+     "parse": "ok",
      "captureMs": 7303,
      "case": "spoof",
      "truth": "phish",
@@ -1378,6 +1418,7 @@
       },
       "neurons": 12.495454788208008
      },
+     "parse": "ok",
      "captureMs": 5671,
      "case": "genuine",
      "truth": "genuine",
@@ -1411,6 +1452,7 @@
       },
       "neurons": 12.495454788208008
      },
+     "parse": "ok",
      "captureMs": 5671,
      "case": "spoof",
      "truth": "phish",
@@ -1445,6 +1487,7 @@
       },
       "neurons": 16.04818344116211
      },
+     "parse": "ok",
      "captureMs": 11695,
      "case": "genuine",
      "truth": "genuine",
@@ -1478,6 +1521,7 @@
       },
       "neurons": 16.04818344116211
      },
+     "parse": "ok",
      "captureMs": 11695,
      "case": "spoof",
      "truth": "phish",
@@ -1512,6 +1556,7 @@
       },
       "neurons": 14.130001068115234
      },
+     "parse": "ok",
      "captureMs": 15983,
      "case": "genuine",
      "truth": "genuine",
@@ -1545,6 +1590,7 @@
       },
       "neurons": 14.130001068115234
      },
+     "parse": "ok",
      "captureMs": 15983,
      "case": "spoof",
      "truth": "phish",
@@ -1579,6 +1625,7 @@
       },
       "neurons": 13.614545822143555
      },
+     "parse": "ok",
      "captureMs": 5149,
      "case": "genuine",
      "truth": "genuine",
@@ -1612,6 +1659,7 @@
       },
       "neurons": 13.614545822143555
      },
+     "parse": "ok",
      "captureMs": 5149,
      "case": "spoof",
      "truth": "phish",
@@ -1645,6 +1693,7 @@
       },
       "neurons": 11.231818199157715
      },
+     "parse": "ok",
      "captureMs": 4627,
      "case": "genuine",
      "truth": "genuine",
@@ -1677,6 +1726,7 @@
       },
       "neurons": 11.231818199157715
      },
+     "parse": "ok",
      "captureMs": 4627,
      "case": "spoof",
      "truth": "phish",
@@ -1711,6 +1761,7 @@
       },
       "neurons": 15.435455322265625
      },
+     "parse": "ok",
      "captureMs": 12839,
      "case": "genuine",
      "truth": "genuine",
@@ -1744,6 +1795,7 @@
       },
       "neurons": 15.435455322265625
      },
+     "parse": "ok",
      "captureMs": 12839,
      "case": "spoof",
      "truth": "phish",
@@ -1778,6 +1830,7 @@
       },
       "neurons": 12.604545593261719
      },
+     "parse": "ok",
      "captureMs": 5651,
      "case": "genuine",
      "truth": "genuine",
@@ -1811,6 +1864,7 @@
       },
       "neurons": 12.604545593261719
      },
+     "parse": "ok",
      "captureMs": 5651,
      "case": "spoof",
      "truth": "phish",
@@ -1845,6 +1899,7 @@
       },
       "neurons": 11.930910110473633
      },
+     "parse": "ok",
      "captureMs": 10872,
      "case": "genuine",
      "truth": "genuine",
@@ -1878,6 +1933,7 @@
       },
       "neurons": 11.930910110473633
      },
+     "parse": "ok",
      "captureMs": 10872,
      "case": "spoof",
      "truth": "phish",
@@ -1912,6 +1968,7 @@
       },
       "neurons": 19.12272834777832
      },
+     "parse": "ok",
      "captureMs": 16987,
      "case": "genuine",
      "truth": "genuine",
@@ -1945,6 +2002,7 @@
       },
       "neurons": 19.12272834777832
      },
+     "parse": "ok",
      "captureMs": 16987,
      "case": "spoof",
      "truth": "phish",
@@ -1979,6 +2037,7 @@
       },
       "neurons": 15.41727352142334
      },
+     "parse": "ok",
      "captureMs": 13561,
      "case": "genuine",
      "truth": "genuine",
@@ -2012,6 +2071,7 @@
       },
       "neurons": 15.41727352142334
      },
+     "parse": "ok",
      "captureMs": 13561,
      "case": "spoof",
      "truth": "phish",
@@ -2046,6 +2106,7 @@
       },
       "neurons": 12.55181884765625
      },
+     "parse": "ok",
      "captureMs": 11725,
      "case": "genuine",
      "truth": "genuine",
@@ -2079,6 +2140,7 @@
       },
       "neurons": 12.55181884765625
      },
+     "parse": "ok",
      "captureMs": 11725,
      "case": "spoof",
      "truth": "phish",
@@ -2113,6 +2175,7 @@
       },
       "neurons": 13.326363563537598
      },
+     "parse": "ok",
      "captureMs": 8070,
      "case": "genuine",
      "truth": "genuine",
@@ -2147,6 +2210,7 @@
       },
       "neurons": 13.326363563537598
      },
+     "parse": "ok",
      "captureMs": 8070,
      "case": "spoof",
      "truth": "phish",
@@ -2181,6 +2245,7 @@
       },
       "neurons": 14.049091339111328
      },
+     "parse": "ok",
      "captureMs": 10584,
      "case": "genuine",
      "truth": "genuine",
@@ -2214,6 +2279,7 @@
       },
       "neurons": 14.049091339111328
      },
+     "parse": "ok",
      "captureMs": 10584,
      "case": "spoof",
      "truth": "phish",
@@ -2248,6 +2314,7 @@
       },
       "neurons": 13.778182029724121
      },
+     "parse": "ok",
      "captureMs": 9613,
      "case": "genuine",
      "truth": "genuine",
@@ -2281,6 +2348,7 @@
       },
       "neurons": 13.778182029724121
      },
+     "parse": "ok",
      "captureMs": 9613,
      "case": "spoof",
      "truth": "phish",
@@ -2315,6 +2383,7 @@
       },
       "neurons": 12.197273254394531
      },
+     "parse": "ok",
      "captureMs": 6168,
      "case": "genuine",
      "truth": "genuine",
@@ -2348,6 +2417,7 @@
       },
       "neurons": 12.197273254394531
      },
+     "parse": "ok",
      "captureMs": 6168,
      "case": "spoof",
      "truth": "phish",
@@ -2382,6 +2452,7 @@
       },
       "neurons": 12.800000190734863
      },
+     "parse": "ok",
      "captureMs": 6313,
      "case": "genuine",
      "truth": "genuine",
@@ -2415,6 +2486,7 @@
       },
       "neurons": 12.800000190734863
      },
+     "parse": "ok",
      "captureMs": 6313,
      "case": "spoof",
      "truth": "phish",
@@ -2449,6 +2521,7 @@
       },
       "neurons": 17.065454483032227
      },
+     "parse": "ok",
      "captureMs": 11611,
      "case": "genuine",
      "truth": "genuine",
@@ -2482,6 +2555,7 @@
       },
       "neurons": 17.065454483032227
      },
+     "parse": "ok",
      "captureMs": 11611,
      "case": "spoof",
      "truth": "phish",
@@ -2516,6 +2590,7 @@
       },
       "neurons": 11.344545364379883
      },
+     "parse": "ok",
      "captureMs": 5156,
      "case": "genuine",
      "truth": "genuine",
@@ -2549,6 +2624,7 @@
       },
       "neurons": 11.344545364379883
      },
+     "parse": "ok",
      "captureMs": 5156,
      "case": "spoof",
      "truth": "phish",
@@ -2582,6 +2658,7 @@
       },
       "neurons": 13.645454406738281
      },
+     "parse": "ok",
      "captureMs": 11129,
      "case": "genuine",
      "truth": "genuine",
@@ -2616,6 +2693,7 @@
       },
       "neurons": 13.645454406738281
      },
+     "parse": "ok",
      "captureMs": 11129,
      "case": "spoof",
      "truth": "phish",
@@ -2650,6 +2728,7 @@
       },
       "neurons": 12.729090690612793
      },
+     "parse": "ok",
      "captureMs": 3928,
      "case": "genuine",
      "truth": "genuine",
@@ -2683,6 +2762,7 @@
       },
       "neurons": 12.729090690612793
      },
+     "parse": "ok",
      "captureMs": 3928,
      "case": "spoof",
      "truth": "phish",
@@ -2717,6 +2797,7 @@
       },
       "neurons": 13.919092178344727
      },
+     "parse": "ok",
      "captureMs": 3321,
      "case": "genuine",
      "truth": "genuine",
@@ -2750,6 +2831,7 @@
       },
       "neurons": 13.919092178344727
      },
+     "parse": "ok",
      "captureMs": 3321,
      "case": "spoof",
      "truth": "phish",
@@ -2784,6 +2866,7 @@
       },
       "neurons": 14.55363655090332
      },
+     "parse": "ok",
      "captureMs": 12731,
      "case": "genuine",
      "truth": "genuine",
@@ -2817,6 +2900,7 @@
       },
       "neurons": 14.55363655090332
      },
+     "parse": "ok",
      "captureMs": 12731,
      "case": "spoof",
      "truth": "phish",
@@ -2851,6 +2935,7 @@
       },
       "neurons": 12.495454788208008
      },
+     "parse": "ok",
      "captureMs": 11920,
      "case": "genuine",
      "truth": "genuine",
@@ -2884,6 +2969,7 @@
       },
       "neurons": 12.495454788208008
      },
+     "parse": "ok",
      "captureMs": 11920,
      "case": "spoof",
      "truth": "phish",
@@ -2918,6 +3004,7 @@
       },
       "neurons": 15.010000228881836
      },
+     "parse": "ok",
      "captureMs": 7633,
      "case": "genuine",
      "truth": "genuine",
@@ -2951,6 +3038,7 @@
       },
       "neurons": 15.010000228881836
      },
+     "parse": "ok",
      "captureMs": 7633,
      "case": "spoof",
      "truth": "phish",
@@ -2985,6 +3073,7 @@
       },
       "neurons": 13.221818923950195
      },
+     "parse": "ok",
      "captureMs": 9856,
      "case": "genuine",
      "truth": "genuine",
@@ -3018,6 +3107,7 @@
       },
       "neurons": 13.221818923950195
      },
+     "parse": "ok",
      "captureMs": 9856,
      "case": "spoof",
      "truth": "phish",
@@ -3052,6 +3142,7 @@
       },
       "neurons": 11.920000076293945
      },
+     "parse": "ok",
      "captureMs": 6543,
      "case": "genuine",
      "truth": "genuine",
@@ -3085,6 +3176,7 @@
       },
       "neurons": 11.920000076293945
      },
+     "parse": "ok",
      "captureMs": 6543,
      "case": "spoof",
      "truth": "phish",
@@ -3119,6 +3211,7 @@
       },
       "neurons": 15.280000686645508
      },
+     "parse": "ok",
      "captureMs": 6426,
      "case": "genuine",
      "truth": "genuine",
@@ -3153,6 +3246,7 @@
       },
       "neurons": 15.280000686645508
      },
+     "parse": "ok",
      "captureMs": 6426,
      "case": "spoof",
      "truth": "phish",
@@ -3187,6 +3281,7 @@
       },
       "neurons": 14.308181762695312
      },
+     "parse": "ok",
      "captureMs": 7558,
      "case": "genuine",
      "truth": "genuine",
@@ -3220,6 +3315,7 @@
       },
       "neurons": 14.308181762695312
      },
+     "parse": "ok",
      "captureMs": 7558,
      "case": "spoof",
      "truth": "phish",
@@ -3254,6 +3350,7 @@
       },
       "neurons": 12.099091529846191
      },
+     "parse": "ok",
      "captureMs": 5530,
      "case": "genuine",
      "truth": "genuine",
@@ -3287,6 +3384,7 @@
       },
       "neurons": 12.099091529846191
      },
+     "parse": "ok",
      "captureMs": 5530,
      "case": "spoof",
      "truth": "phish",
@@ -3321,6 +3419,7 @@
       },
       "neurons": 13.43454647064209
      },
+     "parse": "ok",
      "captureMs": 8139,
      "case": "genuine",
      "truth": "genuine",
@@ -3354,6 +3453,7 @@
       },
       "neurons": 13.43454647064209
      },
+     "parse": "ok",
      "captureMs": 8139,
      "case": "spoof",
      "truth": "phish",
@@ -3388,6 +3488,7 @@
       },
       "neurons": 13.429091453552246
      },
+     "parse": "ok",
      "captureMs": 4426,
      "case": "genuine",
      "truth": "genuine",
@@ -3421,6 +3522,7 @@
       },
       "neurons": 13.429091453552246
      },
+     "parse": "ok",
      "captureMs": 4426,
      "case": "spoof",
      "truth": "phish",
@@ -3454,6 +3556,7 @@
       },
       "neurons": 12.315454483032227
      },
+     "parse": "ok",
      "captureMs": 12581,
      "case": "genuine",
      "truth": "genuine",
@@ -3486,6 +3589,7 @@
       },
       "neurons": 12.315454483032227
      },
+     "parse": "ok",
      "captureMs": 12581,
      "case": "spoof",
      "truth": "phish",
@@ -3520,6 +3624,7 @@
       },
       "neurons": 14.073637008666992
      },
+     "parse": "ok",
      "captureMs": 11068,
      "case": "genuine",
      "truth": "genuine",
@@ -3553,6 +3658,7 @@
       },
       "neurons": 14.073637008666992
      },
+     "parse": "ok",
      "captureMs": 11068,
      "case": "spoof",
      "truth": "phish",
@@ -3587,6 +3693,7 @@
       },
       "neurons": 14.250000953674316
      },
+     "parse": "ok",
      "captureMs": 82588,
      "case": "genuine",
      "truth": "genuine",
@@ -3620,6 +3727,7 @@
       },
       "neurons": 14.250000953674316
      },
+     "parse": "ok",
      "captureMs": 82588,
      "case": "spoof",
      "truth": "phish",
@@ -3654,6 +3762,7 @@
       },
       "neurons": 12.78272819519043
      },
+     "parse": "ok",
      "captureMs": 13175,
      "case": "genuine",
      "truth": "genuine",
@@ -3688,6 +3797,7 @@
       },
       "neurons": 12.78272819519043
      },
+     "parse": "ok",
      "captureMs": 13175,
      "case": "spoof",
      "truth": "phish",
@@ -3722,6 +3832,7 @@
       },
       "neurons": 14.024545669555664
      },
+     "parse": "ok",
      "captureMs": 12139,
      "case": "genuine",
      "truth": "genuine",
@@ -3756,6 +3867,7 @@
       },
       "neurons": 14.024545669555664
      },
+     "parse": "ok",
      "captureMs": 12139,
      "case": "spoof",
      "truth": "phish",
@@ -3790,6 +3902,7 @@
       },
       "neurons": 16.174545288085938
      },
+     "parse": "ok",
      "captureMs": 6776,
      "case": "genuine",
      "truth": "genuine",
@@ -3823,6 +3936,7 @@
       },
       "neurons": 16.174545288085938
      },
+     "parse": "ok",
      "captureMs": 6776,
      "case": "spoof",
      "truth": "phish",
@@ -3857,6 +3971,7 @@
       },
       "neurons": 12.800909042358398
      },
+     "parse": "ok",
      "captureMs": 12036,
      "case": "genuine",
      "truth": "genuine",
@@ -3890,6 +4005,7 @@
       },
       "neurons": 12.800909042358398
      },
+     "parse": "ok",
      "captureMs": 12036,
      "case": "spoof",
      "truth": "phish",
@@ -3923,6 +4039,7 @@
       },
       "neurons": 13.82727336883545
      },
+     "parse": "ok",
      "captureMs": 7260,
      "case": "genuine",
      "truth": "genuine",
@@ -3955,6 +4072,7 @@
       },
       "neurons": 13.82727336883545
      },
+     "parse": "ok",
      "captureMs": 7260,
      "case": "spoof",
      "truth": "phish",
@@ -3989,6 +4107,7 @@
       },
       "neurons": 13.119091033935547
      },
+     "parse": "ok",
      "captureMs": 4628,
      "case": "genuine",
      "truth": "genuine",
@@ -4022,6 +4141,7 @@
       },
       "neurons": 13.119091033935547
      },
+     "parse": "ok",
      "captureMs": 4628,
      "case": "spoof",
      "truth": "phish",
@@ -4055,6 +4175,7 @@
       },
       "neurons": 13.823637008666992
      },
+     "parse": "ok",
      "captureMs": 5226,
      "case": "genuine",
      "truth": "genuine",
@@ -4088,6 +4209,7 @@
       },
       "neurons": 13.823637008666992
      },
+     "parse": "ok",
      "captureMs": 5226,
      "case": "spoof",
      "truth": "phish",
@@ -4121,6 +4243,7 @@
       },
       "neurons": 13.948182106018066
      },
+     "parse": "ok",
      "captureMs": 5820,
      "case": "genuine",
      "truth": "genuine",
@@ -4154,6 +4277,7 @@
       },
       "neurons": 13.948182106018066
      },
+     "parse": "ok",
      "captureMs": 5820,
      "case": "spoof",
      "truth": "phish",
@@ -4187,6 +4311,7 @@
       },
       "neurons": 16.239999771118164
      },
+     "parse": "ok",
      "captureMs": 11860,
      "case": "genuine",
      "truth": "genuine",
@@ -4220,6 +4345,7 @@
       },
       "neurons": 16.239999771118164
      },
+     "parse": "ok",
      "captureMs": 11860,
      "case": "spoof",
      "truth": "phish",
@@ -4253,6 +4379,7 @@
       },
       "neurons": 16.10727310180664
      },
+     "parse": "ok",
      "captureMs": 9338,
      "case": "genuine",
      "truth": "genuine",
@@ -4286,6 +4413,7 @@
       },
       "neurons": 16.10727310180664
      },
+     "parse": "ok",
      "captureMs": 9338,
      "case": "spoof",
      "truth": "phish",
@@ -4319,6 +4447,7 @@
       },
       "neurons": 14.34000015258789
      },
+     "parse": "ok",
      "captureMs": 4694,
      "case": "genuine",
      "truth": "genuine",
@@ -4352,6 +4481,7 @@
       },
       "neurons": 14.34000015258789
      },
+     "parse": "ok",
      "captureMs": 4694,
      "case": "spoof",
      "truth": "phish",
@@ -4385,6 +4515,7 @@
       },
       "neurons": 16.819091796875
      },
+     "parse": "ok",
      "captureMs": 10756,
      "case": "genuine",
      "truth": "genuine",
@@ -4418,6 +4549,7 @@
       },
       "neurons": 16.819091796875
      },
+     "parse": "ok",
      "captureMs": 10756,
      "case": "spoof",
      "truth": "phish",
@@ -4451,6 +4583,7 @@
       },
       "neurons": 14.890910148620605
      },
+     "parse": "ok",
      "captureMs": 12754,
      "case": "genuine",
      "truth": "genuine",
@@ -4484,6 +4617,7 @@
       },
       "neurons": 14.890910148620605
      },
+     "parse": "ok",
      "captureMs": 12754,
      "case": "spoof",
      "truth": "phish",
@@ -4517,6 +4651,7 @@
       },
       "neurons": 16.040908813476562
      },
+     "parse": "ok",
      "captureMs": 15851,
      "case": "genuine",
      "truth": "genuine",
@@ -4550,6 +4685,7 @@
       },
       "neurons": 16.040908813476562
      },
+     "parse": "ok",
      "captureMs": 15851,
      "case": "spoof",
      "truth": "phish",
@@ -4583,6 +4719,7 @@
       },
       "neurons": 14.150909423828125
      },
+     "parse": "ok",
      "captureMs": 6639,
      "case": "genuine",
      "truth": "genuine",
@@ -4616,6 +4753,7 @@
       },
       "neurons": 14.150909423828125
      },
+     "parse": "ok",
      "captureMs": 6639,
      "case": "spoof",
      "truth": "phish",
@@ -4649,6 +4787,7 @@
       },
       "neurons": 13.868181228637695
      },
+     "parse": "ok",
      "captureMs": 15863,
      "case": "genuine",
      "truth": "genuine",
@@ -4682,6 +4821,7 @@
       },
       "neurons": 13.868181228637695
      },
+     "parse": "ok",
      "captureMs": 15863,
      "case": "spoof",
      "truth": "phish",
@@ -4715,6 +4855,7 @@
       },
       "neurons": 14.332727432250977
      },
+     "parse": "ok",
      "captureMs": 11246,
      "case": "genuine",
      "truth": "genuine",
@@ -4748,6 +4889,7 @@
       },
       "neurons": 14.332727432250977
      },
+     "parse": "ok",
      "captureMs": 11246,
      "case": "spoof",
      "truth": "phish",
@@ -4781,6 +4923,7 @@
       },
       "neurons": 14.039091110229492
      },
+     "parse": "ok",
      "captureMs": 11096,
      "case": "genuine",
      "truth": "genuine",
@@ -4814,6 +4957,7 @@
       },
       "neurons": 14.039091110229492
      },
+     "parse": "ok",
      "captureMs": 11096,
      "case": "spoof",
      "truth": "phish",
@@ -4847,6 +4991,7 @@
       },
       "neurons": 11.060909271240234
      },
+     "parse": "ok",
      "captureMs": null,
      "case": "genuine",
      "truth": "benign",
@@ -4880,6 +5025,7 @@
       },
       "neurons": 10.808182716369629
      },
+     "parse": "ok",
      "captureMs": null,
      "case": "genuine",
      "truth": "benign",
@@ -4913,6 +5059,7 @@
       },
       "neurons": 11.03636360168457
      },
+     "parse": "ok",
      "captureMs": null,
      "case": "genuine",
      "truth": "benign",
