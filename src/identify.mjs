@@ -60,16 +60,38 @@ ${describe(signals)}
 
 const NO_BRAND = /^(null|none|unknown|n\/?a|no brand|generic|unbranded|-)?$/i;
 
+/**
+ * Reads the fields one by one from a reply that is not valid JSON: cut off
+ * at the token limit, or with a stray bracket. A number at the very end of
+ * the text may itself be cut short ("0" of "0.95"), so a confidence counts
+ * only when something follows it; otherwise it is 0 and the page stays
+ * unknown.
+ */
+function salvage(text) {
+  const brand = text.match(/"claimed_brand"\s*:\s*(null|"((?:[^"\\]|\\.)*)")/);
+  if (!brand) return null;
+  const confidence = text.match(/"confidence"\s*:\s*(-?[0-9.]+)\s*[,}\]]/);
+  const list = text.match(/"evidence"\s*:\s*\[([\s\S]*)/)?.[1] ?? '';
+  return {
+    claimed_brand: brand[1] === 'null' ? null : JSON.parse(`"${brand[2]}"`),
+    confidence: confidence ? Number(confidence[1]) : 0,
+    evidence: [...list.matchAll(/"((?:[^"\\]|\\.)*)"\s*[,\]]/g)].map((m) => JSON.parse(`"${m[1]}"`)),
+  };
+}
+
 /** Pulls the claim out of whatever came back, JSON mode or not. */
 export function parseClaim(raw) {
   let obj;
+  let salvaged = false;
   const cleaned = String(raw ?? '').replace(/```(?:json)?/gi, '');
   const start = cleaned.indexOf('{');
   const end = cleaned.lastIndexOf('}');
   try {
     obj = JSON.parse(cleaned.slice(start, end + 1));
   } catch {
-    return { claimed_brand: null, confidence: 0, evidence: [], parseError: true };
+    obj = salvage(cleaned);
+    if (!obj) return { claimed_brand: null, confidence: 0, evidence: [], parseError: true };
+    salvaged = true;
   }
   let brand = typeof obj.claimed_brand === 'string' ? obj.claimed_brand.trim() : null;
   if (!brand || NO_BRAND.test(brand)) brand = null;
@@ -79,7 +101,7 @@ export function parseClaim(raw) {
   confidence = Math.min(1, Math.max(0, confidence));
   const evidence = (Array.isArray(obj.evidence) ? obj.evidence : [])
     .map((e) => String(e).trim()).filter(Boolean).slice(0, 6);
-  return { claimed_brand: brand, confidence: brand ? confidence : 0, evidence };
+  return { claimed_brand: brand, confidence: brand ? confidence : 0, evidence, ...(salvaged ? { salvaged } : {}) };
 }
 
 /**

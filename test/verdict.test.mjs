@@ -55,5 +55,19 @@ test('parseClaim reads JSON wrapped in prose or fences, and normalises it', () =
     assert.equal(parseClaim(JSON.stringify({ claimed_brand: none, confidence: 0.8 })).claimed_brand, null, String(none));
   }
   assert.equal(parseClaim('no json here').parseError, true);
+  assert.equal(parseClaim('').parseError, true);
+});
+
+test('parseClaim salvages replies cut off at the token limit, without trusting a cut number', () => {
+  const zoho = parseClaim('{"claimed_brand": "Zoho", "confidence": 0.95, "evidence": ["Title: Zoho Accounts", "Visible text \'Don\'t have a Zoho');
+  assert.deepEqual(zoho, { claimed_brand: 'Zoho', confidence: 0.95, evidence: ['Title: Zoho Accounts'], salvaged: true });
+  assert.deepEqual(parseClaim('{"claimed_brand": "BIDV", "confidence": 0.95,'), { claimed_brand: 'BIDV', confidence: 0.95, evidence: [], salvaged: true });
+  // "0" may be the start of "0.98": not trusted, so the claim cannot clear the threshold.
+  assert.equal(parseClaim('{"claimed_brand": "Apple", "confidence": 0').confidence, 0);
+  // A stray bracket instead of the closing brace.
+  const cf = parseClaim('{"claimed_brand": "Cloudflare", "confidence": 0.98, "evidence": ["Site name: Cloudflare"]]');
+  assert.equal(cf.claimed_brand, 'Cloudflare');
+  assert.equal(cf.confidence, 0.98);
+  assert.equal(parseClaim('{"').parseError, true);
   assert.equal(parseClaim('{"claimed_brand":"Google","confidence":"high"}').confidence, 0);
 });

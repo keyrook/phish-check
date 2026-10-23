@@ -227,6 +227,7 @@ for (const mode of MODES) {
       id: page.id, group: page.group, truthBrand: page.brand,
       claimed: claim.claimed_brand, confidence: claim.confidence, evidence: claim.evidence,
       modelMs: claim.modelMs, usage: claim.usage,
+      parse: claim.parseError ? 'unreadable' : claim.salvaged ? 'salvaged' : 'ok',
       captureMs: page.real ? c.captureMs : null,
     };
     const genuine = judge({ url: realUrl, claim, catalog });
@@ -296,6 +297,10 @@ function summarise(list) {
       endToEndP95: percentile(e2e, 95),
     },
     promptTokensMean: tokens.length ? Math.round(tokens.reduce((a, b) => a + b, 0) / tokens.length) : null,
+    // Replies that were not valid JSON (cut off at the token limit, or
+    // malformed): read field by field, or not readable at all.
+    salvaged: pages.filter((r) => r.parse === 'salvaged').length,
+    unreadable: pages.filter((r) => r.parse === 'unreadable').length,
     byGroup: Object.entries(Object.groupBy(list, (r) => r.group)).map(([group, rs]) => ({
       group,
       n: rs.length,
@@ -362,7 +367,7 @@ md.push('| | ' + columns.map((c) => c.title).join(' | ') + ' |');
 md.push('|---|' + columns.map(() => '---:').join('|') + '|');
 const line = (label, get) => md.push(`| ${label} | ${columns.map((c) => get(c.summary, c)).join(' | ')} |`);
 line('Model', (s, c) => `\`${c.model}\``);
-line('Run', (s, c) => `${c.at.slice(0, 16).replace('T', ' ')} UTC${c.complete ? '' : ' (incomplete)'}`);
+line('Scored', (s, c) => `${c.at.slice(0, 16).replace('T', ' ')} UTC${c.complete ? '' : ' (incomplete)'}`);
 line('Pages scored', (s) => s.pages);
 line('Cases (genuine + spoofed)', (s) => s.cases);
 line('Precision (flagged that were phish)', (s) => f(s.precision));
@@ -375,6 +380,7 @@ line('Model latency p50 / p95', (s) => `${ms(s.latency.modelP50)} / ${ms(s.laten
 line('Page capture p50 / p95', (s) => `${ms(s.latency.captureP50)} / ${ms(s.latency.captureP95)}`);
 line('End to end p50 / p95', (s) => `${ms(s.latency.endToEndP50)} / ${ms(s.latency.endToEndP95)}`);
 line('Prompt tokens, mean', (s) => s.promptTokensMean ?? '—');
+line('Replies not valid JSON: salvaged / unreadable', (s) => `${s.salvaged ?? 0} / ${s.unreadable ?? 0}`);
 md.push('');
 const item = (r) => `- \`${r.id}\` (${r.group}): claimed ${r.claimed ? `"${r.claimed}" ${r.confidence.toFixed(2)}` : 'no brand'} → ${r.verdict}. ${r.reasons.at(-1)}`;
 const list = (title, rs) => md.push(`${title} (${rs.length})`, '', ...(rs.length ? rs.map(item) : ['- none']), '');
