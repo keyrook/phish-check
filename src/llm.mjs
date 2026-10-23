@@ -52,9 +52,16 @@ export function provider(env = process.env) {
   const p = make(env);
   const model = env.MODEL || p.model;
   if (!model) throw new Error('Set MODEL in .env');
+  // Which service answered, for labelling results: an OpenAI-compatible
+  // endpoint is named after its host (integrate.api.nvidia.com → nvidia).
+  let label = name;
+  if (name === 'openai' && env.OPENAI_BASE_URL) {
+    const host = new URL(env.OPENAI_BASE_URL).hostname;
+    label = /nvidia/.test(host) ? 'nvidia' : host;
+  }
   // Under the free tiers' per-minute caps (Groq: 30) with room to spare.
   const rpm = Number(env.RPM) || 20;
-  return { name, ...p, model, rpm };
+  return { name, label, ...p, model, rpm };
 }
 
 export class MissingKeyError extends Error {}
@@ -147,7 +154,7 @@ export async function chat({ messages, json = true, maxTokens = 400 }, p = provi
     }
     // Some endpoints refuse JSON mode together with images: drop it, parse
     // the reply defensively instead, and stop asking for it.
-    if (res.status === 400 && useJsonMode && /response_format|json/i.test(detail)) {
+    if ((res.status === 400 || res.status === 422) && useJsonMode && /response_format|json|unsupported|extra/i.test(detail)) {
       jsonModeRejected.add(p.url);
       useJsonMode = false;
       continue;
