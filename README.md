@@ -79,10 +79,11 @@ _Pending: filled in from the first full `npm run eval`. Every number here will c
 - **Each page judged twice from one answer.** The model never sees the address, so one answer per page serves two cases. Judged at its real address, the page should come out `legit`. Judged at a lookalike `.test` address such as `accounts-google.verify-login.test`, the same answer should come out `impersonation`. That second case is the real-time proxy attack above: the victim sees the genuine page on the attacker's domain. No lookalike page is built or served, and the repo contains none.
 - **Hard cases** ([eval/hard.json](eval/hard.json)):
   - Brands that are in the catalog with no domains (Facebook, Instagram, OpenAI…)
-  - Brands not in the catalog at all (Wells Fargo, Vietcombank, Zalo…)
+  - Brands not in the catalog at all (Wells Fargo, Bank of America, TPBank, BIDV, Zalo…)
   - Three local pages that name no service (a generic sign-in, a generic 2FA prompt, a generic webmail login)
   - Real sign-in pages that live on a domain the catalog does not list, such as Microsoft's work-account page on microsoftonline.com
 - **Ablation.** The same captures are scored with the screenshot and without it (text only).
+- **Pages that were not sign-in pages are excluded by a fixed rule.** A page is scored only if its screenshot shows a sign-in form or sign-in choices. Every capture was checked by eye before any model answer existed. Bot walls, CDN "Access Denied" pages and blank renders are listed with the reason in [eval/excluded.json](eval/excluded.json). Pages that did not load at all are listed in the results with the browser's error.
 
 ## Limits
 
@@ -91,7 +92,7 @@ _To be completed with what the run shows. Known before running:_
 - **It measures the relay attack, not hand-made clones.** A spoofed case reuses the real page's pixels. A crude clone that looks different from the real page is not measured here.
 - **The spoofed cases share answers with the genuine ones.** In this setup, recall on spoofed pages equals how often the model names the brand correctly at confidence ≥ 0.5. The two results are not independent.
 - **The catalog decides what can be caught.** A brand with no domains in the catalog can never be flagged. A brand with a wrong domain makes its real page look like an impersonation.
-- **Headless browsers meet bot checks.** Some sites show a "confirm you're human" page to headless Chromium (PayPal did). That page still carries the brand, but it is not the page a person sees.
+- **Headless browsers meet bot checks.** 13 of the popular brands' pages showed headless Chromium a bot wall, an error or a blank page instead of sign-in (PayPal, GitLab, Shopify, Slack…). They are excluded, so the results say nothing about those brands. Reddit, Roblox and Steam refused connections from the network the captures were taken on.
 - **Confidence is the model's own.** The 0.5 threshold was set before the run and not tuned on these results.
 - **The screenshot goes to a third-party API.** It is taken before anything is typed, so it holds no password or code. It is still a picture of the page the user is on.
 

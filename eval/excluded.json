@@ -1,0 +1,18 @@
+{
+  "rule": "A page is scored only if its saved screenshot shows a sign-in form or sign-in choices. Decided by looking at every capture on 2026-10-23, before any model answer existed. Pages that failed to load at all are listed by the eval as not scored, with the browser's error.",
+  "pages": {
+    "ebay": "eBay's error page (\"Sorry, something went wrong\") instead of sign-in",
+    "etsy": "\"Access is temporarily restricted\" bot block",
+    "gitlab": "Cloudflare bot check (\"Performing security verification\")",
+    "shopify": "Cloudflare bot check (\"Your connection needs to be verified\")",
+    "godaddy": "\"Access Denied\" from the CDN",
+    "playstation": "\"Access Denied\" from the CDN",
+    "slack": "\"Access Denied\" from the CDN",
+    "paypal": "\"Confirm you're human\" slider captcha, no sign-in form",
+    "kakao": "\"Invalid access\" error page",
+    "x": "blank page: the sign-in flow did not render headless",
+    "adobe": "loading spinner only: the sign-in form did not render",
+    "zoom": "cookie dialog over a loading spinner: the sign-in form did not render",
+    "perplexity": "the app's home page; sign-in is a link, not a form on this page"
+  }
+}

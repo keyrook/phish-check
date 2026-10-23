@@ -112,6 +112,9 @@ async function captureAll(todo) {
   }
 }
 
+// Pages that loaded but showed no sign-in page (bot walls, blank renders).
+const EXCLUDED = readJson('eval/excluded.json').pages;
+
 const todoCaptures = pages.filter((p) => flag('recapture') || !loadCapture(p));
 
 // ---------------------------------------------------------------- estimate
@@ -126,7 +129,7 @@ function estimate() {
   for (const p of pages) {
     const c = loadCapture(p);
     for (const mode of MODES) {
-      if (c?.error) continue;
+      if (c?.error || EXCLUDED[p.id]) continue;
       // Not captured yet: assume the average screenshot so far.
       const shot = c?.screenshot ?? Buffer.alloc(captured.length ? 80_000 : 100_000);
       const body = JSON.stringify(buildMessages(c?.signals ?? {}, mode === 'vision' ? shot : null));
@@ -165,8 +168,8 @@ outer:
 for (const mode of MODES) {
   for (const [i, page] of pages.entries()) {
     const c = loadCapture(page);
-    if (!c || c.error) {
-      if (mode === MODES[0]) skipped.push({ id: page.id, why: c?.error ?? 'not captured' });
+    if (!c || c.error || EXCLUDED[page.id]) {
+      if (mode === MODES[0]) skipped.push({ id: page.id, why: EXCLUDED[page.id] ?? c?.error ?? 'not captured' });
       continue;
     }
     if (!isCached(c, mode)) {

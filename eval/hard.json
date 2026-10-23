@@ -12,6 +12,8 @@
     { "id": "bankofamerica", "group": "not-in-catalog", "brand": "Bank of America", "url": "https://secure.bankofamerica.com/login/sign-in/signOnV2Screen.go" },
     { "id": "adobe", "group": "not-in-catalog", "brand": "Adobe", "url": "https://account.adobe.com/" },
     { "id": "vietcombank", "group": "not-in-catalog", "brand": "Vietcombank", "url": "https://vcbdigibank.vietcombank.com.vn/login" },
+    { "id": "tpbank", "group": "not-in-catalog", "brand": "TPBank", "url": "https://ebank.tpb.vn/retail/vX/" },
+    { "id": "bidv", "group": "not-in-catalog", "brand": "BIDV", "url": "https://smartbanking.bidv.com.vn/" },
     { "id": "zalo", "group": "not-in-catalog", "brand": "Zalo", "url": "https://id.zalo.me/account?continue=https%3A%2F%2Fchat.zalo.me%2F" },
     { "id": "quora", "group": "not-in-catalog", "brand": "Quora", "url": "https://www.quora.com/" },
     { "id": "generic-signin", "group": "no-brand", "brand": null, "fixture": "generic-signin.html", "url": "https://portal.example-intranet.test/login" },
