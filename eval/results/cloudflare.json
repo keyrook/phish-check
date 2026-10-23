@@ -1,0 +1,4930 @@
+{
+ "provider": "cloudflare",
+ "model": "@cf/meta/llama-4-scout-17b-16e-instruct",
+ "modes": {
+  "text": {
+   "at": "2026-10-23T15:33:59.044Z",
+   "complete": true,
+   "modelErrors": [],
+   "summary": {
+    "pages": 74,
+    "cases": 145,
+    "tp": 56,
+    "fp": 6,
+    "fn": 15,
+    "tn": 68,
+    "precision": 0.9032258064516129,
+    "recall": 0.7887323943661971,
+    "recallInScope": 0.9655172413793104,
+    "inScope": 58,
+    "fpr": 0.08108108108108109,
+    "liveConfirmed": 0.8620689655172413,
+    "live": 58,
+    "brandAccuracy": 0.9594594594594594,
+    "latency": {
+     "captureP50": 8495,
+     "captureP95": 15863,
+     "modelP50": 10007,
+     "modelP95": 16480,
+     "endToEndP50": 19801,
+     "endToEndP95": 27345
+    },
+    "promptTokensMean": 437,
+    "byGroup": [
+     {
+      "group": "live",
+      "n": 58,
+      "legit": 50,
+      "impersonation": 6,
+      "unknown": 2
+     },
+     {
+      "group": "spoof:live",
+      "n": 58,
+      "legit": 0,
+      "impersonation": 56,
+      "unknown": 2
+     },
+     {
+      "group": "no-domains",
+      "n": 7,
+      "legit": 0,
+      "impersonation": 0,
+      "unknown": 7
+     },
+     {
+      "group": "spoof:no-domains",
+      "n": 7,
+      "legit": 0,
+      "impersonation": 0,
+      "unknown": 7
+     },
+     {
+      "group": "not-in-catalog",
+      "n": 6,
+      "legit": 0,
+      "impersonation": 0,
+      "unknown": 6
+     },
+     {
+      "group": "spoof:not-in-catalog",
+      "n": 6,
+      "legit": 0,
+      "impersonation": 0,
+      "unknown": 6
+     },
+     {
+      "group": "no-brand",
+      "n": 3,
+      "legit": 0,
+      "impersonation": 0,
+      "unknown": 3
+     }
+    ]
+   },
+   "rows": [
+    {
+     "id": "1password",
+     "group": "live",
+     "truthBrand": "1password",
+     "claimed": "1Password",
+     "confidence": 1,
+     "evidence": [
+      "1Password logo",
+      "1Password.com",
+      "1Password mobile app",
+      "1Password branding in text"
+     ],
+     "modelMs": 9224,
+     "usage": {
+      "prompt_tokens": 569,
+      "completion_tokens": 41,
+      "total_tokens": 610,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 17.134546279907227
+     },
+     "captureMs": 9569,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://my.1password.com/signin",
+     "verdict": "legit",
+     "site": "1password.com",
+     "brand": "1password",
+     "reasons": [
+      "The page presents itself as 1Password (1Password logo; 1Password.com; 1Password mobile app), and 1password.com is one of 1Password's domains."
+     ]
+    },
+    {
+     "id": "1password",
+     "group": "spoof:live",
+     "truthBrand": "1password",
+     "claimed": "1Password",
+     "confidence": 1,
+     "evidence": [
+      "1Password logo",
+      "1Password.com",
+      "1Password mobile app",
+      "1Password branding in text"
+     ],
+     "modelMs": 9224,
+     "usage": {
+      "prompt_tokens": 569,
+      "completion_tokens": 41,
+      "total_tokens": 610,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 17.134546279907227
+     },
+     "captureMs": 9569,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://accounts-1password.verify-login.test/signin",
+     "verdict": "impersonation",
+     "site": "verify-login.test",
+     "brand": "1password",
+     "reasons": [
+      "The page presents itself as 1Password at 1.00 (1Password logo; 1Password.com; 1Password mobile app).",
+      "It is served from verify-login.test, but 1Password signs in on 1password.com."
+     ]
+    },
+    {
+     "id": "airtable",
+     "group": "live",
+     "truthBrand": "airtable",
+     "claimed": "Airtable",
+     "confidence": 1,
+     "evidence": [
+      "Airtable",
+      "Welcome to Airtable",
+      "Site name: Airtable",
+      "favicon.svg"
+     ],
+     "modelMs": 14658,
+     "usage": {
+      "prompt_tokens": 390,
+      "completion_tokens": 39,
+      "total_tokens": 429,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.586363792419434
+     },
+     "captureMs": 7726,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://airtable.com/login",
+     "verdict": "legit",
+     "site": "airtable.com",
+     "brand": "airtable",
+     "reasons": [
+      "The page presents itself as Airtable (Airtable; Welcome to Airtable; Site name: Airtable), and airtable.com is one of Airtable's domains."
+     ]
+    },
+    {
+     "id": "airtable",
+     "group": "spoof:live",
+     "truthBrand": "airtable",
+     "claimed": "Airtable",
+     "confidence": 1,
+     "evidence": [
+      "Airtable",
+      "Welcome to Airtable",
+      "Site name: Airtable",
+      "favicon.svg"
+     ],
+     "modelMs": 14658,
+     "usage": {
+      "prompt_tokens": 390,
+      "completion_tokens": 39,
+      "total_tokens": 429,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.586363792419434
+     },
+     "captureMs": 7726,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://airtable.com-secure-signin.test/login",
+     "verdict": "impersonation",
+     "site": "com-secure-signin.test",
+     "brand": "airtable",
+     "reasons": [
+      "The page presents itself as Airtable at 1.00 (Airtable; Welcome to Airtable; Site name: Airtable).",
+      "It is served from com-secure-signin.test, but Airtable signs in on airtable.com."
+     ]
+    },
+    {
+     "id": "alipay",
+     "group": "live",
+     "truthBrand": "alipay",
+     "claimed": "Alipay",
+     "confidence": 1,
+     "evidence": [
+      "alipay-logo",
+      "支付宝",
+      "支付宝APP",
+      "TB1qEwuzrj1gK0jSZFOXXc7GpXa-32-32.ico"
+     ],
+     "modelMs": 13955,
+     "usage": {
+      "prompt_tokens": 390,
+      "completion_tokens": 58,
+      "total_tokens": 448,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.054545402526855
+     },
+     "captureMs": 8310,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://auth.alipay.com/login/index.htm",
+     "verdict": "legit",
+     "site": "alipay.com",
+     "brand": "alipay",
+     "reasons": [
+      "The page presents itself as Alipay (alipay-logo; 支付宝; 支付宝APP), and alipay.com is one of Alipay's domains."
+     ]
+    },
+    {
+     "id": "alipay",
+     "group": "spoof:live",
+     "truthBrand": "alipay",
+     "claimed": "Alipay",
+     "confidence": 1,
+     "evidence": [
+      "alipay-logo",
+      "支付宝",
+      "支付宝APP",
+      "TB1qEwuzrj1gK0jSZFOXXc7GpXa-32-32.ico"
+     ],
+     "modelMs": 13955,
+     "usage": {
+      "prompt_tokens": 390,
+      "completion_tokens": 58,
+      "total_tokens": 448,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.054545402526855
+     },
+     "captureMs": 8310,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://login.alipay-support.test/login/index.htm",
+     "verdict": "impersonation",
+     "site": "alipay-support.test",
+     "brand": "alipay",
+     "reasons": [
+      "The page presents itself as Alipay at 1.00 (alipay-logo; 支付宝; 支付宝APP).",
+      "It is served from alipay-support.test, but Alipay signs in on alipay.com."
+     ]
+    },
+    {
+     "id": "amazon",
+     "group": "live",
+     "truthBrand": "amazon",
+     "claimed": "Amazon",
+     "confidence": 1,
+     "evidence": [
+      "Amazon logo hint",
+      "Amazon.com, Inc. or its affiliates",
+      "Conditions of Use and Privacy Notice",
+      "© 1996-2026, Amazon.com, Inc. or its affiliates"
+     ],
+     "modelMs": 11677,
+     "usage": {
+      "prompt_tokens": 473,
+      "completion_tokens": 58,
+      "total_tokens": 531,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 16.091819763183594
+     },
+     "captureMs": 6879,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://www.amazon.com/ax/claim",
+     "verdict": "legit",
+     "site": "amazon.com",
+     "brand": "amazon",
+     "reasons": [
+      "The page presents itself as Amazon (Amazon logo hint; Amazon.com, Inc. or its affiliates; Conditions of Use and Privacy Notice), and amazon.com is one of Amazon's domains."
+     ]
+    },
+    {
+     "id": "amazon",
+     "group": "spoof:live",
+     "truthBrand": "amazon",
+     "claimed": "Amazon",
+     "confidence": 1,
+     "evidence": [
+      "Amazon logo hint",
+      "Amazon.com, Inc. or its affiliates",
+      "Conditions of Use and Privacy Notice",
+      "© 1996-2026, Amazon.com, Inc. or its affiliates"
+     ],
+     "modelMs": 11677,
+     "usage": {
+      "prompt_tokens": 473,
+      "completion_tokens": 58,
+      "total_tokens": 531,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 16.091819763183594
+     },
+     "captureMs": 6879,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://amazon-account-review.test/ax/claim",
+     "verdict": "impersonation",
+     "site": "amazon-account-review.test",
+     "brand": "amazon",
+     "reasons": [
+      "The page presents itself as Amazon at 1.00 (Amazon logo hint; Amazon.com, Inc. or its affiliates; Conditions of Use and Privacy Notice).",
+      "It is served from amazon-account-review.test, but Amazon signs in on amazon.com."
+     ]
+    },
+    {
+     "id": "anthropic",
+     "group": "live",
+     "truthBrand": "anthropic",
+     "claimed": "Claude",
+     "confidence": 0.9,
+     "evidence": [
+      "Claude Platform",
+      "Claude Console",
+      "Claude models",
+      "Anthropic"
+     ],
+     "modelMs": 11982,
+     "usage": {
+      "prompt_tokens": 500,
+      "completion_tokens": 40,
+      "total_tokens": 540,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 15.36363697052002
+     },
+     "captureMs": 7009,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://platform.claude.com/login",
+     "verdict": "impersonation",
+     "site": "claude.com",
+     "brand": "claude",
+     "reasons": [
+      "The page presents itself as Claude at 0.90 (Claude Platform; Claude Console; Claude models).",
+      "It is served from claude.com, but Claude signs in on claude.ai."
+     ]
+    },
+    {
+     "id": "anthropic",
+     "group": "spoof:live",
+     "truthBrand": "anthropic",
+     "claimed": "Claude",
+     "confidence": 0.9,
+     "evidence": [
+      "Claude Platform",
+      "Claude Console",
+      "Claude models",
+      "Anthropic"
+     ],
+     "modelMs": 11982,
+     "usage": {
+      "prompt_tokens": 500,
+      "completion_tokens": 40,
+      "total_tokens": 540,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 15.36363697052002
+     },
+     "captureMs": 7009,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://auth-anthropic.cloud-portal.test/login",
+     "verdict": "impersonation",
+     "site": "cloud-portal.test",
+     "brand": "claude",
+     "reasons": [
+      "The page presents itself as Claude at 0.90 (Claude Platform; Claude Console; Claude models).",
+      "It is served from cloud-portal.test, but Claude signs in on claude.ai."
+     ]
+    },
+    {
+     "id": "apple",
+     "group": "live",
+     "truthBrand": "apple",
+     "claimed": "Apple",
+     "confidence": 1,
+     "evidence": [
+      "Apple Account",
+      "Apple Store",
+      "Apple Footer",
+      "Apple Inc."
+     ],
+     "modelMs": 11665,
+     "usage": {
+      "prompt_tokens": 496,
+      "completion_tokens": 34,
+      "total_tokens": 530,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.80181884765625
+     },
+     "captureMs": 11965,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://account.apple.com/sign-in",
+     "verdict": "legit",
+     "site": "apple.com",
+     "brand": "apple",
+     "reasons": [
+      "The page presents itself as Apple (Apple Account; Apple Store; Apple Footer), and apple.com is one of Apple's domains."
+     ]
+    },
+    {
+     "id": "apple",
+     "group": "spoof:live",
+     "truthBrand": "apple",
+     "claimed": "Apple",
+     "confidence": 1,
+     "evidence": [
+      "Apple Account",
+      "Apple Store",
+      "Apple Footer",
+      "Apple Inc."
+     ],
+     "modelMs": 11665,
+     "usage": {
+      "prompt_tokens": 496,
+      "completion_tokens": 34,
+      "total_tokens": 530,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.80181884765625
+     },
+     "captureMs": 11965,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://accounts-apple.verify-login.test/sign-in",
+     "verdict": "impersonation",
+     "site": "verify-login.test",
+     "brand": "apple",
+     "reasons": [
+      "The page presents itself as Apple at 1.00 (Apple Account; Apple Store; Apple Footer).",
+      "It is served from verify-login.test, but Apple signs in on apple.com, icloud.com."
+     ]
+    },
+    {
+     "id": "asana",
+     "group": "live",
+     "truthBrand": "asana",
+     "claimed": "Asana",
+     "confidence": 1,
+     "evidence": [
+      "Asana logo",
+      "Asana.com",
+      "Welcome to Asana",
+      "Asana-full-logo-black.svg"
+     ],
+     "modelMs": 11030,
+     "usage": {
+      "prompt_tokens": 550,
+      "completion_tokens": 42,
+      "total_tokens": 592,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 16.745454788208008
+     },
+     "captureMs": 13544,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://app.asana.com/-/login",
+     "verdict": "legit",
+     "site": "asana.com",
+     "brand": "asana",
+     "reasons": [
+      "The page presents itself as Asana (Asana logo; Asana.com; Welcome to Asana), and asana.com is one of Asana's domains."
+     ]
+    },
+    {
+     "id": "asana",
+     "group": "spoof:live",
+     "truthBrand": "asana",
+     "claimed": "Asana",
+     "confidence": 1,
+     "evidence": [
+      "Asana logo",
+      "Asana.com",
+      "Welcome to Asana",
+      "Asana-full-logo-black.svg"
+     ],
+     "modelMs": 11030,
+     "usage": {
+      "prompt_tokens": 550,
+      "completion_tokens": 42,
+      "total_tokens": 592,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 16.745454788208008
+     },
+     "captureMs": 13544,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://asana.com-secure-signin.test/-/login",
+     "verdict": "impersonation",
+     "site": "com-secure-signin.test",
+     "brand": "asana",
+     "reasons": [
+      "The page presents itself as Asana at 1.00 (Asana logo; Asana.com; Welcome to Asana).",
+      "It is served from com-secure-signin.test, but Asana signs in on asana.com."
+     ]
+    },
+    {
+     "id": "auth0",
+     "group": "live",
+     "truthBrand": "auth0",
+     "claimed": "Auth0",
+     "confidence": 1,
+     "evidence": [
+      "Auth0 Dashboard",
+      "Auth0 favicon",
+      "Log in to Auth0",
+      "Auth0 in image alt text"
+     ],
+     "modelMs": 7939,
+     "usage": {
+      "prompt_tokens": 385,
+      "completion_tokens": 44,
+      "total_tokens": 429,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.850000381469727
+     },
+     "captureMs": 5721,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://auth0.auth0.com/u/login/identifier",
+     "verdict": "legit",
+     "site": "auth0.com",
+     "brand": "auth0",
+     "reasons": [
+      "The page presents itself as Auth0 (Auth0 Dashboard; Auth0 favicon; Log in to Auth0), and auth0.com is one of Auth0's domains."
+     ]
+    },
+    {
+     "id": "auth0",
+     "group": "spoof:live",
+     "truthBrand": "auth0",
+     "claimed": "Auth0",
+     "confidence": 1,
+     "evidence": [
+      "Auth0 Dashboard",
+      "Auth0 favicon",
+      "Log in to Auth0",
+      "Auth0 in image alt text"
+     ],
+     "modelMs": 7939,
+     "usage": {
+      "prompt_tokens": 385,
+      "completion_tokens": 44,
+      "total_tokens": 429,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.850000381469727
+     },
+     "captureMs": 5721,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://login.auth0-support.test/u/login/identifier",
+     "verdict": "impersonation",
+     "site": "auth0-support.test",
+     "brand": "auth0",
+     "reasons": [
+      "The page presents itself as Auth0 at 1.00 (Auth0 Dashboard; Auth0 favicon; Log in to Auth0).",
+      "It is served from auth0-support.test, but Auth0 signs in on auth0.com."
+     ]
+    },
+    {
+     "id": "aws",
+     "group": "live",
+     "truthBrand": "aws",
+     "claimed": "Amazon Web Services",
+     "confidence": 1,
+     "evidence": [
+      "Amazon Web Services logo",
+      "AWS Customer Agreement",
+      "Amazon Web Services, Inc. or its affiliates",
+      "aws-logo@2x.7c50e6f9.png"
+     ],
+     "modelMs": 9375,
+     "usage": {
+      "prompt_tokens": 476,
+      "completion_tokens": 57,
+      "total_tokens": 533,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 16.08818244934082
+     },
+     "captureMs": 7207,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://signin.aws.amazon.com/signin",
+     "verdict": "legit",
+     "site": "amazon.com",
+     "brand": "aws",
+     "reasons": [
+      "The page presents itself as AWS (Amazon Web Services logo; AWS Customer Agreement; Amazon Web Services, Inc. or its affiliates), and amazon.com is one of AWS's domains."
+     ]
+    },
+    {
+     "id": "aws",
+     "group": "spoof:live",
+     "truthBrand": "aws",
+     "claimed": "Amazon Web Services",
+     "confidence": 1,
+     "evidence": [
+      "Amazon Web Services logo",
+      "AWS Customer Agreement",
+      "Amazon Web Services, Inc. or its affiliates",
+      "aws-logo@2x.7c50e6f9.png"
+     ],
+     "modelMs": 9375,
+     "usage": {
+      "prompt_tokens": 476,
+      "completion_tokens": 57,
+      "total_tokens": 533,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 16.08818244934082
+     },
+     "captureMs": 7207,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://aws-account-review.test/signin",
+     "verdict": "impersonation",
+     "site": "aws-account-review.test",
+     "brand": "aws",
+     "reasons": [
+      "The page presents itself as AWS at 1.00 (Amazon Web Services logo; AWS Customer Agreement; Amazon Web Services, Inc. or its affiliates).",
+      "It is served from aws-account-review.test, but AWS signs in on amazon.com."
+     ]
+    },
+    {
+     "id": "binance",
+     "group": "live",
+     "truthBrand": "binance",
+     "claimed": "Binance",
+     "confidence": 1,
+     "evidence": [
+      "Binance",
+      "favicon.ico",
+      "Site name: Binance",
+      "Title: Log In | Binance"
+     ],
+     "modelMs": 13703,
+     "usage": {
+      "prompt_tokens": 465,
+      "completion_tokens": 40,
+      "total_tokens": 505,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.504546165466309
+     },
+     "captureMs": 10120,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://accounts.binance.com/en/login",
+     "verdict": "legit",
+     "site": "binance.com",
+     "brand": "binance",
+     "reasons": [
+      "The page presents itself as Binance (Binance; favicon.ico; Site name: Binance), and binance.com is one of Binance's domains."
+     ]
+    },
+    {
+     "id": "binance",
+     "group": "spoof:live",
+     "truthBrand": "binance",
+     "claimed": "Binance",
+     "confidence": 1,
+     "evidence": [
+      "Binance",
+      "favicon.ico",
+      "Site name: Binance",
+      "Title: Log In | Binance"
+     ],
+     "modelMs": 13703,
+     "usage": {
+      "prompt_tokens": 465,
+      "completion_tokens": 40,
+      "total_tokens": 505,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.504546165466309
+     },
+     "captureMs": 10120,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://auth-binance.cloud-portal.test/en/login",
+     "verdict": "impersonation",
+     "site": "cloud-portal.test",
+     "brand": "binance",
+     "reasons": [
+      "The page presents itself as Binance at 1.00 (Binance; favicon.ico; Site name: Binance).",
+      "It is served from cloud-portal.test, but Binance signs in on binance.com."
+     ]
+    },
+    {
+     "id": "bitwarden",
+     "group": "live",
+     "truthBrand": "bitwarden",
+     "claimed": "Bitwarden",
+     "confidence": 1,
+     "evidence": [
+      "Bitwarden Web vault",
+      "Log in to Bitwarden",
+      "bitwarden.com",
+      "Bitwarden logo hints"
+     ],
+     "modelMs": 11344,
+     "usage": {
+      "prompt_tokens": 403,
+      "completion_tokens": 42,
+      "total_tokens": 445,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.137272834777832
+     },
+     "captureMs": 8495,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://vault.bitwarden.com/",
+     "verdict": "legit",
+     "site": "bitwarden.com",
+     "brand": "bitwarden",
+     "reasons": [
+      "The page presents itself as Bitwarden (Bitwarden Web vault; Log in to Bitwarden; bitwarden.com), and bitwarden.com is one of Bitwarden's domains."
+     ]
+    },
+    {
+     "id": "bitwarden",
+     "group": "spoof:live",
+     "truthBrand": "bitwarden",
+     "claimed": "Bitwarden",
+     "confidence": 1,
+     "evidence": [
+      "Bitwarden Web vault",
+      "Log in to Bitwarden",
+      "bitwarden.com",
+      "Bitwarden logo hints"
+     ],
+     "modelMs": 11344,
+     "usage": {
+      "prompt_tokens": 403,
+      "completion_tokens": 42,
+      "total_tokens": 445,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.137272834777832
+     },
+     "captureMs": 8495,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://accounts-bitwarden.verify-login.test/",
+     "verdict": "impersonation",
+     "site": "verify-login.test",
+     "brand": "bitwarden",
+     "reasons": [
+      "The page presents itself as Bitwarden at 1.00 (Bitwarden Web vault; Log in to Bitwarden; bitwarden.com).",
+      "It is served from verify-login.test, but Bitwarden signs in on bitwarden.com."
+     ]
+    },
+    {
+     "id": "box",
+     "group": "live",
+     "truthBrand": "box",
+     "claimed": "Box",
+     "confidence": 1,
+     "evidence": [
+      "Box logo hint",
+      "Box in title",
+      "Box in copyright text",
+      "Sign in with Google button, but primary branding appears to be Box"
+     ],
+     "modelMs": 8770,
+     "usage": {
+      "prompt_tokens": 384,
+      "completion_tokens": 48,
+      "total_tokens": 432,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.134546279907227
+     },
+     "captureMs": 5236,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://account.box.com/login",
+     "verdict": "legit",
+     "site": "box.com",
+     "brand": "box",
+     "reasons": [
+      "The page presents itself as Box (Box logo hint; Box in title; Box in copyright text), and box.com is one of Box's domains."
+     ]
+    },
+    {
+     "id": "box",
+     "group": "spoof:live",
+     "truthBrand": "box",
+     "claimed": "Box",
+     "confidence": 1,
+     "evidence": [
+      "Box logo hint",
+      "Box in title",
+      "Box in copyright text",
+      "Sign in with Google button, but primary branding appears to be Box"
+     ],
+     "modelMs": 8770,
+     "usage": {
+      "prompt_tokens": 384,
+      "completion_tokens": 48,
+      "total_tokens": 432,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.134546279907227
+     },
+     "captureMs": 5236,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://box.com-secure-signin.test/login",
+     "verdict": "impersonation",
+     "site": "com-secure-signin.test",
+     "brand": "box",
+     "reasons": [
+      "The page presents itself as Box at 1.00 (Box logo hint; Box in title; Box in copyright text).",
+      "It is served from com-secure-signin.test, but Box signs in on box.com."
+     ]
+    },
+    {
+     "id": "claude",
+     "group": "live",
+     "truthBrand": "claude",
+     "claimed": "Claude",
+     "confidence": 1,
+     "evidence": [
+      "Claude",
+      "Anthropic",
+      "Logo hints: Claude",
+      "Site name: Claude"
+     ],
+     "modelMs": 15747,
+     "usage": {
+      "prompt_tokens": 569,
+      "completion_tokens": 39,
+      "total_tokens": 608,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 16.979999542236328
+     },
+     "captureMs": 6293,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://claude.ai/login",
+     "verdict": "legit",
+     "site": "claude.ai",
+     "brand": "claude",
+     "reasons": [
+      "The page presents itself as Claude (Claude; Anthropic; Logo hints: Claude), and claude.ai is one of Claude's domains."
+     ]
+    },
+    {
+     "id": "claude",
+     "group": "spoof:live",
+     "truthBrand": "claude",
+     "claimed": "Claude",
+     "confidence": 1,
+     "evidence": [
+      "Claude",
+      "Anthropic",
+      "Logo hints: Claude",
+      "Site name: Claude"
+     ],
+     "modelMs": 15747,
+     "usage": {
+      "prompt_tokens": 569,
+      "completion_tokens": 39,
+      "total_tokens": 608,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 16.979999542236328
+     },
+     "captureMs": 6293,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://login.claude-support.test/login",
+     "verdict": "impersonation",
+     "site": "claude-support.test",
+     "brand": "claude",
+     "reasons": [
+      "The page presents itself as Claude at 1.00 (Claude; Anthropic; Logo hints: Claude).",
+      "It is served from claude-support.test, but Claude signs in on claude.ai."
+     ]
+    },
+    {
+     "id": "cloudflare",
+     "group": "live",
+     "truthBrand": "cloudflare",
+     "claimed": "Cloudflare",
+     "confidence": 1,
+     "evidence": [
+      "Cloudflare Dashboard",
+      "Cloudflare",
+      "Sign in to Cloudflare",
+      "Cloudflare's terms, privacy policy, and cookie policy"
+     ],
+     "modelMs": 8326,
+     "usage": {
+      "prompt_tokens": 501,
+      "completion_tokens": 47,
+      "total_tokens": 548,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 15.92909049987793
+     },
+     "captureMs": 13260,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://dash.cloudflare.com/login",
+     "verdict": "legit",
+     "site": "cloudflare.com",
+     "brand": "cloudflare",
+     "reasons": [
+      "The page presents itself as Cloudflare (Cloudflare Dashboard; Cloudflare; Sign in to Cloudflare), and cloudflare.com is one of Cloudflare's domains."
+     ]
+    },
+    {
+     "id": "cloudflare",
+     "group": "spoof:live",
+     "truthBrand": "cloudflare",
+     "claimed": "Cloudflare",
+     "confidence": 1,
+     "evidence": [
+      "Cloudflare Dashboard",
+      "Cloudflare",
+      "Sign in to Cloudflare",
+      "Cloudflare's terms, privacy policy, and cookie policy"
+     ],
+     "modelMs": 8326,
+     "usage": {
+      "prompt_tokens": 501,
+      "completion_tokens": 47,
+      "total_tokens": 548,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 15.92909049987793
+     },
+     "captureMs": 13260,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://cloudflare-account-review.test/login",
+     "verdict": "impersonation",
+     "site": "cloudflare-account-review.test",
+     "brand": "cloudflare",
+     "reasons": [
+      "The page presents itself as Cloudflare at 1.00 (Cloudflare Dashboard; Cloudflare; Sign in to Cloudflare).",
+      "It is served from cloudflare-account-review.test, but Cloudflare signs in on cloudflare.com."
+     ]
+    },
+    {
+     "id": "coinbase",
+     "group": "live",
+     "truthBrand": "coinbase",
+     "claimed": "Coinbase",
+     "confidence": 1,
+     "evidence": [
+      "Coinbase logo",
+      "Coinbase Sign In",
+      "Sign in to Coinbase",
+      "Coinbase"
+     ],
+     "modelMs": 13310,
+     "usage": {
+      "prompt_tokens": 431,
+      "completion_tokens": 39,
+      "total_tokens": 470,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.592727661132812
+     },
+     "captureMs": 15287,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://login.coinbase.com/signin",
+     "verdict": "legit",
+     "site": "coinbase.com",
+     "brand": "coinbase",
+     "reasons": [
+      "The page presents itself as Coinbase (Coinbase logo; Coinbase Sign In; Sign in to Coinbase), and coinbase.com is one of Coinbase's domains."
+     ]
+    },
+    {
+     "id": "coinbase",
+     "group": "spoof:live",
+     "truthBrand": "coinbase",
+     "claimed": "Coinbase",
+     "confidence": 1,
+     "evidence": [
+      "Coinbase logo",
+      "Coinbase Sign In",
+      "Sign in to Coinbase",
+      "Coinbase"
+     ],
+     "modelMs": 13310,
+     "usage": {
+      "prompt_tokens": 431,
+      "completion_tokens": 39,
+      "total_tokens": 470,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.592727661132812
+     },
+     "captureMs": 15287,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://auth-coinbase.cloud-portal.test/signin",
+     "verdict": "impersonation",
+     "site": "cloud-portal.test",
+     "brand": "coinbase",
+     "reasons": [
+      "The page presents itself as Coinbase at 1.00 (Coinbase logo; Coinbase Sign In; Sign in to Coinbase).",
+      "It is served from cloud-portal.test, but Coinbase signs in on coinbase.com."
+     ]
+    },
+    {
+     "id": "cursor",
+     "group": "live",
+     "truthBrand": "cursor",
+     "claimed": null,
+     "confidence": 0,
+     "evidence": [
+      "generic login form",
+      "no logo mentioned",
+      "no brand name mentioned",
+      "common login fields"
+     ],
+     "modelMs": 13029,
+     "usage": {
+      "prompt_tokens": 351,
+      "completion_tokens": 39,
+      "total_tokens": 390,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 11.629091262817383
+     },
+     "captureMs": 12814,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://authenticator.cursor.sh/",
+     "verdict": "unknown",
+     "site": "cursor.sh",
+     "brand": null,
+     "reasons": [
+      "The page shows no brand the model could name."
+     ]
+    },
+    {
+     "id": "cursor",
+     "group": "spoof:live",
+     "truthBrand": "cursor",
+     "claimed": null,
+     "confidence": 0,
+     "evidence": [
+      "generic login form",
+      "no logo mentioned",
+      "no brand name mentioned",
+      "common login fields"
+     ],
+     "modelMs": 13029,
+     "usage": {
+      "prompt_tokens": 351,
+      "completion_tokens": 39,
+      "total_tokens": 390,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 11.629091262817383
+     },
+     "captureMs": 12814,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://accounts-cursor.verify-login.test/",
+     "verdict": "unknown",
+     "site": "verify-login.test",
+     "brand": null,
+     "reasons": [
+      "The page shows no brand the model could name."
+     ]
+    },
+    {
+     "id": "datadog",
+     "group": "live",
+     "truthBrand": "datadog",
+     "claimed": "Datadog",
+     "confidence": 1,
+     "evidence": [
+      "Datadog Logo",
+      "Log in to Datadog",
+      "Datadog, Inc.",
+      "Datadog: Log In"
+     ],
+     "modelMs": 17928,
+     "usage": {
+      "prompt_tokens": 400,
+      "completion_tokens": 43,
+      "total_tokens": 443,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.140909194946289
+     },
+     "captureMs": 8004,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://app.datadoghq.com/account/login",
+     "verdict": "legit",
+     "site": "datadoghq.com",
+     "brand": "datadog",
+     "reasons": [
+      "The page presents itself as Datadog (Datadog Logo; Log in to Datadog; Datadog, Inc.), and datadoghq.com is one of Datadog's domains."
+     ]
+    },
+    {
+     "id": "datadog",
+     "group": "spoof:live",
+     "truthBrand": "datadog",
+     "claimed": "Datadog",
+     "confidence": 1,
+     "evidence": [
+      "Datadog Logo",
+      "Log in to Datadog",
+      "Datadog, Inc.",
+      "Datadog: Log In"
+     ],
+     "modelMs": 17928,
+     "usage": {
+      "prompt_tokens": 400,
+      "completion_tokens": 43,
+      "total_tokens": 443,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.140909194946289
+     },
+     "captureMs": 8004,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://datadog.com-secure-signin.test/account/login",
+     "verdict": "impersonation",
+     "site": "com-secure-signin.test",
+     "brand": "datadog",
+     "reasons": [
+      "The page presents itself as Datadog at 1.00 (Datadog Logo; Log in to Datadog; Datadog, Inc.).",
+      "It is served from com-secure-signin.test, but Datadog signs in on datadoghq.com."
+     ]
+    },
+    {
+     "id": "digitalocean",
+     "group": "live",
+     "truthBrand": "digitalocean",
+     "claimed": "DigitalOcean",
+     "confidence": 1,
+     "evidence": [
+      "DigitalOcean",
+      "DigitalOcean site name",
+      "Log in to your account | DigitalOcean",
+      "DigitalOcean Terms of Service"
+     ],
+     "modelMs": 9625,
+     "usage": {
+      "prompt_tokens": 480,
+      "completion_tokens": 45,
+      "total_tokens": 525,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 15.2590913772583
+     },
+     "captureMs": 8443,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://cloud.digitalocean.com/login",
+     "verdict": "legit",
+     "site": "digitalocean.com",
+     "brand": "digitalocean",
+     "reasons": [
+      "The page presents itself as DigitalOcean (DigitalOcean; DigitalOcean site name; Log in to your account | DigitalOcean), and digitalocean.com is one of DigitalOcean's domains."
+     ]
+    },
+    {
+     "id": "digitalocean",
+     "group": "spoof:live",
+     "truthBrand": "digitalocean",
+     "claimed": "DigitalOcean",
+     "confidence": 1,
+     "evidence": [
+      "DigitalOcean",
+      "DigitalOcean site name",
+      "Log in to your account | DigitalOcean",
+      "DigitalOcean Terms of Service"
+     ],
+     "modelMs": 9625,
+     "usage": {
+      "prompt_tokens": 480,
+      "completion_tokens": 45,
+      "total_tokens": 525,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 15.2590913772583
+     },
+     "captureMs": 8443,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://login.digitalocean-support.test/login",
+     "verdict": "impersonation",
+     "site": "digitalocean-support.test",
+     "brand": "digitalocean",
+     "reasons": [
+      "The page presents itself as DigitalOcean at 1.00 (DigitalOcean; DigitalOcean site name; Log in to your account | DigitalOcean).",
+      "It is served from digitalocean-support.test, but DigitalOcean signs in on digitalocean.com."
+     ]
+    },
+    {
+     "id": "discord",
+     "group": "live",
+     "truthBrand": "discord",
+     "claimed": "Discord",
+     "confidence": 1,
+     "evidence": [
+      "Discord",
+      "Title: Discord",
+      "Site name: Discord",
+      "QR code login is now ready Welcome back! We're so excited to see you again!"
+     ],
+     "modelMs": 8952,
+     "usage": {
+      "prompt_tokens": 435,
+      "completion_tokens": 50,
+      "total_tokens": 485,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.540908813476562
+     },
+     "captureMs": 7303,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://discord.com/login",
+     "verdict": "legit",
+     "site": "discord.com",
+     "brand": "discord",
+     "reasons": [
+      "The page presents itself as Discord (Discord; Title: Discord; Site name: Discord), and discord.com is one of Discord's domains."
+     ]
+    },
+    {
+     "id": "discord",
+     "group": "spoof:live",
+     "truthBrand": "discord",
+     "claimed": "Discord",
+     "confidence": 1,
+     "evidence": [
+      "Discord",
+      "Title: Discord",
+      "Site name: Discord",
+      "QR code login is now ready Welcome back! We're so excited to see you again!"
+     ],
+     "modelMs": 8952,
+     "usage": {
+      "prompt_tokens": 435,
+      "completion_tokens": 50,
+      "total_tokens": 485,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.540908813476562
+     },
+     "captureMs": 7303,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://discord-account-review.test/login",
+     "verdict": "impersonation",
+     "site": "discord-account-review.test",
+     "brand": "discord",
+     "reasons": [
+      "The page presents itself as Discord at 1.00 (Discord; Title: Discord; Site name: Discord).",
+      "It is served from discord-account-review.test, but Discord signs in on discord.com."
+     ]
+    },
+    {
+     "id": "docker",
+     "group": "live",
+     "truthBrand": "docker",
+     "claimed": "Docker",
+     "confidence": 1,
+     "evidence": [
+      "Docker",
+      "vertical-logo-monochromatic.png",
+      "favicon.ico",
+      "Sign in Using Docker for work?"
+     ],
+     "modelMs": 9631,
+     "usage": {
+      "prompt_tokens": 380,
+      "completion_tokens": 41,
+      "total_tokens": 421,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.495454788208008
+     },
+     "captureMs": 5671,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://login.docker.com/u/login/identifier",
+     "verdict": "legit",
+     "site": "docker.com",
+     "brand": "docker",
+     "reasons": [
+      "The page presents itself as Docker (Docker; vertical-logo-monochromatic.png; favicon.ico), and docker.com is one of Docker's domains."
+     ]
+    },
+    {
+     "id": "docker",
+     "group": "spoof:live",
+     "truthBrand": "docker",
+     "claimed": "Docker",
+     "confidence": 1,
+     "evidence": [
+      "Docker",
+      "vertical-logo-monochromatic.png",
+      "favicon.ico",
+      "Sign in Using Docker for work?"
+     ],
+     "modelMs": 9631,
+     "usage": {
+      "prompt_tokens": 380,
+      "completion_tokens": 41,
+      "total_tokens": 421,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.495454788208008
+     },
+     "captureMs": 5671,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://auth-docker.cloud-portal.test/u/login/identifier",
+     "verdict": "impersonation",
+     "site": "cloud-portal.test",
+     "brand": "docker",
+     "reasons": [
+      "The page presents itself as Docker at 1.00 (Docker; vertical-logo-monochromatic.png; favicon.ico).",
+      "It is served from cloud-portal.test, but Docker signs in on docker.com."
+     ]
+    },
+    {
+     "id": "dropbox",
+     "group": "live",
+     "truthBrand": "dropbox",
+     "claimed": "Dropbox",
+     "confidence": 1,
+     "evidence": [
+      "Dropbox",
+      "Dropbox logo hints",
+      "Site name: Dropbox",
+      "Title: Login or Sign Up for a Dropbox Account"
+     ],
+     "modelMs": 13872,
+     "usage": {
+      "prompt_tokens": 509,
+      "completion_tokens": 46,
+      "total_tokens": 555,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 16.04818344116211
+     },
+     "captureMs": 11695,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://www.dropbox.com/login",
+     "verdict": "legit",
+     "site": "dropbox.com",
+     "brand": "dropbox",
+     "reasons": [
+      "The page presents itself as Dropbox (Dropbox; Dropbox logo hints; Site name: Dropbox), and dropbox.com is one of Dropbox's domains."
+     ]
+    },
+    {
+     "id": "dropbox",
+     "group": "spoof:live",
+     "truthBrand": "dropbox",
+     "claimed": "Dropbox",
+     "confidence": 1,
+     "evidence": [
+      "Dropbox",
+      "Dropbox logo hints",
+      "Site name: Dropbox",
+      "Title: Login or Sign Up for a Dropbox Account"
+     ],
+     "modelMs": 13872,
+     "usage": {
+      "prompt_tokens": 509,
+      "completion_tokens": 46,
+      "total_tokens": 555,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 16.04818344116211
+     },
+     "captureMs": 11695,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://accounts-dropbox.verify-login.test/login",
+     "verdict": "impersonation",
+     "site": "verify-login.test",
+     "brand": "dropbox",
+     "reasons": [
+      "The page presents itself as Dropbox at 1.00 (Dropbox; Dropbox logo hints; Site name: Dropbox).",
+      "It is served from verify-login.test, but Dropbox signs in on dropbox.com."
+     ]
+    },
+    {
+     "id": "epicgames",
+     "group": "live",
+     "truthBrand": "epicgames",
+     "claimed": "Epic Games",
+     "confidence": 1,
+     "evidence": [
+      "Epic Games",
+      "Epic Games title",
+      "epic-favicon-96x96.png",
+      "Sign in to Epic Games heading"
+     ],
+     "modelMs": 10477,
+     "usage": {
+      "prompt_tokens": 434,
+      "completion_tokens": 45,
+      "total_tokens": 479,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.130001068115234
+     },
+     "captureMs": 15983,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://www.epicgames.com/id/login",
+     "verdict": "legit",
+     "site": "epicgames.com",
+     "brand": "epicgames",
+     "reasons": [
+      "The page presents itself as Epic Games (Epic Games; Epic Games title; epic-favicon-96x96.png), and epicgames.com is one of Epic Games's domains."
+     ]
+    },
+    {
+     "id": "epicgames",
+     "group": "spoof:live",
+     "truthBrand": "epicgames",
+     "claimed": "Epic Games",
+     "confidence": 1,
+     "evidence": [
+      "Epic Games",
+      "Epic Games title",
+      "epic-favicon-96x96.png",
+      "Sign in to Epic Games heading"
+     ],
+     "modelMs": 10477,
+     "usage": {
+      "prompt_tokens": 434,
+      "completion_tokens": 45,
+      "total_tokens": 479,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.130001068115234
+     },
+     "captureMs": 15983,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://login.epicgames-support.test/id/login",
+     "verdict": "impersonation",
+     "site": "epicgames-support.test",
+     "brand": "epicgames",
+     "reasons": [
+      "The page presents itself as Epic Games at 1.00 (Epic Games; Epic Games title; epic-favicon-96x96.png).",
+      "It is served from epicgames-support.test, but Epic Games signs in on epicgames.com."
+     ]
+    },
+    {
+     "id": "github",
+     "group": "live",
+     "truthBrand": "github",
+     "claimed": "GitHub",
+     "confidence": 1,
+     "evidence": [
+      "GitHub",
+      "Sign in to GitHub",
+      "Site name: GitHub",
+      "Favicon file: favicon.png"
+     ],
+     "modelMs": 6765,
+     "usage": {
+      "prompt_tokens": 413,
+      "completion_tokens": 45,
+      "total_tokens": 458,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.614545822143555
+     },
+     "captureMs": 5149,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://github.com/login",
+     "verdict": "legit",
+     "site": "github.com",
+     "brand": "github",
+     "reasons": [
+      "The page presents itself as GitHub (GitHub; Sign in to GitHub; Site name: GitHub), and github.com is one of GitHub's domains."
+     ]
+    },
+    {
+     "id": "github",
+     "group": "spoof:live",
+     "truthBrand": "github",
+     "claimed": "GitHub",
+     "confidence": 1,
+     "evidence": [
+      "GitHub",
+      "Sign in to GitHub",
+      "Site name: GitHub",
+      "Favicon file: favicon.png"
+     ],
+     "modelMs": 6765,
+     "usage": {
+      "prompt_tokens": 413,
+      "completion_tokens": 45,
+      "total_tokens": 458,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.614545822143555
+     },
+     "captureMs": 5149,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://auth-github.cloud-portal.test/login",
+     "verdict": "impersonation",
+     "site": "cloud-portal.test",
+     "brand": "github",
+     "reasons": [
+      "The page presents itself as GitHub at 1.00 (GitHub; Sign in to GitHub; Site name: GitHub).",
+      "It is served from cloud-portal.test, but GitHub signs in on github.com."
+     ]
+    },
+    {
+     "id": "google",
+     "group": "live",
+     "truthBrand": "google",
+     "claimed": "Google",
+     "confidence": 1,
+     "evidence": [
+      "Google Accounts",
+      "Google Account",
+      "favicon file: identifier"
+     ],
+     "modelMs": 5603,
+     "usage": {
+      "prompt_tokens": 360,
+      "completion_tokens": 31,
+      "total_tokens": 391,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 11.231818199157715
+     },
+     "captureMs": 4627,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://accounts.google.com/v3/signin/identifier",
+     "verdict": "legit",
+     "site": "google.com",
+     "brand": "google",
+     "reasons": [
+      "The page presents itself as Google (Google Accounts; Google Account; favicon file: identifier), and google.com is one of Google's domains."
+     ]
+    },
+    {
+     "id": "google",
+     "group": "spoof:live",
+     "truthBrand": "google",
+     "claimed": "Google",
+     "confidence": 1,
+     "evidence": [
+      "Google Accounts",
+      "Google Account",
+      "favicon file: identifier"
+     ],
+     "modelMs": 5603,
+     "usage": {
+      "prompt_tokens": 360,
+      "completion_tokens": 31,
+      "total_tokens": 391,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 11.231818199157715
+     },
+     "captureMs": 4627,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://login.google-support.test/v3/signin/identifier",
+     "verdict": "impersonation",
+     "site": "google-support.test",
+     "brand": "google",
+     "reasons": [
+      "The page presents itself as Google at 1.00 (Google Accounts; Google Account; favicon file: identifier).",
+      "It is served from google-support.test, but Google signs in on google.com."
+     ]
+    },
+    {
+     "id": "huggingface",
+     "group": "live",
+     "truthBrand": "huggingface",
+     "claimed": "Hugging Face",
+     "confidence": 1,
+     "evidence": [
+      "Hugging Face logo",
+      "Hugging Face text",
+      "Hugging Face Account text",
+      "Title: Hugging Face – The AI community building the future."
+     ],
+     "modelMs": 14506,
+     "usage": {
+      "prompt_tokens": 462,
+      "completion_tokens": 53,
+      "total_tokens": 515,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 15.435455322265625
+     },
+     "captureMs": 12839,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://huggingface.co/login",
+     "verdict": "legit",
+     "site": "huggingface.co",
+     "brand": "huggingface",
+     "reasons": [
+      "The page presents itself as Hugging Face (Hugging Face logo; Hugging Face text; Hugging Face Account text), and huggingface.co is one of Hugging Face's domains."
+     ]
+    },
+    {
+     "id": "huggingface",
+     "group": "spoof:live",
+     "truthBrand": "huggingface",
+     "claimed": "Hugging Face",
+     "confidence": 1,
+     "evidence": [
+      "Hugging Face logo",
+      "Hugging Face text",
+      "Hugging Face Account text",
+      "Title: Hugging Face – The AI community building the future."
+     ],
+     "modelMs": 14506,
+     "usage": {
+      "prompt_tokens": 462,
+      "completion_tokens": 53,
+      "total_tokens": 515,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 15.435455322265625
+     },
+     "captureMs": 12839,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://huggingface-account-review.test/login",
+     "verdict": "impersonation",
+     "site": "huggingface-account-review.test",
+     "brand": "huggingface",
+     "reasons": [
+      "The page presents itself as Hugging Face at 1.00 (Hugging Face logo; Hugging Face text; Hugging Face Account text).",
+      "It is served from huggingface-account-review.test, but Hugging Face signs in on huggingface.co."
+     ]
+    },
+    {
+     "id": "lastpass",
+     "group": "live",
+     "truthBrand": "lastpass",
+     "claimed": "LastPass",
+     "confidence": 1,
+     "evidence": [
+      "LastPass in title",
+      "lastpassicon.png favicon",
+      "LastPass in copyright text",
+      "LOG IN heading"
+     ],
+     "modelMs": 12533,
+     "usage": {
+      "prompt_tokens": 375,
+      "completion_tokens": 44,
+      "total_tokens": 419,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.604545593261719
+     },
+     "captureMs": 5651,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://lastpass.com/login/",
+     "verdict": "legit",
+     "site": "lastpass.com",
+     "brand": "lastpass",
+     "reasons": [
+      "The page presents itself as LastPass (LastPass in title; lastpassicon.png favicon; LastPass in copyright text), and lastpass.com is one of LastPass's domains."
+     ]
+    },
+    {
+     "id": "lastpass",
+     "group": "spoof:live",
+     "truthBrand": "lastpass",
+     "claimed": "LastPass",
+     "confidence": 1,
+     "evidence": [
+      "LastPass in title",
+      "lastpassicon.png favicon",
+      "LastPass in copyright text",
+      "LOG IN heading"
+     ],
+     "modelMs": 12533,
+     "usage": {
+      "prompt_tokens": 375,
+      "completion_tokens": 44,
+      "total_tokens": 419,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.604545593261719
+     },
+     "captureMs": 5651,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://accounts-lastpass.verify-login.test/login/",
+     "verdict": "impersonation",
+     "site": "verify-login.test",
+     "brand": "lastpass",
+     "reasons": [
+      "The page presents itself as LastPass at 1.00 (LastPass in title; lastpassicon.png favicon; LastPass in copyright text).",
+      "It is served from verify-login.test, but LastPass signs in on lastpass.com."
+     ]
+    },
+    {
+     "id": "linear",
+     "group": "live",
+     "truthBrand": "linear",
+     "claimed": "Linear",
+     "confidence": 1,
+     "evidence": [
+      "Linear",
+      "Log in to Linear",
+      "favicon-Dri1lbbK.ico",
+      "title: Linear"
+     ],
+     "modelMs": 13646,
+     "usage": {
+      "prompt_tokens": 357,
+      "completion_tokens": 41,
+      "total_tokens": 398,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 11.930910110473633
+     },
+     "captureMs": 10872,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://linear.app/login",
+     "verdict": "legit",
+     "site": "linear.app",
+     "brand": "linear",
+     "reasons": [
+      "The page presents itself as Linear (Linear; Log in to Linear; favicon-Dri1lbbK.ico), and linear.app is one of Linear's domains."
+     ]
+    },
+    {
+     "id": "linear",
+     "group": "spoof:live",
+     "truthBrand": "linear",
+     "claimed": "Linear",
+     "confidence": 1,
+     "evidence": [
+      "Linear",
+      "Log in to Linear",
+      "favicon-Dri1lbbK.ico",
+      "title: Linear"
+     ],
+     "modelMs": 13646,
+     "usage": {
+      "prompt_tokens": 357,
+      "completion_tokens": 41,
+      "total_tokens": 398,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 11.930910110473633
+     },
+     "captureMs": 10872,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://linear.com-secure-signin.test/login",
+     "verdict": "impersonation",
+     "site": "com-secure-signin.test",
+     "brand": "linear",
+     "reasons": [
+      "The page presents itself as Linear at 1.00 (Linear; Log in to Linear; favicon-Dri1lbbK.ico).",
+      "It is served from com-secure-signin.test, but Linear signs in on linear.app."
+     ]
+    },
+    {
+     "id": "linkedin",
+     "group": "live",
+     "truthBrand": "linkedin",
+     "claimed": "LinkedIn",
+     "confidence": 1,
+     "evidence": [
+      "LinkedIn",
+      "Logo hints: LinkedIn",
+      "Site name: LinkedIn",
+      "LinkedIn Corporation"
+     ],
+     "modelMs": 16626,
+     "usage": {
+      "prompt_tokens": 650,
+      "completion_tokens": 41,
+      "total_tokens": 691,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 19.12272834777832
+     },
+     "captureMs": 16987,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://www.linkedin.com/login/",
+     "verdict": "legit",
+     "site": "linkedin.com",
+     "brand": "linkedin",
+     "reasons": [
+      "The page presents itself as LinkedIn (LinkedIn; Logo hints: LinkedIn; Site name: LinkedIn), and linkedin.com is one of LinkedIn's domains."
+     ]
+    },
+    {
+     "id": "linkedin",
+     "group": "spoof:live",
+     "truthBrand": "linkedin",
+     "claimed": "LinkedIn",
+     "confidence": 1,
+     "evidence": [
+      "LinkedIn",
+      "Logo hints: LinkedIn",
+      "Site name: LinkedIn",
+      "LinkedIn Corporation"
+     ],
+     "modelMs": 16626,
+     "usage": {
+      "prompt_tokens": 650,
+      "completion_tokens": 41,
+      "total_tokens": 691,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 19.12272834777832
+     },
+     "captureMs": 16987,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://login.linkedin-support.test/login/",
+     "verdict": "impersonation",
+     "site": "linkedin-support.test",
+     "brand": "linkedin",
+     "reasons": [
+      "The page presents itself as LinkedIn at 1.00 (LinkedIn; Logo hints: LinkedIn; Site name: LinkedIn).",
+      "It is served from linkedin-support.test, but LinkedIn signs in on linkedin.com."
+     ]
+    },
+    {
+     "id": "mailchimp",
+     "group": "live",
+     "truthBrand": "mailchimp",
+     "claimed": "Mailchimp",
+     "confidence": 1,
+     "evidence": [
+      "Mailchimp logo",
+      "Log in to Mailchimp",
+      "Mailchimp Login",
+      "Mailchimp is a registered trademark"
+     ],
+     "modelMs": 10876,
+     "usage": {
+      "prompt_tokens": 477,
+      "completion_tokens": 48,
+      "total_tokens": 525,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 15.41727352142334
+     },
+     "captureMs": 13561,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://login.mailchimp.com/",
+     "verdict": "legit",
+     "site": "mailchimp.com",
+     "brand": "mailchimp",
+     "reasons": [
+      "The page presents itself as MailChimp (Mailchimp logo; Log in to Mailchimp; Mailchimp Login), and mailchimp.com is one of MailChimp's domains."
+     ]
+    },
+    {
+     "id": "mailchimp",
+     "group": "spoof:live",
+     "truthBrand": "mailchimp",
+     "claimed": "Mailchimp",
+     "confidence": 1,
+     "evidence": [
+      "Mailchimp logo",
+      "Log in to Mailchimp",
+      "Mailchimp Login",
+      "Mailchimp is a registered trademark"
+     ],
+     "modelMs": 10876,
+     "usage": {
+      "prompt_tokens": 477,
+      "completion_tokens": 48,
+      "total_tokens": 525,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 15.41727352142334
+     },
+     "captureMs": 13561,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://mailchimp-account-review.test/",
+     "verdict": "impersonation",
+     "site": "mailchimp-account-review.test",
+     "brand": "mailchimp",
+     "reasons": [
+      "The page presents itself as MailChimp at 1.00 (Mailchimp logo; Log in to Mailchimp; Mailchimp Login).",
+      "It is served from mailchimp-account-review.test, but MailChimp signs in on mailchimp.com."
+     ]
+    },
+    {
+     "id": "microsoft",
+     "group": "live",
+     "truthBrand": "microsoft",
+     "claimed": "Microsoft",
+     "confidence": 1,
+     "evidence": [
+      "Microsoft account text",
+      "Microsoft logo hints",
+      "Create an account text",
+      "Terms of use and Privacy and cookies text"
+     ],
+     "modelMs": 10007,
+     "usage": {
+      "prompt_tokens": 376,
+      "completion_tokens": 43,
+      "total_tokens": 419,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.55181884765625
+     },
+     "captureMs": 11725,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://login.live.com/",
+     "verdict": "legit",
+     "site": "live.com",
+     "brand": "microsoft",
+     "reasons": [
+      "The page presents itself as Microsoft (Microsoft account text; Microsoft logo hints; Create an account text), and live.com is one of Microsoft's domains."
+     ]
+    },
+    {
+     "id": "microsoft",
+     "group": "spoof:live",
+     "truthBrand": "microsoft",
+     "claimed": "Microsoft",
+     "confidence": 1,
+     "evidence": [
+      "Microsoft account text",
+      "Microsoft logo hints",
+      "Create an account text",
+      "Terms of use and Privacy and cookies text"
+     ],
+     "modelMs": 10007,
+     "usage": {
+      "prompt_tokens": 376,
+      "completion_tokens": 43,
+      "total_tokens": 419,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.55181884765625
+     },
+     "captureMs": 11725,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://auth-microsoft.cloud-portal.test/",
+     "verdict": "impersonation",
+     "site": "cloud-portal.test",
+     "brand": "microsoft",
+     "reasons": [
+      "The page presents itself as Microsoft at 1.00 (Microsoft account text; Microsoft logo hints; Create an account text).",
+      "It is served from cloud-portal.test, but Microsoft signs in on microsoft.com, live.com, outlook.com, office.com."
+     ]
+    },
+    {
+     "id": "microsoft-entra",
+     "group": "live",
+     "truthBrand": "microsoft",
+     "claimed": "Microsoft",
+     "confidence": 0.9,
+     "evidence": [
+      "Microsoft logo hint",
+      "Skype field option",
+      "Microsoft image alt text",
+      "favicon file"
+     ],
+     "modelMs": 16596,
+     "usage": {
+      "prompt_tokens": 417,
+      "completion_tokens": 40,
+      "total_tokens": 457,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.326363563537598
+     },
+     "captureMs": 8070,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
+     "verdict": "impersonation",
+     "site": "microsoftonline.com",
+     "brand": "microsoft",
+     "reasons": [
+      "The page presents itself as Microsoft at 0.90 (Microsoft logo hint; Skype field option; Microsoft image alt text).",
+      "It is served from microsoftonline.com, but Microsoft signs in on microsoft.com, live.com, outlook.com, office.com."
+     ]
+    },
+    {
+     "id": "microsoft-entra",
+     "group": "spoof:live",
+     "truthBrand": "microsoft",
+     "claimed": "Microsoft",
+     "confidence": 0.9,
+     "evidence": [
+      "Microsoft logo hint",
+      "Skype field option",
+      "Microsoft image alt text",
+      "favicon file"
+     ],
+     "modelMs": 16596,
+     "usage": {
+      "prompt_tokens": 417,
+      "completion_tokens": 40,
+      "total_tokens": 457,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.326363563537598
+     },
+     "captureMs": 8070,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://accounts-microsoftentra.verify-login.test/common/oauth2/v2.0/authorize",
+     "verdict": "impersonation",
+     "site": "verify-login.test",
+     "brand": "microsoft",
+     "reasons": [
+      "The page presents itself as Microsoft at 0.90 (Microsoft logo hint; Skype field option; Microsoft image alt text).",
+      "It is served from verify-login.test, but Microsoft signs in on microsoft.com, live.com, outlook.com, office.com."
+     ]
+    },
+    {
+     "id": "mongodb",
+     "group": "live",
+     "truthBrand": "mongodb",
+     "claimed": "MongoDB",
+     "confidence": 0.9,
+     "evidence": [
+      "MongoDB Logo",
+      "Log in to your account",
+      "MongoDB.local events",
+      "ATLAS50"
+     ],
+     "modelMs": 10507,
+     "usage": {
+      "prompt_tokens": 437,
+      "completion_tokens": 43,
+      "total_tokens": 480,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.049091339111328
+     },
+     "captureMs": 10584,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://account.mongodb.com/account/login",
+     "verdict": "legit",
+     "site": "mongodb.com",
+     "brand": "mongodb",
+     "reasons": [
+      "The page presents itself as MongoDB (MongoDB Logo; Log in to your account; MongoDB.local events), and mongodb.com is one of MongoDB's domains."
+     ]
+    },
+    {
+     "id": "mongodb",
+     "group": "spoof:live",
+     "truthBrand": "mongodb",
+     "claimed": "MongoDB",
+     "confidence": 0.9,
+     "evidence": [
+      "MongoDB Logo",
+      "Log in to your account",
+      "MongoDB.local events",
+      "ATLAS50"
+     ],
+     "modelMs": 10507,
+     "usage": {
+      "prompt_tokens": 437,
+      "completion_tokens": 43,
+      "total_tokens": 480,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.049091339111328
+     },
+     "captureMs": 10584,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://mongodb.com-secure-signin.test/account/login",
+     "verdict": "impersonation",
+     "site": "com-secure-signin.test",
+     "brand": "mongodb",
+     "reasons": [
+      "The page presents itself as MongoDB at 0.90 (MongoDB Logo; Log in to your account; MongoDB.local events).",
+      "It is served from com-secure-signin.test, but MongoDB signs in on mongodb.com."
+     ]
+    },
+    {
+     "id": "namecheap",
+     "group": "live",
+     "truthBrand": "namecheap",
+     "claimed": "Namecheap",
+     "confidence": 1,
+     "evidence": [
+      "Namecheap.com",
+      "Namecheap",
+      "favicon.ico",
+      "My Account Login"
+     ],
+     "modelMs": 11067,
+     "usage": {
+      "prompt_tokens": 448,
+      "completion_tokens": 36,
+      "total_tokens": 484,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.778182029724121
+     },
+     "captureMs": 9613,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://www.namecheap.com/myaccount/login/",
+     "verdict": "legit",
+     "site": "namecheap.com",
+     "brand": "namecheap",
+     "reasons": [
+      "The page presents itself as Namecheap (Namecheap.com; Namecheap; favicon.ico), and namecheap.com is one of Namecheap's domains."
+     ]
+    },
+    {
+     "id": "namecheap",
+     "group": "spoof:live",
+     "truthBrand": "namecheap",
+     "claimed": "Namecheap",
+     "confidence": 1,
+     "evidence": [
+      "Namecheap.com",
+      "Namecheap",
+      "favicon.ico",
+      "My Account Login"
+     ],
+     "modelMs": 11067,
+     "usage": {
+      "prompt_tokens": 448,
+      "completion_tokens": 36,
+      "total_tokens": 484,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.778182029724121
+     },
+     "captureMs": 9613,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://login.namecheap-support.test/myaccount/login/",
+     "verdict": "impersonation",
+     "site": "namecheap-support.test",
+     "brand": "namecheap",
+     "reasons": [
+      "The page presents itself as Namecheap at 1.00 (Namecheap.com; Namecheap; favicon.ico).",
+      "It is served from namecheap-support.test, but Namecheap signs in on namecheap.com."
+     ]
+    },
+    {
+     "id": "naver",
+     "group": "live",
+     "truthBrand": "naver",
+     "claimed": "NAVER",
+     "confidence": 1,
+     "evidence": [
+      "NAVER text",
+      "NAVER Corp.",
+      "nidlogin.login favicon",
+      "네이버 ID"
+     ],
+     "modelMs": 11080,
+     "usage": {
+      "prompt_tokens": 371,
+      "completion_tokens": 40,
+      "total_tokens": 411,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.197273254394531
+     },
+     "captureMs": 6168,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://nid.naver.com/nidlogin.login",
+     "verdict": "legit",
+     "site": "naver.com",
+     "brand": "naver",
+     "reasons": [
+      "The page presents itself as Naver (NAVER text; NAVER Corp.; nidlogin.login favicon), and naver.com is one of Naver's domains."
+     ]
+    },
+    {
+     "id": "naver",
+     "group": "spoof:live",
+     "truthBrand": "naver",
+     "claimed": "NAVER",
+     "confidence": 1,
+     "evidence": [
+      "NAVER text",
+      "NAVER Corp.",
+      "nidlogin.login favicon",
+      "네이버 ID"
+     ],
+     "modelMs": 11080,
+     "usage": {
+      "prompt_tokens": 371,
+      "completion_tokens": 40,
+      "total_tokens": 411,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.197273254394531
+     },
+     "captureMs": 6168,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://naver-account-review.test/nidlogin.login",
+     "verdict": "impersonation",
+     "site": "naver-account-review.test",
+     "brand": "naver",
+     "reasons": [
+      "The page presents itself as Naver at 1.00 (NAVER text; NAVER Corp.; nidlogin.login favicon).",
+      "It is served from naver-account-review.test, but Naver signs in on naver.com."
+     ]
+    },
+    {
+     "id": "netflix",
+     "group": "live",
+     "truthBrand": "netflix",
+     "claimed": "Netflix",
+     "confidence": 1,
+     "evidence": [
+      "Netflix",
+      "Title: Netflix",
+      "nficon2023.ico",
+      "Favicon file"
+     ],
+     "modelMs": 12492,
+     "usage": {
+      "prompt_tokens": 405,
+      "completion_tokens": 37,
+      "total_tokens": 442,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.800000190734863
+     },
+     "captureMs": 6313,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://www.netflix.com/vn-en/login",
+     "verdict": "legit",
+     "site": "netflix.com",
+     "brand": "netflix",
+     "reasons": [
+      "The page presents itself as Netflix (Netflix; Title: Netflix; nficon2023.ico), and netflix.com is one of Netflix's domains."
+     ]
+    },
+    {
+     "id": "netflix",
+     "group": "spoof:live",
+     "truthBrand": "netflix",
+     "claimed": "Netflix",
+     "confidence": 1,
+     "evidence": [
+      "Netflix",
+      "Title: Netflix",
+      "nficon2023.ico",
+      "Favicon file"
+     ],
+     "modelMs": 12492,
+     "usage": {
+      "prompt_tokens": 405,
+      "completion_tokens": 37,
+      "total_tokens": 442,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.800000190734863
+     },
+     "captureMs": 6313,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://auth-netflix.cloud-portal.test/vn-en/login",
+     "verdict": "impersonation",
+     "site": "cloud-portal.test",
+     "brand": "netflix",
+     "reasons": [
+      "The page presents itself as Netflix at 1.00 (Netflix; Title: Netflix; nficon2023.ico).",
+      "It is served from cloud-portal.test, but Netflix signs in on netflix.com."
+     ]
+    },
+    {
+     "id": "netlify",
+     "group": "live",
+     "truthBrand": "netlify",
+     "claimed": "Netlify",
+     "confidence": 1,
+     "evidence": [
+      "Netlify",
+      "Log in | Netlify",
+      "favicon-prod-remote-default-16x16.png",
+      "By logging in to Netlify"
+     ],
+     "modelMs": 9859,
+     "usage": {
+      "prompt_tokens": 541,
+      "completion_tokens": 49,
+      "total_tokens": 590,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 17.065454483032227
+     },
+     "captureMs": 11611,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://app.netlify.com/login",
+     "verdict": "legit",
+     "site": "netlify.com",
+     "brand": "netlify",
+     "reasons": [
+      "The page presents itself as Netlify (Netlify; Log in | Netlify; favicon-prod-remote-default-16x16.png), and netlify.com is one of Netlify's domains."
+     ]
+    },
+    {
+     "id": "netlify",
+     "group": "spoof:live",
+     "truthBrand": "netlify",
+     "claimed": "Netlify",
+     "confidence": 1,
+     "evidence": [
+      "Netlify",
+      "Log in | Netlify",
+      "favicon-prod-remote-default-16x16.png",
+      "By logging in to Netlify"
+     ],
+     "modelMs": 9859,
+     "usage": {
+      "prompt_tokens": 541,
+      "completion_tokens": 49,
+      "total_tokens": 590,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 17.065454483032227
+     },
+     "captureMs": 11611,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://accounts-netlify.verify-login.test/login",
+     "verdict": "impersonation",
+     "site": "verify-login.test",
+     "brand": "netlify",
+     "reasons": [
+      "The page presents itself as Netlify at 1.00 (Netlify; Log in | Netlify; favicon-prod-remote-default-16x16.png).",
+      "It is served from verify-login.test, but Netlify signs in on netlify.com."
+     ]
+    },
+    {
+     "id": "nordvpn",
+     "group": "live",
+     "truthBrand": "nordvpn",
+     "claimed": "Nord",
+     "confidence": 1,
+     "evidence": [
+      "Nord Account logo",
+      "Nord Account",
+      "Nord Security",
+      "Nord Account title"
+     ],
+     "modelMs": 13500,
+     "usage": {
+      "prompt_tokens": 352,
+      "completion_tokens": 35,
+      "total_tokens": 387,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 11.344545364379883
+     },
+     "captureMs": 5156,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://my.nordaccount.com/",
+     "verdict": "unknown",
+     "site": "nordaccount.com",
+     "brand": null,
+     "reasons": [
+      "The page presents itself as \"Nord\", which is not in the catalog, so there is nothing to compare its domain with."
+     ]
+    },
+    {
+     "id": "nordvpn",
+     "group": "spoof:live",
+     "truthBrand": "nordvpn",
+     "claimed": "Nord",
+     "confidence": 1,
+     "evidence": [
+      "Nord Account logo",
+      "Nord Account",
+      "Nord Security",
+      "Nord Account title"
+     ],
+     "modelMs": 13500,
+     "usage": {
+      "prompt_tokens": 352,
+      "completion_tokens": 35,
+      "total_tokens": 387,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 11.344545364379883
+     },
+     "captureMs": 5156,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://nordvpn.com-secure-signin.test/",
+     "verdict": "unknown",
+     "site": "com-secure-signin.test",
+     "brand": null,
+     "reasons": [
+      "The page presents itself as \"Nord\", which is not in the catalog, so there is nothing to compare its domain with."
+     ]
+    },
+    {
+     "id": "notion",
+     "group": "live",
+     "truthBrand": "notion",
+     "claimed": "Notion",
+     "confidence": 1,
+     "evidence": [
+      "Notion",
+      "favicon.ico",
+      "Your AI workspace",
+      "Log in to your Notion account"
+     ],
+     "modelMs": 14908,
+     "usage": {
+      "prompt_tokens": 430,
+      "completion_tokens": 40,
+      "total_tokens": 470,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.645454406738281
+     },
+     "captureMs": 11129,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://app.notion.com/login",
+     "verdict": "impersonation",
+     "site": "notion.com",
+     "brand": "notion",
+     "reasons": [
+      "The page presents itself as Notion at 1.00 (Notion; favicon.ico; Your AI workspace).",
+      "It is served from notion.com, but Notion signs in on notion.so."
+     ]
+    },
+    {
+     "id": "notion",
+     "group": "spoof:live",
+     "truthBrand": "notion",
+     "claimed": "Notion",
+     "confidence": 1,
+     "evidence": [
+      "Notion",
+      "favicon.ico",
+      "Your AI workspace",
+      "Log in to your Notion account"
+     ],
+     "modelMs": 14908,
+     "usage": {
+      "prompt_tokens": 430,
+      "completion_tokens": 40,
+      "total_tokens": 470,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.645454406738281
+     },
+     "captureMs": 11129,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://login.notion-support.test/login",
+     "verdict": "impersonation",
+     "site": "notion-support.test",
+     "brand": "notion",
+     "reasons": [
+      "The page presents itself as Notion at 1.00 (Notion; favicon.ico; Your AI workspace).",
+      "It is served from notion-support.test, but Notion signs in on notion.so."
+     ]
+    },
+    {
+     "id": "npm",
+     "group": "live",
+     "truthBrand": "npm",
+     "claimed": "npm",
+     "confidence": 1,
+     "evidence": [
+      "npm",
+      "Sign In",
+      "Username",
+      "favicon"
+     ],
+     "modelMs": 12094,
+     "usage": {
+      "prompt_tokens": 421,
+      "completion_tokens": 31,
+      "total_tokens": 452,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.729090690612793
+     },
+     "captureMs": 3928,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://www.npmjs.com/login",
+     "verdict": "legit",
+     "site": "npmjs.com",
+     "brand": "npm",
+     "reasons": [
+      "The page presents itself as npm (npm; Sign In; Username), and npmjs.com is one of npm's domains."
+     ]
+    },
+    {
+     "id": "npm",
+     "group": "spoof:live",
+     "truthBrand": "npm",
+     "claimed": "npm",
+     "confidence": 1,
+     "evidence": [
+      "npm",
+      "Sign In",
+      "Username",
+      "favicon"
+     ],
+     "modelMs": 12094,
+     "usage": {
+      "prompt_tokens": 421,
+      "completion_tokens": 31,
+      "total_tokens": 452,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.729090690612793
+     },
+     "captureMs": 3928,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://npm-account-review.test/login",
+     "verdict": "impersonation",
+     "site": "npm-account-review.test",
+     "brand": "npm",
+     "reasons": [
+      "The page presents itself as npm at 1.00 (npm; Sign In; Username).",
+      "It is served from npm-account-review.test, but npm signs in on npmjs.com."
+     ]
+    },
+    {
+     "id": "okta",
+     "group": "live",
+     "truthBrand": "okta",
+     "claimed": "Okta",
+     "confidence": 1,
+     "evidence": [
+      "Okta org",
+      "okta_logo.svg",
+      ".okta.com",
+      "Powered by Okta"
+     ],
+     "modelMs": 16480,
+     "usage": {
+      "prompt_tokens": 438,
+      "completion_tokens": 41,
+      "total_tokens": 479,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.919092178344727
+     },
+     "captureMs": 3321,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://login.okta.com/",
+     "verdict": "legit",
+     "site": "okta.com",
+     "brand": "okta",
+     "reasons": [
+      "The page presents itself as Okta (Okta org; okta_logo.svg; .okta.com), and okta.com is one of Okta's domains."
+     ]
+    },
+    {
+     "id": "okta",
+     "group": "spoof:live",
+     "truthBrand": "okta",
+     "claimed": "Okta",
+     "confidence": 1,
+     "evidence": [
+      "Okta org",
+      "okta_logo.svg",
+      ".okta.com",
+      "Powered by Okta"
+     ],
+     "modelMs": 16480,
+     "usage": {
+      "prompt_tokens": 438,
+      "completion_tokens": 41,
+      "total_tokens": 479,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.919092178344727
+     },
+     "captureMs": 3321,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://auth-okta.cloud-portal.test/",
+     "verdict": "impersonation",
+     "site": "cloud-portal.test",
+     "brand": "okta",
+     "reasons": [
+      "The page presents itself as Okta at 1.00 (Okta org; okta_logo.svg; .okta.com).",
+      "It is served from cloud-portal.test, but Okta signs in on okta.com."
+     ]
+    },
+    {
+     "id": "proton",
+     "group": "live",
+     "truthBrand": "proton",
+     "claimed": "Proton",
+     "confidence": 1,
+     "evidence": [
+      "Proton Account",
+      "Proton Mail",
+      "Proton logo hint",
+      "Proton site name"
+     ],
+     "modelMs": 11131,
+     "usage": {
+      "prompt_tokens": 467,
+      "completion_tokens": 40,
+      "total_tokens": 507,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.55363655090332
+     },
+     "captureMs": 12731,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://account.proton.me/login",
+     "verdict": "legit",
+     "site": "proton.me",
+     "brand": "proton",
+     "reasons": [
+      "The page presents itself as Proton (Proton Account; Proton Mail; Proton logo hint), and proton.me is one of Proton's domains."
+     ]
+    },
+    {
+     "id": "proton",
+     "group": "spoof:live",
+     "truthBrand": "proton",
+     "claimed": "Proton",
+     "confidence": 1,
+     "evidence": [
+      "Proton Account",
+      "Proton Mail",
+      "Proton logo hint",
+      "Proton site name"
+     ],
+     "modelMs": 11131,
+     "usage": {
+      "prompt_tokens": 467,
+      "completion_tokens": 40,
+      "total_tokens": 507,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.55363655090332
+     },
+     "captureMs": 12731,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://proton-account-review.test/login",
+     "verdict": "impersonation",
+     "site": "proton-account-review.test",
+     "brand": "proton",
+     "reasons": [
+      "The page presents itself as Proton at 1.00 (Proton Account; Proton Mail; Proton logo hint).",
+      "It is served from proton-account-review.test, but Proton signs in on proton.me, protonmail.com."
+     ]
+    },
+    {
+     "id": "redis",
+     "group": "live",
+     "truthBrand": "redis",
+     "claimed": "Redis Cloud",
+     "confidence": 0.8,
+     "evidence": [
+      "Redis Cloud Console",
+      "favicon-48x48.ico",
+      "Sign in",
+      "Sign up"
+     ],
+     "modelMs": 8394,
+     "usage": {
+      "prompt_tokens": 380,
+      "completion_tokens": 41,
+      "total_tokens": 421,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.495454788208008
+     },
+     "captureMs": 11920,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://cloud.redis.io/",
+     "verdict": "legit",
+     "site": "redis.io",
+     "brand": "redis",
+     "reasons": [
+      "The page presents itself as Redis (Redis Cloud Console; favicon-48x48.ico; Sign in), and redis.io is one of Redis's domains."
+     ]
+    },
+    {
+     "id": "redis",
+     "group": "spoof:live",
+     "truthBrand": "redis",
+     "claimed": "Redis Cloud",
+     "confidence": 0.8,
+     "evidence": [
+      "Redis Cloud Console",
+      "favicon-48x48.ico",
+      "Sign in",
+      "Sign up"
+     ],
+     "modelMs": 8394,
+     "usage": {
+      "prompt_tokens": 380,
+      "completion_tokens": 41,
+      "total_tokens": 421,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.495454788208008
+     },
+     "captureMs": 11920,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://accounts-redis.verify-login.test/",
+     "verdict": "impersonation",
+     "site": "verify-login.test",
+     "brand": "redis",
+     "reasons": [
+      "The page presents itself as Redis at 0.80 (Redis Cloud Console; favicon-48x48.ico; Sign in).",
+      "It is served from verify-login.test, but Redis signs in on redis.io."
+     ]
+    },
+    {
+     "id": "revolut",
+     "group": "live",
+     "truthBrand": "revolut",
+     "claimed": "Revolut",
+     "confidence": 1,
+     "evidence": [
+      "Revolut logo",
+      "Revolut in title",
+      "Revolut favicon",
+      "Welcome back text"
+     ],
+     "modelMs": 10317,
+     "usage": {
+      "prompt_tokens": 473,
+      "completion_tokens": 44,
+      "total_tokens": 517,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 15.010000228881836
+     },
+     "captureMs": 7633,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://sso.revolut.com/signin",
+     "verdict": "legit",
+     "site": "revolut.com",
+     "brand": "revolut",
+     "reasons": [
+      "The page presents itself as Revolut (Revolut logo; Revolut in title; Revolut favicon), and revolut.com is one of Revolut's domains."
+     ]
+    },
+    {
+     "id": "revolut",
+     "group": "spoof:live",
+     "truthBrand": "revolut",
+     "claimed": "Revolut",
+     "confidence": 1,
+     "evidence": [
+      "Revolut logo",
+      "Revolut in title",
+      "Revolut favicon",
+      "Welcome back text"
+     ],
+     "modelMs": 10317,
+     "usage": {
+      "prompt_tokens": 473,
+      "completion_tokens": 44,
+      "total_tokens": 517,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 15.010000228881836
+     },
+     "captureMs": 7633,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://revolut.com-secure-signin.test/signin",
+     "verdict": "impersonation",
+     "site": "com-secure-signin.test",
+     "brand": "revolut",
+     "reasons": [
+      "The page presents itself as Revolut at 1.00 (Revolut logo; Revolut in title; Revolut favicon).",
+      "It is served from com-secure-signin.test, but Revolut signs in on revolut.com."
+     ]
+    },
+    {
+     "id": "robinhood",
+     "group": "live",
+     "truthBrand": "robinhood",
+     "claimed": "Robinhood",
+     "confidence": 1,
+     "evidence": [
+      "Robinhood title",
+      "Robinhood favicon",
+      "Log in to Robinhood text",
+      "Create an account | Robinhood"
+     ],
+     "modelMs": 7397,
+     "usage": {
+      "prompt_tokens": 397,
+      "completion_tokens": 45,
+      "total_tokens": 442,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.221818923950195
+     },
+     "captureMs": 9856,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://robinhood.com/login",
+     "verdict": "legit",
+     "site": "robinhood.com",
+     "brand": "robinhood",
+     "reasons": [
+      "The page presents itself as Robinhood (Robinhood title; Robinhood favicon; Log in to Robinhood text), and robinhood.com is one of Robinhood's domains."
+     ]
+    },
+    {
+     "id": "robinhood",
+     "group": "spoof:live",
+     "truthBrand": "robinhood",
+     "claimed": "Robinhood",
+     "confidence": 1,
+     "evidence": [
+      "Robinhood title",
+      "Robinhood favicon",
+      "Log in to Robinhood text",
+      "Create an account | Robinhood"
+     ],
+     "modelMs": 7397,
+     "usage": {
+      "prompt_tokens": 397,
+      "completion_tokens": 45,
+      "total_tokens": 442,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.221818923950195
+     },
+     "captureMs": 9856,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://login.robinhood-support.test/login",
+     "verdict": "impersonation",
+     "site": "robinhood-support.test",
+     "brand": "robinhood",
+     "reasons": [
+      "The page presents itself as Robinhood at 1.00 (Robinhood title; Robinhood favicon; Log in to Robinhood text).",
+      "It is served from robinhood-support.test, but Robinhood signs in on robinhood.com."
+     ]
+    },
+    {
+     "id": "sentry",
+     "group": "live",
+     "truthBrand": "sentry",
+     "claimed": "Sentry",
+     "confidence": 1,
+     "evidence": [
+      "Sentry",
+      "Sign in to Sentry",
+      "Log in to Sentry",
+      "favicon.png"
+     ],
+     "modelMs": 6385,
+     "usage": {
+      "prompt_tokens": 366,
+      "completion_tokens": 38,
+      "total_tokens": 404,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 11.920000076293945
+     },
+     "captureMs": 6543,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://sentry.io/auth/login/",
+     "verdict": "legit",
+     "site": "sentry.io",
+     "brand": "sentry",
+     "reasons": [
+      "The page presents itself as Sentry (Sentry; Sign in to Sentry; Log in to Sentry), and sentry.io is one of Sentry's domains."
+     ]
+    },
+    {
+     "id": "sentry",
+     "group": "spoof:live",
+     "truthBrand": "sentry",
+     "claimed": "Sentry",
+     "confidence": 1,
+     "evidence": [
+      "Sentry",
+      "Sign in to Sentry",
+      "Log in to Sentry",
+      "favicon.png"
+     ],
+     "modelMs": 6385,
+     "usage": {
+      "prompt_tokens": 366,
+      "completion_tokens": 38,
+      "total_tokens": 404,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 11.920000076293945
+     },
+     "captureMs": 6543,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://auth-sentry.cloud-portal.test/auth/login/",
+     "verdict": "impersonation",
+     "site": "cloud-portal.test",
+     "brand": "sentry",
+     "reasons": [
+      "The page presents itself as Sentry at 1.00 (Sentry; Sign in to Sentry; Log in to Sentry).",
+      "It is served from cloud-portal.test, but Sentry signs in on sentry.io."
+     ]
+    },
+    {
+     "id": "shopee",
+     "group": "live",
+     "truthBrand": "shopee",
+     "claimed": "Shopee",
+     "confidence": 1,
+     "evidence": [
+      "Shopee Việt Nam",
+      "Shopee's Terms of Service & Privacy Policy",
+      "Shopee Mall",
+      "About Shopee"
+     ],
+     "modelMs": 6883,
+     "usage": {
+      "prompt_tokens": 484,
+      "completion_tokens": 44,
+      "total_tokens": 528,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 15.280000686645508
+     },
+     "captureMs": 6426,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://shopee.vn/buyer/login",
+     "verdict": "impersonation",
+     "site": "shopee.vn",
+     "brand": "shopee",
+     "reasons": [
+      "The page presents itself as Shopee at 1.00 (Shopee Việt Nam; Shopee's Terms of Service & Privacy Policy; Shopee Mall).",
+      "It is served from shopee.vn, but Shopee signs in on shopee.com."
+     ]
+    },
+    {
+     "id": "shopee",
+     "group": "spoof:live",
+     "truthBrand": "shopee",
+     "claimed": "Shopee",
+     "confidence": 1,
+     "evidence": [
+      "Shopee Việt Nam",
+      "Shopee's Terms of Service & Privacy Policy",
+      "Shopee Mall",
+      "About Shopee"
+     ],
+     "modelMs": 6883,
+     "usage": {
+      "prompt_tokens": 484,
+      "completion_tokens": 44,
+      "total_tokens": 528,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 15.280000686645508
+     },
+     "captureMs": 6426,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://accounts-shopee.verify-login.test/buyer/login",
+     "verdict": "impersonation",
+     "site": "verify-login.test",
+     "brand": "shopee",
+     "reasons": [
+      "The page presents itself as Shopee at 1.00 (Shopee Việt Nam; Shopee's Terms of Service & Privacy Policy; Shopee Mall).",
+      "It is served from verify-login.test, but Shopee signs in on shopee.com."
+     ]
+    },
+    {
+     "id": "snapchat",
+     "group": "live",
+     "truthBrand": "snapchat",
+     "claimed": "Snapchat",
+     "confidence": 1,
+     "evidence": [
+      "Snapchat",
+      "Snap Inc.",
+      "favicon-192x192.png",
+      "Log in to Snapchat"
+     ],
+     "modelMs": 7907,
+     "usage": {
+      "prompt_tokens": 457,
+      "completion_tokens": 40,
+      "total_tokens": 497,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.308181762695312
+     },
+     "captureMs": 7558,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://accounts.snapchat.com/v2/login",
+     "verdict": "legit",
+     "site": "snapchat.com",
+     "brand": "snapchat",
+     "reasons": [
+      "The page presents itself as Snapchat (Snapchat; Snap Inc.; favicon-192x192.png), and snapchat.com is one of Snapchat's domains."
+     ]
+    },
+    {
+     "id": "snapchat",
+     "group": "spoof:live",
+     "truthBrand": "snapchat",
+     "claimed": "Snapchat",
+     "confidence": 1,
+     "evidence": [
+      "Snapchat",
+      "Snap Inc.",
+      "favicon-192x192.png",
+      "Log in to Snapchat"
+     ],
+     "modelMs": 7907,
+     "usage": {
+      "prompt_tokens": 457,
+      "completion_tokens": 40,
+      "total_tokens": 497,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.308181762695312
+     },
+     "captureMs": 7558,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://snapchat-account-review.test/v2/login",
+     "verdict": "impersonation",
+     "site": "snapchat-account-review.test",
+     "brand": "snapchat",
+     "reasons": [
+      "The page presents itself as Snapchat at 1.00 (Snapchat; Snap Inc.; favicon-192x192.png).",
+      "It is served from snapchat-account-review.test, but Snapchat signs in on snapchat.com."
+     ]
+    },
+    {
+     "id": "spotify",
+     "group": "live",
+     "truthBrand": "spotify",
+     "claimed": "Spotify",
+     "confidence": 1,
+     "evidence": [
+      "Spotify",
+      "Logo hints: Spotify",
+      "Title: Spotify",
+      "Favicon file: favicon.png"
+     ],
+     "modelMs": 11361,
+     "usage": {
+      "prompt_tokens": 367,
+      "completion_tokens": 40,
+      "total_tokens": 407,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.099091529846191
+     },
+     "captureMs": 5530,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://accounts.spotify.com/en/login",
+     "verdict": "legit",
+     "site": "spotify.com",
+     "brand": "spotify",
+     "reasons": [
+      "The page presents itself as Spotify (Spotify; Logo hints: Spotify; Title: Spotify), and spotify.com is one of Spotify's domains."
+     ]
+    },
+    {
+     "id": "spotify",
+     "group": "spoof:live",
+     "truthBrand": "spotify",
+     "claimed": "Spotify",
+     "confidence": 1,
+     "evidence": [
+      "Spotify",
+      "Logo hints: Spotify",
+      "Title: Spotify",
+      "Favicon file: favicon.png"
+     ],
+     "modelMs": 11361,
+     "usage": {
+      "prompt_tokens": 367,
+      "completion_tokens": 40,
+      "total_tokens": 407,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.099091529846191
+     },
+     "captureMs": 5530,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://auth-spotify.cloud-portal.test/en/login",
+     "verdict": "impersonation",
+     "site": "cloud-portal.test",
+     "brand": "spotify",
+     "reasons": [
+      "The page presents itself as Spotify at 1.00 (Spotify; Logo hints: Spotify; Title: Spotify).",
+      "It is served from cloud-portal.test, but Spotify signs in on spotify.com."
+     ]
+    },
+    {
+     "id": "stripe",
+     "group": "live",
+     "truthBrand": "stripe",
+     "claimed": "Stripe",
+     "confidence": 1,
+     "evidence": [
+      "Stripe Login",
+      "Stripe Dashboard",
+      "Sign in to your account",
+      "© Stripe"
+     ],
+     "modelMs": 9017,
+     "usage": {
+      "prompt_tokens": 434,
+      "completion_tokens": 36,
+      "total_tokens": 470,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.43454647064209
+     },
+     "captureMs": 8139,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://dashboard.stripe.com/login",
+     "verdict": "legit",
+     "site": "stripe.com",
+     "brand": "stripe",
+     "reasons": [
+      "The page presents itself as Stripe (Stripe Login; Stripe Dashboard; Sign in to your account), and stripe.com is one of Stripe's domains."
+     ]
+    },
+    {
+     "id": "stripe",
+     "group": "spoof:live",
+     "truthBrand": "stripe",
+     "claimed": "Stripe",
+     "confidence": 1,
+     "evidence": [
+      "Stripe Login",
+      "Stripe Dashboard",
+      "Sign in to your account",
+      "© Stripe"
+     ],
+     "modelMs": 9017,
+     "usage": {
+      "prompt_tokens": 434,
+      "completion_tokens": 36,
+      "total_tokens": 470,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.43454647064209
+     },
+     "captureMs": 8139,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://stripe.com-secure-signin.test/login",
+     "verdict": "impersonation",
+     "site": "com-secure-signin.test",
+     "brand": "stripe",
+     "reasons": [
+      "The page presents itself as Stripe at 1.00 (Stripe Login; Stripe Dashboard; Sign in to your account).",
+      "It is served from com-secure-signin.test, but Stripe signs in on stripe.com."
+     ]
+    },
+    {
+     "id": "tailscale",
+     "group": "live",
+     "truthBrand": "tailscale",
+     "claimed": "Tailscale",
+     "confidence": 1,
+     "evidence": [
+      "Tailscale.com",
+      "Tailscale's Terms of Service",
+      "Favicon file: login",
+      "Title: Tailscale"
+     ],
+     "modelMs": 7135,
+     "usage": {
+      "prompt_tokens": 396,
+      "completion_tokens": 48,
+      "total_tokens": 444,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.429091453552246
+     },
+     "captureMs": 4426,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://login.tailscale.com/login",
+     "verdict": "legit",
+     "site": "tailscale.com",
+     "brand": "tailscale",
+     "reasons": [
+      "The page presents itself as Tailscale (Tailscale.com; Tailscale's Terms of Service; Favicon file: login), and tailscale.com is one of Tailscale's domains."
+     ]
+    },
+    {
+     "id": "tailscale",
+     "group": "spoof:live",
+     "truthBrand": "tailscale",
+     "claimed": "Tailscale",
+     "confidence": 1,
+     "evidence": [
+      "Tailscale.com",
+      "Tailscale's Terms of Service",
+      "Favicon file: login",
+      "Title: Tailscale"
+     ],
+     "modelMs": 7135,
+     "usage": {
+      "prompt_tokens": 396,
+      "completion_tokens": 48,
+      "total_tokens": 444,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.429091453552246
+     },
+     "captureMs": 4426,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://login.tailscale-support.test/login",
+     "verdict": "impersonation",
+     "site": "tailscale-support.test",
+     "brand": "tailscale",
+     "reasons": [
+      "The page presents itself as Tailscale at 1.00 (Tailscale.com; Tailscale's Terms of Service; Favicon file: login).",
+      "It is served from tailscale-support.test, but Tailscale signs in on tailscale.com."
+     ]
+    },
+    {
+     "id": "telegram",
+     "group": "live",
+     "truthBrand": "telegram",
+     "claimed": "Telegram",
+     "confidence": 1,
+     "evidence": [
+      "Telegram Web",
+      "Telegram app",
+      "Site name: Telegram Web"
+     ],
+     "modelMs": 9831,
+     "usage": {
+      "prompt_tokens": 401,
+      "completion_tokens": 32,
+      "total_tokens": 433,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.315454483032227
+     },
+     "captureMs": 12581,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://web.telegram.org/k/",
+     "verdict": "legit",
+     "site": "telegram.org",
+     "brand": "telegram",
+     "reasons": [
+      "The page presents itself as Telegram (Telegram Web; Telegram app; Site name: Telegram Web), and telegram.org is one of Telegram's domains."
+     ]
+    },
+    {
+     "id": "telegram",
+     "group": "spoof:live",
+     "truthBrand": "telegram",
+     "claimed": "Telegram",
+     "confidence": 1,
+     "evidence": [
+      "Telegram Web",
+      "Telegram app",
+      "Site name: Telegram Web"
+     ],
+     "modelMs": 9831,
+     "usage": {
+      "prompt_tokens": 401,
+      "completion_tokens": 32,
+      "total_tokens": 433,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.315454483032227
+     },
+     "captureMs": 12581,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://telegram-account-review.test/k/",
+     "verdict": "impersonation",
+     "site": "telegram-account-review.test",
+     "brand": "telegram",
+     "reasons": [
+      "The page presents itself as Telegram at 1.00 (Telegram Web; Telegram app; Site name: Telegram Web).",
+      "It is served from telegram-account-review.test, but Telegram signs in on telegram.org."
+     ]
+    },
+    {
+     "id": "tiktok",
+     "group": "live",
+     "truthBrand": "tiktok",
+     "claimed": "TikTok",
+     "confidence": 1,
+     "evidence": [
+      "TikTok in title",
+      "TikTok in headings",
+      "TikTok in visible text",
+      "TikTok favicon"
+     ],
+     "modelMs": 7300,
+     "usage": {
+      "prompt_tokens": 438,
+      "completion_tokens": 43,
+      "total_tokens": 481,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.073637008666992
+     },
+     "captureMs": 11068,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://www.tiktok.com/login",
+     "verdict": "legit",
+     "site": "tiktok.com",
+     "brand": "tiktok",
+     "reasons": [
+      "The page presents itself as TikTok (TikTok in title; TikTok in headings; TikTok in visible text), and tiktok.com is one of TikTok's domains."
+     ]
+    },
+    {
+     "id": "tiktok",
+     "group": "spoof:live",
+     "truthBrand": "tiktok",
+     "claimed": "TikTok",
+     "confidence": 1,
+     "evidence": [
+      "TikTok in title",
+      "TikTok in headings",
+      "TikTok in visible text",
+      "TikTok favicon"
+     ],
+     "modelMs": 7300,
+     "usage": {
+      "prompt_tokens": 438,
+      "completion_tokens": 43,
+      "total_tokens": 481,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.073637008666992
+     },
+     "captureMs": 11068,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://auth-tiktok.cloud-portal.test/login",
+     "verdict": "impersonation",
+     "site": "cloud-portal.test",
+     "brand": "tiktok",
+     "reasons": [
+      "The page presents itself as TikTok at 1.00 (TikTok in title; TikTok in headings; TikTok in visible text).",
+      "It is served from cloud-portal.test, but TikTok signs in on tiktok.com."
+     ]
+    },
+    {
+     "id": "twitch",
+     "group": "live",
+     "truthBrand": "twitch",
+     "claimed": "Twitch",
+     "confidence": 1,
+     "evidence": [
+      "Twitch",
+      "Log In - Twitch",
+      "Twitch",
+      "favicon-32-5c61aa63605bca4f740d.png"
+     ],
+     "modelMs": 10726,
+     "usage": {
+      "prompt_tokens": 420,
+      "completion_tokens": 51,
+      "total_tokens": 471,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.250000953674316
+     },
+     "captureMs": 82588,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://www.twitch.tv/login",
+     "verdict": "legit",
+     "site": "twitch.tv",
+     "brand": "twitch",
+     "reasons": [
+      "The page presents itself as Twitch (Twitch; Log In - Twitch; Twitch), and twitch.tv is one of Twitch's domains."
+     ]
+    },
+    {
+     "id": "twitch",
+     "group": "spoof:live",
+     "truthBrand": "twitch",
+     "claimed": "Twitch",
+     "confidence": 1,
+     "evidence": [
+      "Twitch",
+      "Log In - Twitch",
+      "Twitch",
+      "favicon-32-5c61aa63605bca4f740d.png"
+     ],
+     "modelMs": 10726,
+     "usage": {
+      "prompt_tokens": 420,
+      "completion_tokens": 51,
+      "total_tokens": 471,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.250000953674316
+     },
+     "captureMs": 82588,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://accounts-twitch.verify-login.test/login",
+     "verdict": "impersonation",
+     "site": "verify-login.test",
+     "brand": "twitch",
+     "reasons": [
+      "The page presents itself as Twitch at 1.00 (Twitch; Log In - Twitch; Twitch).",
+      "It is served from verify-login.test, but Twitch signs in on twitch.tv."
+     ]
+    },
+    {
+     "id": "vk",
+     "group": "live",
+     "truthBrand": "vk",
+     "claimed": "VK",
+     "confidence": 1,
+     "evidence": [
+      "VK in title",
+      "Sign in to VK heading",
+      "VK favicon",
+      "VK copyright text"
+     ],
+     "modelMs": 7669,
+     "usage": {
+      "prompt_tokens": 398,
+      "completion_tokens": 39,
+      "total_tokens": 437,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.78272819519043
+     },
+     "captureMs": 13175,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://vk.ru/",
+     "verdict": "impersonation",
+     "site": "vk.ru",
+     "brand": "vk",
+     "reasons": [
+      "The page presents itself as VK at 1.00 (VK in title; Sign in to VK heading; VK favicon).",
+      "It is served from vk.ru, but VK signs in on vk.com."
+     ]
+    },
+    {
+     "id": "vk",
+     "group": "spoof:live",
+     "truthBrand": "vk",
+     "claimed": "VK",
+     "confidence": 1,
+     "evidence": [
+      "VK in title",
+      "Sign in to VK heading",
+      "VK favicon",
+      "VK copyright text"
+     ],
+     "modelMs": 7669,
+     "usage": {
+      "prompt_tokens": 398,
+      "completion_tokens": 39,
+      "total_tokens": 437,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.78272819519043
+     },
+     "captureMs": 13175,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://vk.com-secure-signin.test/",
+     "verdict": "impersonation",
+     "site": "com-secure-signin.test",
+     "brand": "vk",
+     "reasons": [
+      "The page presents itself as VK at 1.00 (VK in title; Sign in to VK heading; VK favicon).",
+      "It is served from com-secure-signin.test, but VK signs in on vk.com."
+     ]
+    },
+    {
+     "id": "wise",
+     "group": "live",
+     "truthBrand": "wise",
+     "claimed": "Wise",
+     "confidence": 1,
+     "evidence": [
+      "Wise",
+      "Wise Payments Limited",
+      "Login with Google/Facebook/Apple buttons in context",
+      "Logo hints: Wise"
+     ],
+     "modelMs": 6603,
+     "usage": {
+      "prompt_tokens": 436,
+      "completion_tokens": 43,
+      "total_tokens": 479,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.024545669555664
+     },
+     "captureMs": 12139,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://wise.com/login",
+     "verdict": "impersonation",
+     "site": "wise.com",
+     "brand": "wise",
+     "reasons": [
+      "The page presents itself as Wise at 1.00 (Wise; Wise Payments Limited; Login with Google/Facebook/Apple buttons in context).",
+      "It is served from wise.com, but Wise signs in on wise.design."
+     ]
+    },
+    {
+     "id": "wise",
+     "group": "spoof:live",
+     "truthBrand": "wise",
+     "claimed": "Wise",
+     "confidence": 1,
+     "evidence": [
+      "Wise",
+      "Wise Payments Limited",
+      "Login with Google/Facebook/Apple buttons in context",
+      "Logo hints: Wise"
+     ],
+     "modelMs": 6603,
+     "usage": {
+      "prompt_tokens": 436,
+      "completion_tokens": 43,
+      "total_tokens": 479,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.024545669555664
+     },
+     "captureMs": 12139,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://login.wise-support.test/login",
+     "verdict": "impersonation",
+     "site": "wise-support.test",
+     "brand": "wise",
+     "reasons": [
+      "The page presents itself as Wise at 1.00 (Wise; Wise Payments Limited; Login with Google/Facebook/Apple buttons in context).",
+      "It is served from wise-support.test, but Wise signs in on wise.design."
+     ]
+    },
+    {
+     "id": "wordpress",
+     "group": "live",
+     "truthBrand": "wordpress",
+     "claimed": "WordPress",
+     "confidence": 1,
+     "evidence": [
+      "WordPress.org Login",
+      "Powered by WordPress",
+      "Log in to your WordPress.org account",
+      "WordPress.org English"
+     ],
+     "modelMs": 8025,
+     "usage": {
+      "prompt_tokens": 511,
+      "completion_tokens": 47,
+      "total_tokens": 558,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 16.174545288085938
+     },
+     "captureMs": 6776,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://login.wordpress.org/",
+     "verdict": "legit",
+     "site": "wordpress.org",
+     "brand": "wordpress",
+     "reasons": [
+      "The page presents itself as WordPress (WordPress.org Login; Powered by WordPress; Log in to your WordPress.org account), and wordpress.org is one of WordPress's domains."
+     ]
+    },
+    {
+     "id": "wordpress",
+     "group": "spoof:live",
+     "truthBrand": "wordpress",
+     "claimed": "WordPress",
+     "confidence": 1,
+     "evidence": [
+      "WordPress.org Login",
+      "Powered by WordPress",
+      "Log in to your WordPress.org account",
+      "WordPress.org English"
+     ],
+     "modelMs": 8025,
+     "usage": {
+      "prompt_tokens": 511,
+      "completion_tokens": 47,
+      "total_tokens": 558,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 16.174545288085938
+     },
+     "captureMs": 6776,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://wordpress-account-review.test/",
+     "verdict": "impersonation",
+     "site": "wordpress-account-review.test",
+     "brand": "wordpress",
+     "reasons": [
+      "The page presents itself as WordPress at 1.00 (WordPress.org Login; Powered by WordPress; Log in to your WordPress.org account).",
+      "It is served from wordpress-account-review.test, but WordPress signs in on wordpress.org."
+     ]
+    },
+    {
+     "id": "yandex",
+     "group": "live",
+     "truthBrand": "yandex",
+     "claimed": "Yandex",
+     "confidence": 1,
+     "evidence": [
+      "Yandex ID",
+      "Yandex favicon",
+      "Learn more about Yandex services",
+      "© 2026, Yandex"
+     ],
+     "modelMs": 6854,
+     "usage": {
+      "prompt_tokens": 383,
+      "completion_tokens": 44,
+      "total_tokens": 427,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.800909042358398
+     },
+     "captureMs": 12036,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://passport.yandex.com/pwl-yandex/auth/add",
+     "verdict": "legit",
+     "site": "yandex.com",
+     "brand": "yandex",
+     "reasons": [
+      "The page presents itself as Yandex (Yandex ID; Yandex favicon; Learn more about Yandex services), and yandex.com is one of Yandex's domains."
+     ]
+    },
+    {
+     "id": "yandex",
+     "group": "spoof:live",
+     "truthBrand": "yandex",
+     "claimed": "Yandex",
+     "confidence": 1,
+     "evidence": [
+      "Yandex ID",
+      "Yandex favicon",
+      "Learn more about Yandex services",
+      "© 2026, Yandex"
+     ],
+     "modelMs": 6854,
+     "usage": {
+      "prompt_tokens": 383,
+      "completion_tokens": 44,
+      "total_tokens": 427,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 12.800909042358398
+     },
+     "captureMs": 12036,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://accounts-yandex.verify-login.test/pwl-yandex/auth/add",
+     "verdict": "impersonation",
+     "site": "verify-login.test",
+     "brand": "yandex",
+     "reasons": [
+      "The page presents itself as Yandex at 1.00 (Yandex ID; Yandex favicon; Learn more about Yandex services).",
+      "It is served from verify-login.test, but Yandex signs in on yandex.com, yandex.ru."
+     ]
+    },
+    {
+     "id": "zoho",
+     "group": "live",
+     "truthBrand": "zoho",
+     "claimed": "Zoho",
+     "confidence": 1,
+     "evidence": [
+      "Zoho Accounts",
+      "Zoho Corporation Pvt. Ltd.",
+      "Zoho"
+     ],
+     "modelMs": 5276,
+     "usage": {
+      "prompt_tokens": 450,
+      "completion_tokens": 36,
+      "total_tokens": 486,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.82727336883545
+     },
+     "captureMs": 7260,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://accounts.zoho.com/signin",
+     "verdict": "legit",
+     "site": "zoho.com",
+     "brand": "zoho",
+     "reasons": [
+      "The page presents itself as Zoho (Zoho Accounts; Zoho Corporation Pvt. Ltd.; Zoho), and zoho.com is one of Zoho's domains."
+     ]
+    },
+    {
+     "id": "zoho",
+     "group": "spoof:live",
+     "truthBrand": "zoho",
+     "claimed": "Zoho",
+     "confidence": 1,
+     "evidence": [
+      "Zoho Accounts",
+      "Zoho Corporation Pvt. Ltd.",
+      "Zoho"
+     ],
+     "modelMs": 5276,
+     "usage": {
+      "prompt_tokens": 450,
+      "completion_tokens": 36,
+      "total_tokens": 486,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.82727336883545
+     },
+     "captureMs": 7260,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://zoho.com-secure-signin.test/signin",
+     "verdict": "impersonation",
+     "site": "com-secure-signin.test",
+     "brand": "zoho",
+     "reasons": [
+      "The page presents itself as Zoho at 1.00 (Zoho Accounts; Zoho Corporation Pvt. Ltd.; Zoho).",
+      "It is served from com-secure-signin.test, but Zoho signs in on zoho.com."
+     ]
+    },
+    {
+     "id": "facebook",
+     "group": "no-domains",
+     "truthBrand": "facebook",
+     "claimed": "Facebook",
+     "confidence": 1,
+     "evidence": [
+      "Facebook title",
+      "Meta logo",
+      "Log in to Facebook text",
+      "Facebook favicon"
+     ],
+     "modelMs": 8122,
+     "usage": {
+      "prompt_tokens": 418,
+      "completion_tokens": 37,
+      "total_tokens": 455,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.119091033935547
+     },
+     "captureMs": 4628,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://www.facebook.com/login",
+     "verdict": "unknown",
+     "site": "facebook.com",
+     "brand": "facebook",
+     "reasons": [
+      "The page presents itself as Facebook, but the catalog lists no domains for Facebook."
+     ]
+    },
+    {
+     "id": "facebook",
+     "group": "spoof:no-domains",
+     "truthBrand": "facebook",
+     "claimed": "Facebook",
+     "confidence": 1,
+     "evidence": [
+      "Facebook title",
+      "Meta logo",
+      "Log in to Facebook text",
+      "Facebook favicon"
+     ],
+     "modelMs": 8122,
+     "usage": {
+      "prompt_tokens": 418,
+      "completion_tokens": 37,
+      "total_tokens": 455,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.119091033935547
+     },
+     "captureMs": 4628,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://facebook-account-review.test/login",
+     "verdict": "unknown",
+     "site": "facebook-account-review.test",
+     "brand": "facebook",
+     "reasons": [
+      "The page presents itself as Facebook, but the catalog lists no domains for Facebook."
+     ]
+    },
+    {
+     "id": "instagram",
+     "group": "no-domains",
+     "truthBrand": "instagram",
+     "claimed": "Instagram",
+     "confidence": 1,
+     "evidence": [
+      "Instagram",
+      "Meta logo",
+      "Log in with Facebook",
+      "Title: Instagram"
+     ],
+     "modelMs": 8259,
+     "usage": {
+      "prompt_tokens": 453,
+      "completion_tokens": 35,
+      "total_tokens": 488,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.823637008666992
+     },
+     "captureMs": 5226,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://www.instagram.com/accounts/login/",
+     "verdict": "unknown",
+     "site": "instagram.com",
+     "brand": "instagram",
+     "reasons": [
+      "The page presents itself as Instagram, but the catalog lists no domains for Instagram."
+     ]
+    },
+    {
+     "id": "instagram",
+     "group": "spoof:no-domains",
+     "truthBrand": "instagram",
+     "claimed": "Instagram",
+     "confidence": 1,
+     "evidence": [
+      "Instagram",
+      "Meta logo",
+      "Log in with Facebook",
+      "Title: Instagram"
+     ],
+     "modelMs": 8259,
+     "usage": {
+      "prompt_tokens": 453,
+      "completion_tokens": 35,
+      "total_tokens": 488,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.823637008666992
+     },
+     "captureMs": 5226,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://auth-instagram.cloud-portal.test/accounts/login/",
+     "verdict": "unknown",
+     "site": "cloud-portal.test",
+     "brand": "instagram",
+     "reasons": [
+      "The page presents itself as Instagram, but the catalog lists no domains for Instagram."
+     ]
+    },
+    {
+     "id": "openai",
+     "group": "no-domains",
+     "truthBrand": "openai",
+     "claimed": "ChatGPT",
+     "confidence": 1,
+     "evidence": [
+      "ChatGPT logo",
+      "ChatGPT Terms of use",
+      "Title: Get started | ChatGPT",
+      "Headings: Log in or sign up"
+     ],
+     "modelMs": 6282,
+     "usage": {
+      "prompt_tokens": 414,
+      "completion_tokens": 49,
+      "total_tokens": 463,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.948182106018066
+     },
+     "captureMs": 5820,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://chatgpt.com/auth/login",
+     "verdict": "unknown",
+     "site": "chatgpt.com",
+     "brand": "openai",
+     "reasons": [
+      "The page presents itself as OpenAI, but the catalog lists no domains for OpenAI."
+     ]
+    },
+    {
+     "id": "openai",
+     "group": "spoof:no-domains",
+     "truthBrand": "openai",
+     "claimed": "ChatGPT",
+     "confidence": 1,
+     "evidence": [
+      "ChatGPT logo",
+      "ChatGPT Terms of use",
+      "Title: Get started | ChatGPT",
+      "Headings: Log in or sign up"
+     ],
+     "modelMs": 6282,
+     "usage": {
+      "prompt_tokens": 414,
+      "completion_tokens": 49,
+      "total_tokens": 463,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.948182106018066
+     },
+     "captureMs": 5820,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://accounts-openai.verify-login.test/auth/login",
+     "verdict": "unknown",
+     "site": "verify-login.test",
+     "brand": "openai",
+     "reasons": [
+      "The page presents itself as OpenAI, but the catalog lists no domains for OpenAI."
+     ]
+    },
+    {
+     "id": "atlassian",
+     "group": "no-domains",
+     "truthBrand": "atlassian",
+     "claimed": "Atlassian",
+     "confidence": 0.9,
+     "evidence": [
+      "Atlassian account",
+      "key-logo.6d28e5f0.svg",
+      "One account , for Jira, Confluence, Trello and more",
+      "favicon.9500e2a9.ico"
+     ],
+     "modelMs": 6561,
+     "usage": {
+      "prompt_tokens": 457,
+      "completion_tokens": 65,
+      "total_tokens": 522,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 16.239999771118164
+     },
+     "captureMs": 11860,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://id.atlassian.com/login",
+     "verdict": "unknown",
+     "site": "atlassian.com",
+     "brand": "atlassian",
+     "reasons": [
+      "The page presents itself as Atlassian, but the catalog lists no domains for Atlassian."
+     ]
+    },
+    {
+     "id": "atlassian",
+     "group": "spoof:no-domains",
+     "truthBrand": "atlassian",
+     "claimed": "Atlassian",
+     "confidence": 0.9,
+     "evidence": [
+      "Atlassian account",
+      "key-logo.6d28e5f0.svg",
+      "One account , for Jira, Confluence, Trello and more",
+      "favicon.9500e2a9.ico"
+     ],
+     "modelMs": 6561,
+     "usage": {
+      "prompt_tokens": 457,
+      "completion_tokens": 65,
+      "total_tokens": 522,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 16.239999771118164
+     },
+     "captureMs": 11860,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://atlassian.com-secure-signin.test/login",
+     "verdict": "unknown",
+     "site": "com-secure-signin.test",
+     "brand": "atlassian",
+     "reasons": [
+      "The page presents itself as Atlassian, but the catalog lists no domains for Atlassian."
+     ]
+    },
+    {
+     "id": "figma",
+     "group": "no-domains",
+     "truthBrand": "figma",
+     "claimed": "Figma",
+     "confidence": 1,
+     "evidence": [
+      "Figma",
+      "Sign in to Figma",
+      "Site name: Figma",
+      "Login | Figma"
+     ],
+     "modelMs": 11759,
+     "usage": {
+      "prompt_tokens": 524,
+      "completion_tokens": 42,
+      "total_tokens": 566,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 16.10727310180664
+     },
+     "captureMs": 9338,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://www.figma.com/login",
+     "verdict": "unknown",
+     "site": "figma.com",
+     "brand": "figma",
+     "reasons": [
+      "The page presents itself as Figma, but the catalog lists no domains for Figma."
+     ]
+    },
+    {
+     "id": "figma",
+     "group": "spoof:no-domains",
+     "truthBrand": "figma",
+     "claimed": "Figma",
+     "confidence": 1,
+     "evidence": [
+      "Figma",
+      "Sign in to Figma",
+      "Site name: Figma",
+      "Login | Figma"
+     ],
+     "modelMs": 11759,
+     "usage": {
+      "prompt_tokens": 524,
+      "completion_tokens": 42,
+      "total_tokens": 566,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 16.10727310180664
+     },
+     "captureMs": 9338,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://login.figma-support.test/login",
+     "verdict": "unknown",
+     "site": "figma-support.test",
+     "brand": "figma",
+     "reasons": [
+      "The page presents itself as Figma, but the catalog lists no domains for Figma."
+     ]
+    },
+    {
+     "id": "vercel",
+     "group": "no-domains",
+     "truthBrand": "vercel",
+     "claimed": "Vercel",
+     "confidence": 1,
+     "evidence": [
+      "Vercel Logo",
+      "Log in to Vercel",
+      "Vercel",
+      "favicon.ico"
+     ],
+     "modelMs": 8900,
+     "usage": {
+      "prompt_tokens": 452,
+      "completion_tokens": 42,
+      "total_tokens": 494,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.34000015258789
+     },
+     "captureMs": 4694,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://vercel.com/login",
+     "verdict": "unknown",
+     "site": "vercel.com",
+     "brand": "vercel",
+     "reasons": [
+      "The page presents itself as Vercel, but the catalog lists no domains for Vercel."
+     ]
+    },
+    {
+     "id": "vercel",
+     "group": "spoof:no-domains",
+     "truthBrand": "vercel",
+     "claimed": "Vercel",
+     "confidence": 1,
+     "evidence": [
+      "Vercel Logo",
+      "Log in to Vercel",
+      "Vercel",
+      "favicon.ico"
+     ],
+     "modelMs": 8900,
+     "usage": {
+      "prompt_tokens": 452,
+      "completion_tokens": 42,
+      "total_tokens": 494,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.34000015258789
+     },
+     "captureMs": 4694,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://vercel-account-review.test/login",
+     "verdict": "unknown",
+     "site": "vercel-account-review.test",
+     "brand": "vercel",
+     "reasons": [
+      "The page presents itself as Vercel, but the catalog lists no domains for Vercel."
+     ]
+    },
+    {
+     "id": "canva",
+     "group": "no-domains",
+     "truthBrand": "canva",
+     "claimed": "Canva",
+     "confidence": 1,
+     "evidence": [
+      "Canva",
+      "Login to your Canva account",
+      "Site name: Canva",
+      "Canva home"
+     ],
+     "modelMs": 10378,
+     "usage": {
+      "prompt_tokens": 553,
+      "completion_tokens": 42,
+      "total_tokens": 595,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 16.819091796875
+     },
+     "captureMs": 10756,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://www.canva.com/login/",
+     "verdict": "unknown",
+     "site": "canva.com",
+     "brand": "canva",
+     "reasons": [
+      "The page presents itself as Canva, but the catalog lists no domains for Canva."
+     ]
+    },
+    {
+     "id": "canva",
+     "group": "spoof:no-domains",
+     "truthBrand": "canva",
+     "claimed": "Canva",
+     "confidence": 1,
+     "evidence": [
+      "Canva",
+      "Login to your Canva account",
+      "Site name: Canva",
+      "Canva home"
+     ],
+     "modelMs": 10378,
+     "usage": {
+      "prompt_tokens": 553,
+      "completion_tokens": 42,
+      "total_tokens": 595,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 16.819091796875
+     },
+     "captureMs": 10756,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://auth-canva.cloud-portal.test/login/",
+     "verdict": "unknown",
+     "site": "cloud-portal.test",
+     "brand": "canva",
+     "reasons": [
+      "The page presents itself as Canva, but the catalog lists no domains for Canva."
+     ]
+    },
+    {
+     "id": "wellsfargo",
+     "group": "not-in-catalog",
+     "truthBrand": "Wells Fargo",
+     "claimed": "Wells Fargo",
+     "confidence": 1,
+     "evidence": [
+      "Wells Fargo",
+      "Sign On to View Your Personal Accounts",
+      "Wells Fargo Enroll",
+      "Favicon file"
+     ],
+     "modelMs": 13138,
+     "usage": {
+      "prompt_tokens": 465,
+      "completion_tokens": 45,
+      "total_tokens": 510,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.890910148620605
+     },
+     "captureMs": 12754,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://connect.secure.wellsfargo.com/auth/login/present",
+     "verdict": "unknown",
+     "site": "wellsfargo.com",
+     "brand": null,
+     "reasons": [
+      "The page presents itself as \"Wells Fargo\", which is not in the catalog, so there is nothing to compare its domain with."
+     ]
+    },
+    {
+     "id": "wellsfargo",
+     "group": "spoof:not-in-catalog",
+     "truthBrand": "Wells Fargo",
+     "claimed": "Wells Fargo",
+     "confidence": 1,
+     "evidence": [
+      "Wells Fargo",
+      "Sign On to View Your Personal Accounts",
+      "Wells Fargo Enroll",
+      "Favicon file"
+     ],
+     "modelMs": 13138,
+     "usage": {
+      "prompt_tokens": 465,
+      "completion_tokens": 45,
+      "total_tokens": 510,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.890910148620605
+     },
+     "captureMs": 12754,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://accounts-wellsfargo.verify-login.test/auth/login/present",
+     "verdict": "unknown",
+     "site": "verify-login.test",
+     "brand": null,
+     "reasons": [
+      "The page presents itself as \"Wells Fargo\", which is not in the catalog, so there is nothing to compare its domain with."
+     ]
+    },
+    {
+     "id": "bankofamerica",
+     "group": "not-in-catalog",
+     "truthBrand": "Bank of America",
+     "claimed": "Bank of America",
+     "confidence": 1,
+     "evidence": [
+      "Bank of America",
+      "Online & Mobile Banking",
+      "FDIC-Insured",
+      "Bank of America deposit products"
+     ],
+     "modelMs": 7828,
+     "usage": {
+      "prompt_tokens": 515,
+      "completion_tokens": 44,
+      "total_tokens": 559,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 16.040908813476562
+     },
+     "captureMs": 15851,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://secure.bankofamerica.com/auth/signon/",
+     "verdict": "unknown",
+     "site": "bankofamerica.com",
+     "brand": null,
+     "reasons": [
+      "The page presents itself as \"Bank of America\", which is not in the catalog, so there is nothing to compare its domain with."
+     ]
+    },
+    {
+     "id": "bankofamerica",
+     "group": "spoof:not-in-catalog",
+     "truthBrand": "Bank of America",
+     "claimed": "Bank of America",
+     "confidence": 1,
+     "evidence": [
+      "Bank of America",
+      "Online & Mobile Banking",
+      "FDIC-Insured",
+      "Bank of America deposit products"
+     ],
+     "modelMs": 7828,
+     "usage": {
+      "prompt_tokens": 515,
+      "completion_tokens": 44,
+      "total_tokens": 559,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 16.040908813476562
+     },
+     "captureMs": 15851,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://bankofamerica.com-secure-signin.test/auth/signon/",
+     "verdict": "unknown",
+     "site": "com-secure-signin.test",
+     "brand": null,
+     "reasons": [
+      "The page presents itself as \"Bank of America\", which is not in the catalog, so there is nothing to compare its domain with."
+     ]
+    },
+    {
+     "id": "tpbank",
+     "group": "not-in-catalog",
+     "truthBrand": "TPBank",
+     "claimed": "TPBank",
+     "confidence": 1,
+     "evidence": [
+      "TPBank",
+      "Ngân hàng Số Cá nhân TPBank",
+      "www.tpb.vn",
+      "logo-bold-text.svg"
+     ],
+     "modelMs": 8598,
+     "usage": {
+      "prompt_tokens": 438,
+      "completion_tokens": 44,
+      "total_tokens": 482,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.150909423828125
+     },
+     "captureMs": 6639,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://ebank.tpb.vn/retail/vX/",
+     "verdict": "unknown",
+     "site": "tpb.vn",
+     "brand": null,
+     "reasons": [
+      "The page presents itself as \"TPBank\", which is not in the catalog, so there is nothing to compare its domain with."
+     ]
+    },
+    {
+     "id": "tpbank",
+     "group": "spoof:not-in-catalog",
+     "truthBrand": "TPBank",
+     "claimed": "TPBank",
+     "confidence": 1,
+     "evidence": [
+      "TPBank",
+      "Ngân hàng Số Cá nhân TPBank",
+      "www.tpb.vn",
+      "logo-bold-text.svg"
+     ],
+     "modelMs": 8598,
+     "usage": {
+      "prompt_tokens": 438,
+      "completion_tokens": 44,
+      "total_tokens": 482,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.150909423828125
+     },
+     "captureMs": 6639,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://auth-tpbank.cloud-portal.test/retail/vX/",
+     "verdict": "unknown",
+     "site": "cloud-portal.test",
+     "brand": null,
+     "reasons": [
+      "The page presents itself as \"TPBank\", which is not in the catalog, so there is nothing to compare its domain with."
+     ]
+    },
+    {
+     "id": "bidv",
+     "group": "not-in-catalog",
+     "truthBrand": "BIDV",
+     "claimed": "BIDV",
+     "confidence": 1,
+     "evidence": [
+      "BIDV",
+      "Ngân hàng TMCP Đầu tư và Phát triển Việt Nam",
+      "logo-bao-hiem-tien-gui.png",
+      "favicon.ico"
+     ],
+     "modelMs": 8957,
+     "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 54,
+      "total_tokens": 449,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.868181228637695
+     },
+     "captureMs": 15863,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://smartbanking.bidv.com.vn/dang-nhap",
+     "verdict": "unknown",
+     "site": "bidv.com.vn",
+     "brand": null,
+     "reasons": [
+      "The page presents itself as \"BIDV\", which is not in the catalog, so there is nothing to compare its domain with."
+     ]
+    },
+    {
+     "id": "bidv",
+     "group": "spoof:not-in-catalog",
+     "truthBrand": "BIDV",
+     "claimed": "BIDV",
+     "confidence": 1,
+     "evidence": [
+      "BIDV",
+      "Ngân hàng TMCP Đầu tư và Phát triển Việt Nam",
+      "logo-bao-hiem-tien-gui.png",
+      "favicon.ico"
+     ],
+     "modelMs": 8957,
+     "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 54,
+      "total_tokens": 449,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 13.868181228637695
+     },
+     "captureMs": 15863,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://accounts-bidv.verify-login.test/dang-nhap",
+     "verdict": "unknown",
+     "site": "verify-login.test",
+     "brand": null,
+     "reasons": [
+      "The page presents itself as \"BIDV\", which is not in the catalog, so there is nothing to compare its domain with."
+     ]
+    },
+    {
+     "id": "zalo",
+     "group": "not-in-catalog",
+     "truthBrand": "Zalo",
+     "claimed": "Zalo",
+     "confidence": 1,
+     "evidence": [
+      "Zalo",
+      "Đăng nhập tài khoản Zalo",
+      "Zalo Web",
+      "Zalo PC"
+     ],
+     "modelMs": 13753,
+     "usage": {
+      "prompt_tokens": 458,
+      "completion_tokens": 40,
+      "total_tokens": 498,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.332727432250977
+     },
+     "captureMs": 11246,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://id.zalo.me/account",
+     "verdict": "unknown",
+     "site": "zalo.me",
+     "brand": null,
+     "reasons": [
+      "The page presents itself as \"Zalo\", which is not in the catalog, so there is nothing to compare its domain with."
+     ]
+    },
+    {
+     "id": "zalo",
+     "group": "spoof:not-in-catalog",
+     "truthBrand": "Zalo",
+     "claimed": "Zalo",
+     "confidence": 1,
+     "evidence": [
+      "Zalo",
+      "Đăng nhập tài khoản Zalo",
+      "Zalo Web",
+      "Zalo PC"
+     ],
+     "modelMs": 13753,
+     "usage": {
+      "prompt_tokens": 458,
+      "completion_tokens": 40,
+      "total_tokens": 498,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.332727432250977
+     },
+     "captureMs": 11246,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://zalo.com-secure-signin.test/account",
+     "verdict": "unknown",
+     "site": "com-secure-signin.test",
+     "brand": null,
+     "reasons": [
+      "The page presents itself as \"Zalo\", which is not in the catalog, so there is nothing to compare its domain with."
+     ]
+    },
+    {
+     "id": "quora",
+     "group": "not-in-catalog",
+     "truthBrand": "Quora",
+     "claimed": "Quora",
+     "confidence": 1,
+     "evidence": [
+      "Quora",
+      "Quora's Terms of Service",
+      "Quora, Inc. 2026",
+      "Site name: Quora"
+     ],
+     "modelMs": 8846,
+     "usage": {
+      "prompt_tokens": 424,
+      "completion_tokens": 47,
+      "total_tokens": 471,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.039091110229492
+     },
+     "captureMs": 11096,
+     "case": "genuine",
+     "truth": "genuine",
+     "url": "https://www.quora.com/",
+     "verdict": "unknown",
+     "site": "quora.com",
+     "brand": null,
+     "reasons": [
+      "The page presents itself as \"Quora\", which is not in the catalog, so there is nothing to compare its domain with."
+     ]
+    },
+    {
+     "id": "quora",
+     "group": "spoof:not-in-catalog",
+     "truthBrand": "Quora",
+     "claimed": "Quora",
+     "confidence": 1,
+     "evidence": [
+      "Quora",
+      "Quora's Terms of Service",
+      "Quora, Inc. 2026",
+      "Site name: Quora"
+     ],
+     "modelMs": 8846,
+     "usage": {
+      "prompt_tokens": 424,
+      "completion_tokens": 47,
+      "total_tokens": 471,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 14.039091110229492
+     },
+     "captureMs": 11096,
+     "case": "spoof",
+     "truth": "phish",
+     "url": "https://login.quora-support.test/",
+     "verdict": "unknown",
+     "site": "quora-support.test",
+     "brand": null,
+     "reasons": [
+      "The page presents itself as \"Quora\", which is not in the catalog, so there is nothing to compare its domain with."
+     ]
+    },
+    {
+     "id": "generic-signin",
+     "group": "no-brand",
+     "truthBrand": null,
+     "claimed": null,
+     "confidence": 0,
+     "evidence": [
+      "generic-signin.html",
+      "no brand mentioned",
+      "standard signin form",
+      "forgot password link"
+     ],
+     "modelMs": 6545,
+     "usage": {
+      "prompt_tokens": 331,
+      "completion_tokens": 38,
+      "total_tokens": 369,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 11.060909271240234
+     },
+     "captureMs": null,
+     "case": "genuine",
+     "truth": "benign",
+     "url": "https://portal.example-intranet.test/login",
+     "verdict": "unknown",
+     "site": "example-intranet.test",
+     "brand": null,
+     "reasons": [
+      "The page shows no brand the model could name."
+     ]
+    },
+    {
+     "id": "generic-otp",
+     "group": "no-brand",
+     "truthBrand": null,
+     "claimed": null,
+     "confidence": 0,
+     "evidence": [
+      "no logo mentioned",
+      "generic favicon",
+      "no brand text",
+      "generic verification text"
+     ],
+     "modelMs": 10739,
+     "usage": {
+      "prompt_tokens": 327,
+      "completion_tokens": 36,
+      "total_tokens": 363,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 10.808182716369629
+     },
+     "captureMs": null,
+     "case": "genuine",
+     "truth": "benign",
+     "url": "https://verify.example-intranet.test/2fa",
+     "verdict": "unknown",
+     "site": "example-intranet.test",
+     "brand": null,
+     "reasons": [
+      "The page shows no brand the model could name."
+     ]
+    },
+    {
+     "id": "generic-webmail",
+     "group": "no-brand",
+     "truthBrand": null,
+     "claimed": null,
+     "confidence": 0,
+     "evidence": [
+      "generic-webmail.html",
+      "no logo mentioned",
+      "basic form fields",
+      "no brand name mentioned"
+     ],
+     "modelMs": 8783,
+     "usage": {
+      "prompt_tokens": 330,
+      "completion_tokens": 38,
+      "total_tokens": 368,
+      "prompt_tokens_details": {
+       "cached_tokens": 0
+      },
+      "neurons": 11.03636360168457
+     },
+     "captureMs": null,
+     "case": "genuine",
+     "truth": "benign",
+     "url": "https://mail.example-hosting.test/",
+     "verdict": "unknown",
+     "site": "example-hosting.test",
+     "brand": null,
+     "reasons": [
+      "The page shows no brand the model could name."
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -56,13 +56,14 @@ npm run doctor         # checks the settings and makes one real request before y
 ```
 
 ```bash
-npm run check -- https://github.com/login
+npm run check -- https://github.com/login --text-only
 ```
 
 ```
 LEGIT  github.com
-  claims to be: GitHub (0.95)
-  ...
+  claims to be: GitHub (1.00)
+  - The page presents itself as GitHub (GitHub; Sign in to GitHub; Site name: GitHub), and github.com is one of GitHub's domains.
+  capture 5576 ms · model 6765 ms when first asked (cached now) · cloudflare:@cf/meta/llama-4-scout-17b-16e-instruct
 ```
 
 `--text-only` withholds the screenshot; `--json` prints the full result. The exit code is 1 for `impersonation`.
@@ -75,7 +76,37 @@ This reproduces the table below. The first run opens every page in [eval/legit.j
 
 ## Results
 
-_Pending: filled in from the first full `npm run eval`. Every number here will come from [eval/RESULTS.md](eval/RESULTS.md), never from an estimate._
+Measured on 2026-10-23 with Llama 4 Scout (`@cf/meta/llama-4-scout-17b-16e-instruct`) on Cloudflare Workers AI. Every number is copied from [eval/RESULTS.md](eval/RESULTS.md), which `npm run eval` writes, and that file also lists every failure.
+
+74 real pages were scored: 58 popular catalogued brands, 7 brands the catalog has no domains for, 6 brands outside the catalog and 3 pages with no brand. Each page was judged at its real address and, if it is a real page, at a lookalike address too: 145 cases.
+
+| Text only (no screenshot) | |
+|---|---:|
+| Precision: flagged pages that were spoofed | 90.3% (56 of 62) |
+| Recall: spoofed pages of catalogued brands caught | 96.6% (56 of 58) |
+| Recall: all spoofed pages caught | 78.9% (56 of 71) |
+| False-positive rate: genuine pages flagged | 8.1% (6 of 74) |
+| Real catalogued pages confirmed `legit` | 86.2% (50 of 58) |
+| Brand named correctly | 95.9% (71 of 74) |
+| Model latency p50 / p95 | 10.0 s / 16.5 s |
+| Page capture p50 / p95 | 8.5 s / 15.9 s |
+| End to end p50 / p95 | 19.8 s / 27.3 s |
+
+**Screenshot + text: not measured yet.** On 2026-10-23 Workers AI failed every request that carried an image after about 65 s: 503 "Unknown internal error" or 499 "Client Closed Request". It failed at every size tried (1280, 768 and 336 px wide), with and without JSON mode, on both its OpenAI-compatible and native routes. Text-only requests to the same model kept working. One image request did succeed earlier that evening: the GitHub page, in 57.7 s and 2,299 prompt tokens, named correctly. One success is not a result, so the screenshot column, and with it the ablation, stays empty until it has been run on all 74 pages.
+
+What the failures were:
+
+- **All six false positives were catalog gaps, not model errors.** In each case the model named the right brand, but the sign-in page was on a domain the catalog does not list:
+  - Wise signs in on wise.com; the catalog has wise.design.
+  - Notion on notion.com; the catalog has notion.so.
+  - VK on vk.ru; the catalog has vk.com.
+  - Shopee Vietnam on shopee.vn; the catalog has shopee.com.
+  - Microsoft's work accounts on microsoftonline.com.
+  - Anthropic's console is now platform.claude.com, branded "Claude Platform". The model called it Claude, whose catalog domain is claude.ai.
+- **Two spoofed catalogued pages were missed.**
+  - Cursor's sign-in page names Cursor only in its pixels; the extracted text is "Sign in / Email / Continue with email". Text alone has nothing to go on, and the screenshot is exactly what would catch it.
+  - NordVPN's page calls itself "Nord Account". The model said "Nord", which the catalog does not match to "NordVPN".
+- **The hard cases did what they were designed to do.** The 7 brands with no catalog domains, the 6 brands outside the catalog (TPBank, BIDV and Zalo among them) and the 3 unbranded pages all came out `unknown`. The model named every one of those brands correctly. None was flagged. Their spoofed versions also came out `unknown`, which means they were not caught. That is the price of never guessing, and it is why recall over all spoofed pages is 78.9%.
 
 ## How the evaluation is built
 
@@ -91,13 +122,12 @@ _Pending: filled in from the first full `npm run eval`. Every number here will c
 
 ## Limits
 
-_To be completed with what the run shows. Known before running:_
-
 - **It measures the relay attack, not hand-made clones.** A spoofed case reuses the real page's pixels. A crude clone that looks different from the real page is not measured here.
 - **The spoofed cases share answers with the genuine ones.** In this setup, recall on spoofed pages equals how often the model names the brand correctly at confidence ≥ 0.5. The two results are not independent.
-- **The catalog decides what can be caught.** A brand with no domains in the catalog can never be flagged. A brand with a wrong domain makes its real page look like an impersonation.
-- **Headless browsers meet bot checks.** 13 of the popular brands' pages showed headless Chromium a bot wall, an error or a blank page instead of sign-in (PayPal, GitLab, Shopify, Slack…). They are excluded, so the results say nothing about those brands. Reddit, Roblox and Steam refused connections from the network the captures were taken on.
+- **The catalog decides what can be caught, and today it is the weakest part.** It caused every false positive above. A brand with no domains in the catalog can never be flagged, and popular ones have none: Facebook, Instagram, OpenAI, Figma and Vercel. Before the extension blocks anything, the catalog needs every domain each brand really signs in on, country domains included (shopee.vn, vk.ru).
+- **Headless browsers meet bot checks.** 12 of the 73 popular brands' sign-in pages, and Adobe's, showed headless Chromium a bot wall, an error or a blank page instead of sign-in (PayPal, GitLab, Shopify, Slack…). They are excluded, so the results say nothing about those brands. Reddit, Roblox and Steam refused connections from the network the captures were taken on, and Vietcombank's page failed to load headless. In the extension this should mostly go away, because the page is already open in the user's own browser.
 - **Confidence is the model's own.** The 0.5 threshold was set before the run and not tuned on these results.
+- **Too slow to sit in front of a code today.** A text-only answer took 10 s at the median on Workers AI's free tier. Capturing a page headless took another 8.5 s, and the extension would not need to do that. Ten seconds is too long to make someone wait for their code. A faster host, a smaller first pass, or checking while the page loads rather than when the code is requested are the obvious next steps; none has been measured.
 - **The screenshot goes to a third-party API.** It is taken before anything is typed, so it holds no password or code. It is still a picture of the page the user is on.
 
 ## Built with Llama
