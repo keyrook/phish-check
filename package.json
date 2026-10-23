@@ -10,8 +10,10 @@
   },
   "scripts": {
     "catalog": "node scripts/snapshot-catalog.mjs",
+    "doctor": "node scripts/doctor.mjs",
     "check": "node src/cli.mjs",
-    "eval": "node eval/run.mjs"
+    "eval": "node eval/run.mjs",
+    "test": "node --test test/*.test.mjs"
   },
   "dependencies": {
     "playwright": "1.63.0",

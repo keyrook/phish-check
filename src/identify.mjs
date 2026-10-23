@@ -72,7 +72,7 @@ export function parseClaim(raw) {
     return { claimed_brand: null, confidence: 0, evidence: [], parseError: true };
   }
   let brand = typeof obj.claimed_brand === 'string' ? obj.claimed_brand.trim() : null;
-  if (brand && NO_BRAND.test(brand)) brand = null;
+  if (!brand || NO_BRAND.test(brand)) brand = null;
   let confidence = Number(obj.confidence);
   if (!Number.isFinite(confidence)) confidence = 0;
   if (confidence > 1 && confidence <= 100) confidence /= 100;
@@ -95,5 +95,6 @@ export async function identify(signals, screenshot) {
     modelMs: reply.latencyMs,
     cached: reply.cached,
     usage: reply.usage,
+    jsonMode: reply.jsonMode,
   };
 }
