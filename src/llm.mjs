@@ -46,7 +46,7 @@ const PROVIDERS = {
 };
 
 export function provider(env = process.env) {
-  const name = (env.PROVIDER ?? 'groq').toLowerCase();
+  const name = (env.PROVIDER || 'cloudflare').toLowerCase();
   const make = PROVIDERS[name];
   if (!make) throw new Error(`Unknown PROVIDER "${name}" (expected ${Object.keys(PROVIDERS).join(', ')})`);
   const p = make(env);

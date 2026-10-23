@@ -37,7 +37,7 @@ Three choices matter:
 - **The model is not shown the address.** It judges what the person sees, not where the page lives. That keeps the claim independent of the thing it is checked against.
 - **`unknown` is a first-class answer.** A page with no brand, a brand outside the catalog, or a low-confidence guess is never called `impersonation`. For a 2FA tool, a wrong block is costly: it teaches people to ignore the warning.
 
-Models are reached through any OpenAI-compatible chat-completions endpoint over plain `fetch`, switched in `.env`. Groq and Cloudflare Workers AI both host Llama 4 Scout. Requests are throttled under the free-tier limits. Every answer is cached on disk under a hash of the exact request, so a rerun costs no quota.
+Models are reached through any OpenAI-compatible chat-completions endpoint over plain `fetch`, switched in `.env`. Cloudflare Workers AI hosts Llama 4 Scout. Groq was the first choice, but on 2026-10-23 its model list for a free key had no Llama 4 Scout and no Meta chat model at all. Requests are throttled under the free-tier limits. Every answer is cached on disk under a hash of the exact request, so a rerun costs no quota.
 
 ## Use
 
@@ -48,7 +48,11 @@ npm install
 ```
 
 ```bash
-cp .env.example .env   # then put a Groq key (or Cloudflare account ID and token) in it
+cp .env.example .env   # then put a Cloudflare account ID and API token in it
+```
+
+```bash
+npm run doctor         # checks the settings and makes one real request before you spend quota
 ```
 
 ```bash

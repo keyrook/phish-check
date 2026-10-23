@@ -61,6 +61,13 @@ try {
   console.log(`  json mode ${claim.jsonMode ? 'accepted' : 'not used (parsed from text)'}`);
   console.log(`  latency   ${claim.modelMs} ms${claim.cached ? ' (cached answer)' : ''}`);
   if (claim.usage) console.log(`  tokens    ${claim.usage.prompt_tokens} in, ${claim.usage.completion_tokens} out`);
+  // Workers AI bills Llama 4 Scout at 24,545 neurons per million input
+  // tokens and 77,273 per million output, against 10,000 free a day.
+  if (p.name === 'cloudflare' && claim.usage) {
+    const neurons = (claim.usage.prompt_tokens * 24_545 + claim.usage.completion_tokens * 77_273) / 1e6;
+    console.log(`  neurons   ≈ ${neurons.toFixed(0)} for this call; a screenshot call is most of a run's cost`);
+    console.log(`            ≈ ${Math.floor(10_000 / neurons)} calls like it fit in one free day`);
+  }
   if (claim.parseError) process.exitCode = 1;
 } catch (err) {
   if (err instanceof NetworkBlockedError || err instanceof MissingKeyError) {
